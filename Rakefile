@@ -20,7 +20,7 @@ end
 
 desc "local: pull and bundle exec jekyll serve --watch --incremental"
 task :pls do
-  sh "git pull origin master"
+  sh "git pull origin masqter"
   sh "bundle exec jekyll serve --future --watch --incremental --port 8080"
 end
 
@@ -32,9 +32,12 @@ end
 
 desc "build"
 task :b do
-  sh "bundle exec jekyll build --future"
+  sh "bundle exec jekyll build --future -I -w -d ../website"
 end
 
+task :pushhtml do
+  "./scripts/build-and-push.sh"
+end
 
 desc "sytws: pull and build"
 task :pb do
