@@ -5,7 +5,10 @@ subtitle: 'Master de Ingeniería Informática'
 theme: jekyll-theme-midnight
 description: 'Master de II. ULL. 1er cuatrimestre. 2020/2021'
 future: true
+include: [".nojekyll"]
 exclude: 
+  - Gemfile # to avoid messages from GH dependences
+  - Gemfile.lock
   - node_modules
   - tema3-web/practicas/p10-t3-commanding-databases/eval
   - tema2-async/practicas/p7-t2-asyncmap/sol-reto-async-reading-multiple-files
