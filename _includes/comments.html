@@ -2,12 +2,14 @@
                 <summary><h2>Comment with GitHub Utterances</h2></summary>
                 {% include utterances.html %}
             </details>
-            
+
+{% comment %}            
             <details>
                 <summary>
                    <h2>Comment with Disqus</h2> 
                 </summary>   
-                {% comment %}           
+           
                 {% include disqus.html %}
-                {% endcomment %}
+            
             </details>
+{% endcomment %}
