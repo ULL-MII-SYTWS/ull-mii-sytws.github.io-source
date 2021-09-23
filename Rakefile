@@ -8,6 +8,11 @@ task :serve do
   sh "bundle exec jekyll serve --future --watch --port 8080 --host 0.0.0.0"
 end
 
+desc "sytws: serve raw html"
+task :rawserve do
+  sh "http-server ../website -p 8000"
+end
+
 desc "local: bundle exec jekyll serve --watch"
 task :ls do
   sh "bundle exec jekyll serve --host 0.0.0.0 --future --watch --port 8080"
