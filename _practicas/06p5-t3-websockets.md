@@ -2,7 +2,7 @@
 name: p5-t3-websockets
 myurl: /tema3-web/practicas/p5-t3-websockets/
 layout: post
-visible: true
+visible: false
 date: 0000-01-20
 ---
 

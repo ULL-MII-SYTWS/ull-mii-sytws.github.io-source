@@ -1,6 +1,7 @@
 ---
 name: p3-t1-c3-http
 myurl: /tema1-introduccion/practicas/p3-t1-c3-http/
+visible: false
 date: 3000-01-01
 ---
 

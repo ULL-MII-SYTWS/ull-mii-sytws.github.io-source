@@ -2,7 +2,7 @@
 layout: post
 name: p15-t2-generators
 myurl: /tema2-async/practicas/p15-t2-generators/
-visible: true
+visible: false
 date: 0000-01-15
 ---
 

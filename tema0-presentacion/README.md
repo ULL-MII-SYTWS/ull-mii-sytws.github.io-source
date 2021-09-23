@@ -7,8 +7,8 @@
 
 ## Guías Docentes del Máster Universitario en Ingeniería Informática
 
-* [Guías Docentes del Máster Universitario en Ingeniería Informática (2020 - 2021)](https://www.ull.es/apps/guias/guias/view_degree/670) 
-* [Guía Docente de SYTWS](https://www.ull.es/apps/guias/guias/view_guide/22284/) 
+* [Guías Docentes del Máster Universitario en Ingeniería Informática (2021 - 2022)](https://www.ull.es/apps/guias/guias/view_degree/M%C3%A1ster%20Universitario%20en%20Ingenier%C3%ADa%20Inform%C3%A1tica/) 
+* [Guía Docente de SYTWS 2021-2022](https://www.ull.es/apps/guias/guias/view_guide/27349/) 
 
 ## [El Master: Módulos y Asignaturas](../degree.md)
 

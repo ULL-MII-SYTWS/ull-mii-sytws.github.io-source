@@ -2,7 +2,7 @@
 layout: post
 name: p6-t1-gh-cli
 myurl: /tema1-introduccion/practicas/p6-t1-gh-cli/
-visible: true
+visible: false
 date: 0000-01-06
 ---
 

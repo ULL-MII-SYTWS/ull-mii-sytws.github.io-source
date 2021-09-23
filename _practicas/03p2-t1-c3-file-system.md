@@ -2,7 +2,7 @@
 layout: post
 name: p2-t1-c3-filesystem
 myurl: /tema1-introduccion/practicas/p2-t1-c3-file-system/
-visible: true
+visible: false
 date: 0000-01-04
 ---
 

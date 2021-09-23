@@ -2,7 +2,7 @@
 layout: post
 name: p17-t2-async-iteration-and-generators
 myurl: /tema2-async/practicas/p17-t2-async-iteration-and-generators/
-visible: true
+visible: false
 date: 0000-01-17
 ---
 

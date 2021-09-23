@@ -1,4 +1,4 @@
-## Temas Hemos conseguido que .nojekyll se copie
+## Temas
 
 {% for tema in site.temas %}
 

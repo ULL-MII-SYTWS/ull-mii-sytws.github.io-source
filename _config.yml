@@ -5,6 +5,7 @@ subtitle: 'Master de Ingeniería Informática'
 theme: jekyll-theme-midnight
 description: 'Master de II. ULL. 1er cuatrimestre. 2020/2021'
 future: true
+baseurl: ""
 include: [".nojekyll"]
 exclude: 
   - Gemfile # to avoid messages from GH dependences
@@ -18,15 +19,15 @@ exclude:
 show_downloads: false
 live_reload: true
 organization: 
-  url: https://github.com/ULL-MII-SYTWS-2021
-  name: ULL-MII-SYTWS-2021
-  master: https://github.com/ULL-MII-SYTWS-2021/tree/master/
+  url: https://github.com/ULL-MII-SYTWS-2122
+  name: ULL-MII-SYTWS-2122
+  master: https://github.com/ULL-MII-SYTWS-2122/tree/master/
 chat: https://chat.google.com/u/1/room/AAAAp18fCE8
 jamboard: https://jamboard.google.com/d/1wCWvYJeirSY7ISGO80Ip6h-k_1FH_XYDuUtqe0jf5Fk/edit?usp=sharing
 classroom:
-  url: https://classroom.github.com/classrooms/68184806-ull-mii-sytws-2021
-  name: ULL-MII-SYTWS-2021
-  id: 68184806
+  url: https://classroom.github.com/classrooms/90842007-ull-mii-sytws-2122 #https://classroom.github.com/classrooms/68184806-ull-mii-sytws-2021
+  name: ULL-MII-SYTWS-2122
+  id: 90842007 # 68184806
 collections: 
   practicas: 
     order: 
@@ -44,17 +45,17 @@ collections:
       #- p10-t3-jekyll-search.md
     output: true
 campus_virtual:
-  home: https://campusdoctoradoyposgrado.ull.es/course/view.php?id=2020111300 
-  tareas: https://campusdoctoradoyposgrado.ull.es/mod/assign/index.php?id=2020111300
-calificador: https://campusdoctoradoyposgrado.ull.es/grade/report/grader/index.php?id=2020111300
+  home: https://campusdoctoradoyposgrado2122.ull.es/course/view.php?id=2122110810  # https://campusdoctoradoyposgrado.ull.es/course/view.php?id=2122110810 
+  tareas: https://campusdoctoradoyposgrado.ull.es/mod/assign/index.php?id=2122110810
+calificador: https://campusdoctoradoyposgrado.ull.es/grade/report/grader/index.php?id=2122110810
 covid_ull: https://campusvirtual.ull.es/doctoradoyposgrado/course/view.php?id=201913946
 horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0
-github_org: https://github.com/ULL-MII-SYTWS-2021
-repo_apuntes: https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/
-repo_url_master: https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/
-despliegue_apuntes: https://ull-mii-sytws-1920.github.io/
+github_org: https://github.com/ULL-MII-SYTWS-2122
+repo_apuntes: https://github.com/ULL-MII-SYTWS/ull-mii-sytws.github.io-source/
+repo_url_master: https://github.com/ULL-MII-SYTWS/ull-mii-sytws.github.io-source/tree/main/
+despliegue_apuntes: https://ull-mii-sytws.github.io/
 #classroom: https://classroom.github.com/classrooms/55384072-master-de-ingenieria-informatica-sistemas-y-tecnologias-web-servidor-classroom
-profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/745/(%3FPcrguezl.*)/
+profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/837/crguezl/ # https://www.ull.es/apps/guias/guias/view_teacher_niu/745/(%3FPcrguezl.*)/
 profesor_name: Casiano
 acronimo: SYTWS
 acronimo_curso: SYTWS 19/20
@@ -73,7 +74,7 @@ temas:
     title: "Tema 3: Servicios y Aplicaciones Web"
   - path: tema4-devops
     title: "Tema 4: DevOps"
-books_shared: https://github.com/ULL-MII-SYTWS-2021/books-shared/tree/master/
+books_shared: https://github.com/ULL-MII-SYTWS-1920/books-shared/tree/master/
 books_shared_2019: https://github.com/ULL-MII-SYTWS-1920/books-shared/tree/master/
 meet: https://meet.google.com/bhv-togn-ynm
 kramdown:

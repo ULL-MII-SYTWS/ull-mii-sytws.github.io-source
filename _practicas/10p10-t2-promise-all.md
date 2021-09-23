@@ -2,7 +2,7 @@
 layout: post
 name: p10-t2-promise-all
 myurl: /tema2-async/practicas/p10-t2-promise-all/
-visible: true
+visible: false
 date: 0000-01-11
 ---
 

@@ -4,7 +4,7 @@
 * Autentíquese en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * Una vez autenticado obtendrá acceso al libro [Node.js 8 the Right Way](https://puntoq.ull.es/permalink/f/1rcchus/TN_safari_s9781680505344). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ)
 * Lea el Capítulo 2 "[Wrangling the File System]()" de *Node.JS The Right Way*. 
-* Consulte el [repo de bibliografía para la organización](https://github.com/ULL-MII-SYTWS-2021/books-shared)
+* Consulte el [repo de bibliografía para la organización](https://github.com/ULL-MII-SYTWS-2022/books-shared)
 * Resuelva los problemas en la secciones *Fortifying the code* y *Expanding Functionality* del capítulo *Wrangling the File System*
 * Haga su desarrollo usando Visual studio Code. [Use git y github desde visual studio code](https://code.visualstudio.com/docs/editor/versioncontrol) tanto como pueda
 
@@ -187,7 +187,7 @@ File change watcher-fortifying-code.js
 
 ### El Libro Node.js 8 the Right Way
 
-* [Repo de bibliografía para la organización](https://github.com/ULL-MII-SYTWS-2021/books-shared)
+* [Repo de bibliografía para la organización](https://github.com/ULL-MII-SYTWS-2022/books-shared)
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * [Node.js 8 the Right Way](https://puntoq.ull.es/permalink/f/1rcchus/TN_safari_s9781680505344) en Safari books O'Reilly. Jim Wilson. 2018 (Debes estar autenticado via PuntoQ) 
 * [Node.js 8 the Right Way](https://books.google.es/books?id=oA9QDwAAQBAJ&lpg=PT96&ots=-mLQPlvsSj&dq=should%20ldjclient%20emit%20a%20close%20event&hl=es&pg=PP1#v=onepage&q=should%20ldjclient%20emit%20a%20close%20event&f=false) en Google Books. Faltan páginas

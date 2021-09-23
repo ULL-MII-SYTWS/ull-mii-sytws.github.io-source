@@ -44,7 +44,7 @@ Consider both cases: when a rejection or an error occurs and when all the promis
 
 ## See
 
-* [ULL-MII-SYTWS-2021/learning-async-iteration-and-generators](https://github.com/ULL-MII-SYTWS-2021/learning-async-iteration-and-generators) (Private)
+* [ULL-MII-SYTWS-2022/learning-async-iteration-and-generators](https://github.com/ULL-MII-SYTWS-2022/learning-async-iteration-and-generators) (Private)
   * campus-virtual/2021/learning/asyncjs-learning/learning-async-iteration-and-generators
 * Chapter [Async iteration and generators](https://javascript.info/async-iterators-generators)
 * Chapter [Iterables](https://javascript.info/iterable)

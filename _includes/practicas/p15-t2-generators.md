@@ -112,7 +112,7 @@ Surely you are going to have a look at the chapter [Iterables](https://javascrip
 
 ## See
 
-* [ULL-MII-SYTWS-2021/learning-generators](https://github.com/ULL-MII-SYTWS-2021/learning-generators) (Private)
+* [ULL-MII-SYTWS-2022/learning-generators](https://github.com/ULL-MII-SYTWS-2022/learning-generators) (Private)
   * campus-virtual/2021/learning/asyncjs-learning/learning-generators
 * Chapter [Iterables](https://javascript.info/iterable)
 * Chapter [Generators](https://javascript.info/generators) of JavaScript.info

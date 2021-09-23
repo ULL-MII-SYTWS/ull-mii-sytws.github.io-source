@@ -2,7 +2,7 @@
 
 ## Calendario Académico
 
-- <a href="https://www.ull.es/estudios-docencia/calendario-academico/" target="_blank">Calendario Académico</a>
+- <a href="{{ site.data.datos.calendario_academico.url }}" target="_blank">Calendario Académico</a>
 - <a href="https://drive.google.com/open?id=1VGZXc0K6iK2Kg-8dTotm_Jqu7dwv_Tu5" target="_blank">Calendario Académico 2019/2020</a>
 - <a href="https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view" target="_blank">Calendario Académico 2018/2019</a>
 
@@ -24,9 +24,9 @@ El máster contempla un 50% de no presencialidad y las clases de teoría (Grupos
 
 [meet]: https://meet.google.com/bhv-togn-ynm
 
-Nos comunican que las clases comenzarán el Lunes 05/10/2020 de forma telemática.
+Nos comunican que las clases comenzarán el Lunes 27/09/2021.
  
-* [Calendario Google de SYTWS](https://calendar.google.com/calendar/b/1?cid=dWxsLmVkdS5lc19oM2FiN3AzcmxmYW1qY25zbmhsdDZ1aGI0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) (Por si lo quieres añadir a tu Google Calendar)
+* [Calendario Google de SYTWS](https://calendar.google.com/calendar/u/1?cid=dWxsLmVkdS5lc19oM2FiN3AzcmxmYW1qY25zbmhsdDZ1aGI0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) (Por si lo quieres añadir a tu Google Calendar)
 
 {% include embeded-calendar-iframe.html %}
 

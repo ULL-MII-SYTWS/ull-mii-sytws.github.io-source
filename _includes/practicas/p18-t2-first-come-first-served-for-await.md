@@ -150,7 +150,7 @@ allsettled: 331.935ms
 ## See
 
 * Here is a [solution](https://github.com/crguezl/frstcmfrstsvd). Don't look at it unless you are blocked
-* [ULL-MII-SYTWS-2021/learning-async-iteration-and-generators](https://github.com/ULL-MII-SYTWS-2021/learning-async-iteration-and-generators) (Private)
+* [ULL-MII-SYTWS-2022/learning-async-iteration-and-generators](https://github.com/ULL-MII-SYTWS-2022/learning-async-iteration-and-generators) (Private)
   * campus-virtual/2021/learning/asyncjs-learning/learning-async-iteration-and-generators
 * Chapter [Async iteration and generators](https://javascript.info/async-iterators-generators)
 * Chapter [Iterables](https://javascript.info/iterable)

@@ -2,7 +2,7 @@
 name: p4-t2-networking
 myurl: /tema2-async/practicas/p4-t2-networking/
 layout: post
-visible: true
+visible: false
 date: 0000-01-19
 ---
 

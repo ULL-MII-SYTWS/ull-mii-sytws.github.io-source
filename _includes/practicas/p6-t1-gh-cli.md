@@ -4,7 +4,7 @@ Using `gh api` and `gh alias --shell` add to `gh`
 an extension `gh create-repo` that creates the repo inside the given organization:
 
 ```
-gh create-repo prueba-repo ULL-MII-SYTWS-2021
+gh create-repo prueba-repo ULL-MII-SYTWS-2022
 ```
 
 You can use the REST API or GraphQL

@@ -3,7 +3,7 @@ layout: post
 name: p9-t2-promise-readfile
 tema: tema2-async
 myurl: /tema2-async/practicas/p9-t2-promise-readfile/
-visible: true
+visible: false
 date: 0000-01-10
 ---
 

@@ -20,7 +20,7 @@ En el caso de las tutorías, estamos utilizando las herramientas de chat y meet 
 
 ### Sesiones virtuales/clases 
 
-Realizamos las clases mediante videoconferencias (Google Meet). Las de teoría serán grabadas y publicadas en el campus virtual. Los vídeos son compartidos via Google Drive, el Campus (Kaltura) y Youtube.
+Realizamos las clases mediante videoconferencias (Google Meet). Las de teoría serán grabadas y publicadas en el campus virtual.
 
 ### Inclusión de documentación sobre cada tema
 
@@ -67,7 +67,7 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 * [ELABORACIÓN DE LAS ADENDAS A LAS GUÍAS DOCENTES. PREGUNTAS FRECUENTES ](https://docs.google.com/document/u/1/d/e/2PACX-1vRI7bTEi93KsUBrb1S9sRmdMbsR3fL9N0MHz39CbtGtdzK-eoA7U4dIsXDvyuV7eSekyY3uyBa1z8Ix/pub)
 * [Fichas de Evaluación Telemática](https://campusvirtual.ull.es/1920/mod/resource/view.php?id=246585)
 * [Videotutorial Evaluación ULL](https://www.youtube.com/watch?v=oGSv58_dbNk&feature=youtu.be)
-* <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
+* <a href=".calendario_academico}}" target="_blank">Calendario Académico</a>
 * <a href="{{site.horarios_examenes}}" target="_blank">Horarios del Grado de Ingeniería Informática para el curso 19/20</a>
 * <a href="{{site.horarios_tutorias}}" target="_blank">Horarios de tutorías del Departamento de Ingeniería Informática</a>
 
