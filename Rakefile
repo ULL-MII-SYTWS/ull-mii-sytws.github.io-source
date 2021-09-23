@@ -37,10 +37,10 @@ end
 
 desc "build"
 task :b do
-  sh "bundle exec jekyll build --future -I -w -d ../website"
+  sh "bundle exec jekyll build --future  -d ../website"
 end
 
-task :pushhtml do
+task :pushhtml => [ :b ] do
   sh "./scripts/build-and-push.sh"
 end
 
