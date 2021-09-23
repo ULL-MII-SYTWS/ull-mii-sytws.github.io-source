@@ -3,7 +3,7 @@ subtitle: 'Master de Ingeniería Informática'
 #remote_theme: mmistakes/minimal-mistakes
 #minimal_mistakes_skin: "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 theme: jekyll-theme-midnight
-description: 'Master de II. ULL. 1er cuatrimestre. 2020/2021'
+description: 'Master de II. ULL. 1er cuatrimestre'
 future: true
 baseurl: ""
 include: [".nojekyll"]
