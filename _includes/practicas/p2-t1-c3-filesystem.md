@@ -208,7 +208,7 @@ File change watcher-fortifying-code.js
 
 ### El libro Node.js Beyond the Basics
 
-Este es un libro diferente a la mayoría de los libros sobre Node.Js en cuanto que profundiza en el runtime-system de Node.js y por tanto es relevante en la etapa en la que estamos. Sólo están disponibles la introducción y el capítulo de streams. Elr esto es de pago.
+Este es un libro diferente a la mayoría de los libros sobre Node.Js en cuanto que profundiza en el runtime-system de Node.js y por tanto es relevante en la etapa en la que estamos. Sólo están disponibles la introducción y el capítulo de streams. El resto es de pago.
 
 * [Node.js Beyond the Basics](https://jscomplete.com/learn/node-beyond-basics)
 * [Node.js Child Processes: Everything you need to know How to use spawn(), exec(), execFile(), and fork()](https://medium.freecodecamp.org/node-js-child-processes-everything-you-need-to-know-e69498fe970a)
