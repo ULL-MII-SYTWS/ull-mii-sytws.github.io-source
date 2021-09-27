@@ -57,9 +57,9 @@ A la hora acordada inicie un chat usando <a href="https://chat.google.com" targe
 
 ## Fechas de Cierre de actas 
 
-*  7 de Febrero
-*  20 de Marzo
-*  18 de Junio
-*  15 de Julio
-*  18 de Septiembre
+*  14 de Febrero
+*  17 de Marzo
+*  20 de Junio
+*  13 de Julio
+*  19 de Septiembre
 
