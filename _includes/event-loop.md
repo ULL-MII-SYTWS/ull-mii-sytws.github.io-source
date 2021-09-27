@@ -23,7 +23,7 @@
     17	console.log(numberSquared);
 ```
 
-[Output from execution]({{site.baseurl}}/tema2-async/callstack-js-execution)
+[Output from execution]({{site.baseurl}}/tema2-async/event-loop/callstack-js-execution)
 
 
 * ¿En que orden ocurren las salidas?
