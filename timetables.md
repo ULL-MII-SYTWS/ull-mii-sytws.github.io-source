@@ -38,11 +38,8 @@ Nos comunican que las clases comenzarán el Lunes 27/09/2021.
 ### Horarios de Tutorías
 
 * Primer Cuatrimestre: L, M, X de 8:30 a 10:30
-<!-- 
-* <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUd1YlJSLURtcE5JfGRlZmF1bHR8ZmNiMWNmMTE4MjNjNzk1MWQwZGQyYTI4ZjZjYjZjY2E" target="_blank">Reserva de Tutoría</a>  (Enlace al calendario de solicitud de citas. Haz clic en una hora disponible. Si no hay ninguna, prueba en un intervalo de tiempo diferente. Para cancelar una hora ya reservada, sal de la página de registro y elimina el evento de tu propio calendario.).
-A la hora acordada inicie un chat usando <a href="https://chat.google.com" target="_blank">Google Chat</a> para arrancar la videoconferencia 
-* <a href="https://docs.google.com/spreadsheets/d/1Ib_pSZcnagKwWyLvLmX5Hzref0JeLX0mKcVPnGrOglQ/edit#gid=0" target="_blank">Página de Horarios de tutorías del Departamento de Ingeniería Informática y de Sistemas de la ULL</a> (Puede no estar actualizado)
--->
+
+<!-- -->
 
 
 ## Exámenes de convocatoria
