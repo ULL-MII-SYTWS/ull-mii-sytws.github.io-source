@@ -1,9 +1,9 @@
 # Descripción de la práctica p2-t1-c3-filesystem
 
 * Autentíquese en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
-* Una vez autenticado obtendrá acceso al libro [Node.js 8 the Right Way](https://puntoq.ull.es/permalink/f/1rcchus/TN_safari_s9781680505344). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ)
+* Una vez autenticado obtendrá acceso al libro [Node.js 8 the Right Way](https://puntoq.ull.es/permalink/f/1rcchus/TN_safari_s9781680505344). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ y dentro dela VPN de la ULL)
 * Lea el Capítulo 2 "[Wrangling the File System]()" de *Node.JS The Right Way*. 
-* Consulte el [repo de bibliografía para la organización](https://github.com/ULL-MII-SYTWS-1920/books-shared)
+* Una alternativa es consultar en el [repo de bibliografía para la organización](https://github.com/ULL-MII-SYTWS-2122/books-shared)
 * Resuelva los problemas en la secciones *Fortifying the code* y *Expanding Functionality* del capítulo *Wrangling the File System*
 * Haga su desarrollo usando Visual studio Code. [Use git y github desde visual studio code](https://code.visualstudio.com/docs/editor/versioncontrol) tanto como pueda
 
