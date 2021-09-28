@@ -1,6 +1,6 @@
 ---
 layout: post
-name: p01-t1-iaas
+name: set-up 
 myurl: /tema1-introduccion/practicas/p01-t1-iaas/
 visible: true
 date: 0000-01-02

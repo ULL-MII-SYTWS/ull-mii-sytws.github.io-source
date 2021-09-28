@@ -1,6 +1,6 @@
 ---
 layout: post
-name: p7-t2-asyncmap
+name: asyncmap
 myurl: /tema2-async/practicas/p7-t2-asyncmap/
 visible: true
 date: 0000-01-05

@@ -1,6 +1,5 @@
 # Descripción de la práctica p2-t1-c3-filesystem
 
-* [Aceptemos la asignación de la tarea](https://classroom.github.com/a/JeTaIHuY)
 * Autentíquese en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * Una vez autenticado obtendrá acceso al libro [Node.js 8 the Right Way](https://puntoq.ull.es/permalink/f/1rcchus/TN_safari_s9781680505344). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ)
 * Lea el Capítulo 2 "[Wrangling the File System]()" de *Node.JS The Right Way*. 
