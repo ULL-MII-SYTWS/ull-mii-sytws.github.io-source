@@ -1,72 +1,40 @@
-# Recursos de la Asignatura
 
-## Campus Virtual
+## Recursos ULL
 
-* [SYTWS](https://campusvirtual.ull.es/1920/course/view.php?id=201913778)
-* [Participantes](https://campusvirtual.ull.es/1920/user/index.php?id=201913778)
-* [Calificaciones](https://campusvirtual.ull.es/1920/grade/report/grader/index.php?id=201913778)
-* [Tareas](https://campusvirtual.ull.es/1920/mod/assign/index.php?id=201913778)
-* [Foros](https://campusvirtual.ull.es/1920/mod/forum/index.php?id=201913778)
+### BULL
 
-### Campus Virtuales de Otras Asignaturas del Profesor
-
-* [Org ULL-ESIT-PL-1819](https://github.com/ULL-ESIT-PL-1819)
-* [Org ULL-MII-CA-1819](https://github.com/ULL-MII-CA-1819)
-* [Org ULL-ESIT-DSI-1819](https://github.com/ULL-ESIT-DSI-1819)
-* [Org ULL-ESIT-PL-1718](https://github.com/ULL-ESIT-PL-1718)
-* [Org ULL-ESIT-MII-CA-1718](https://github.com/ULL-ESIT-MII-CA-1718)
-* [Org ULL-ESIT-DSI-1617](https://github.com/ULL-ESIT-DSI-1617)
-
-
-## GitHub
-
-* [Página Web de SYTWS](https://ull-esit-sytws-1920.github.io)
-* [Organización ULL-ESIT-SYTWS-1920](https://github.com/ULL-ESIT-SYTWS-1920)
-  - [Repo ull-esit-sytws-1920.github.io](https://github.com/ULL-ESIT-SYTWS-1920/ull-esit-sytws-1920.github.io)
-
-### Asking GitHub for Educational Discounts
-
-* [Solicitudes a GitHub](https://education.github.com/discount_requests/new)
-* [When you receive then email notifying you that you've been approved for GitHub Education faculty benefits, you may return to](https://education.github.com/benefits) to upgrade your academic GitHub organizations
-
-## Google Drive
-
-* [Spreadsheet](https://docs.google.com/spreadsheets/d/123qbWECg5CNWbuIzgGHGvoixnTMYybL8rjVQAqtBYEI/edit?pli=1#gid=1051140367)
-
-
-## Google+
-
-* [Comunidad Google+ SYTWS](https://plus.google.com/u/2/communities/104629784252354892324)
-
-# Recursos Generales
-
-## Prácticas
-
-* Herramientas para la Asignación de Tareas
-  * [GitHub Classroom](https://classroom.github.com/classrooms/)
-  * [CodeLab TFG de Samuel](https://codelab-tfg1718.herokuapp.com/)
-* [Instrucciones para las entregas de Prácticas y Trabajos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/)
-
-### Connecting GitHub Classroom with Moodle
-
-GitHub Classroom integrates with learning management systems (LMS) such as Brightspace, Canvas, Moodle, and others. GitHub Classroom supports:
-
-- Roster provisioning
-- Assignment creation (Planned) Brrr
-- Submission syncing (Planned) Brrr
-
-* [Use GitHub Classroom with Canvas, Google Classroom, or your own tools](https://github.blog/2019-08-13-use-github-classroom-with-your-own-tools/)
-* [Integrating GHC with a learning management system (LMS)](https://classroom.github.com/help/connect-to-lms)
-* [Configuring GitHub Classroom in Moodle](https://classroom.github.com/help/setup-moodle)
-* [Importing a course roster from your Learning Management System](https://classroom.github.com/help/import-roster-from-lms)
-
-## BULL
-
-* [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
+* [BULL PuntoQ]({{ site.bull_puntoq }})
 * [Video tutoriales de ayuda sobre PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/videotutoriales-de-puntoq/)
-* [Antiplagio]( https://www.ull.es/servicios/biblioteca/antiplagio/)
 
-## iaas.ull.es
+### Antiplagio
+
+* [Solicitud de informe de similitud]({{ site.turnitin }}) Turnitin
+
+### Sede ULL
+
+* [Sede ULL](https://sede.ull.es/)
+    - [Solicitud General](https://sede.ull.es/ecivilis-site/catalog/showProcedure/229)
+    - [Mis trámites](https://sede.ull.es/ecivilis-site/records/myRecords)
+    - [Portafirmas de la ULL](https://sede.ull.es/ecivilis-signature-inbox-application/inbox.html)
+    - [Certificado de Docencia Impartida](https://sede.ull.es/ecivilis-site/catalog/showProcedure/550?fbclid=IwAR27HUuu8SbYKpsnoR3RCPzHzCvaMpDqW1ZxB4jeljRLz1SreHgxv1aJqZc)
+  
+#### Procedimientos en la Sede  para Masters y TFGs
+
+* [Procedimiento Presentación del Trabajo Fin de Máster Universitario](https://sede.ull.es/ecivilis-site/catalog/showProcedure/257)
+* [Presentación de las Actas del Trabajo Fin de Máster (TFM)](https://sede.ull.es/ecivilis-site/catalog/showProcedure/485) por el secretaio del tribunal
+* [Presentación del Trabajo Fin de Grado (TFG)](https://sede.ull.es/ecivilis-site/catalog/showProcedure/281)
+* [Procedimiento para entregar el Trabajo Fin de Grado (TFG) a través de la sede electrónica de la ULL](https://youtu.be/foDDM8tQML4)
+
+### App ULL Plan de Ordenación Docente 
+
+* [POD ULL App](https://www.ull.es/apps/pod/)
+
+### Portal del Empleado y del Estudiante
+
+* [Portal ull.es](portal.ull.es) Portal del Empleado y del Estudiante
+
+
+### iaas.ull.es
 
 * [Instrucciones para el uso de iaas.ull.es](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/recursos/iaas.html)
   - [Gestor online de pools](https://iaas.ull.es/ovirtadmin/login) 
@@ -74,38 +42,80 @@ GitHub Classroom integrates with learning management systems (LMS) such as Brigh
   - [Video del profesor: iaas.ull.es](https://youtu.be/qKHgbV0lYbA)
   - [https://iaas.ull.es/mismaquinas](https://iaas.ull.es/mismaquinas) 
 
+* [Servicio IaaS EULA y Solicitud de servicio
+](https://docs.google.com/document/d/1noIAcAEzX1PuxxSLWuiTKzkLurAm9fL6vUmZN-A-kpE/edit?usp=sharing)
+  - Certificados SSL para máquinas IaaS de PAS/PDI
 
-## STIC
 
-### Incidencias
+### Incidencias STIC
 
 - [Gestor de incidencias. RT para rt.stic.ull.es](https://usuarios.ull.es/rt/SelfService/)
 - [Tarjeta Universitaria](https://www.ull.es/tarjeta/)
 
-### VPN
+### VPN ULL
 
 - [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
+  *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs)
+  *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Mac OSX](https://drive.google.com/file/d/0B3mzWpxzbJD1VTZhUkFVbUI2NWc/view?usp=sharing)
+  * [Instrucciones para acceder a la VPN de la ULL en un Mac sin usar GlobalProtect]({{site.baseurl}}/pages/vpn-ull)
+  *   [Guía de configuración del cliente VPN para Linux, Android e IOS (Ipad, Iphone) con IPSEC](https://drive.google.com/open?id=0B3mzWpxzbJD1Z1p4OWtQSFFzOGs)
 
-- [Instrucciones para acceder a la VPN de la ULL en un Mac sin usar GlobalProtect]({{site.baseurl}}/vpn-ull)
+### Servicio de Escritorios Virtuales para la docencia
 
-### Mapa de Recursos
+* [Servicio de Escritorios Virtuales](https://www.ull.es/servicios/stic/2020/09/01/escritorios-virtuales-para-la-docencia-en-la-universidad-de-la-laguna/)
+
+### Mapa de Recursos ULL
 
 - [Mapa de recursos de la ULL](https://www.ull.es/donde/)
 
-### Impresión
+### Servicio de Impresión ULL
 
 * [Datos para el servicio de impresión](https://usuarios.ull.es/autogestion/valores_impresion/)
 
-### Cambio de contraseña
+### Cambio de contraseña en la ULL
 
 * [Cambio de contraseña](https://usuarios.ull.es/autogestion/cambio_password_google/)
 
+### Búsqueda de Usuarios ULL
 
-## Sede ULL/ULL Online
+* [Búsqueda de Usuarios ULL](https://usuarios.ull.es/buscar/)
 
-* [Sede ULL](https://sede.ull.es/)
-    - [Solicitud General](https://sede.ull.es/ecivilis-site/catalog/showProcedure/229)
-    - [Mis trámites](https://sede.ull.es/ecivilis-site/records/myRecords)
-    - [Portafirmas de la ULL](https://sede.ull.es/ecivilis-signature-inbox-application/inbox.html)
-    - [Certificado de Docencia Impartida](https://sede.ull.es/ecivilis-site/catalog/showProcedure/550?fbclid=IwAR27HUuu8SbYKpsnoR3RCPzHzCvaMpDqW1ZxB4jeljRLz1SreHgxv1aJqZc)
+
+## Recursos GitHub
+
+### GitHub Benefits
+
+* [Solicitar Free Plan para uso educativo](https://education.github.com/discount_requests/new)
+
+* [Actualizar tus organizaciones de acuerdo al Free Plan concedido](https://education.github.com/toolbox/offers/github-org-upgrades)
+
+* [Actualizar tus organizaciones de acuerdo al Free Plan concedido](https://education.github.com/benefits) Vieja
+
+* [Check the status of your GitHub Application _**as student**_](https://education.github.com/discount_requests/student_application)
+
+### GitHub Classroom Help
+
+* [GitHub Classroom en YouTube](https://www.youtube.com/playlist?list=PLIRjfNq867bewk3ZGV6Z7a16YDNRCpK3u)
+* [GitHub Classroom Help](https://classroom.github.com/help/)
+  * [Upgrading your organization](https://classroom.github.com/help/upgrade-your-organization)
+
+### GitHub Help
+
+* [GitHub Support: My tickets](https://support.github.com/tickets/personal/0)
+* [GitHub Support Community](https://github.community/)
+* [GitHub Education Community](https://education.github.community/)
+* [Create Icon avatar for the organization](https://graduaat-iconizr.herokuapp.com/)
+
+### Authorizing Apps to access your GitHub Orgs and Repos
+
+* [Authorize an OAuth App: settings/applications](https://github.com/settings/connections/applications/) Go to **user** settings and from there to applications
+
+### GitPod
+
+* [Introducción a GitPod]({{ site.baseurl}}/tema1-introduccion/gitpod)
+
+  
+## Google+
+
+* [Comunidad Google+ SYTWS](https://plus.google.com/u/2/communities/104629784252354892324)
 

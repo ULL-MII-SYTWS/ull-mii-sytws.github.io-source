@@ -7,7 +7,7 @@
 * Resuelva los problemas en la secciones *Fortifying the code* y *Expanding Functionality* del capítulo *Wrangling the File System*
 * Haga su desarrollo usando Visual studio Code. [Use git y github desde visual studio code](https://code.visualstudio.com/docs/editor/versioncontrol) tanto como pueda
 
-Este es un ejemplo similar a los ejemplos que encontrará en el capítulo
+Este es un ejemplo similar a los ejemplos que encontrará en el capítulo edl libro
 con la diferencia de que usamos la librería  [commander.js](https://www.npmjs.com/package/commander) para procesar los argumentos:
  
  ``` 
