@@ -1,6 +1,7 @@
+
 # Descripción de la Práctica p7-t2-asyncmap 
 
-Escriba un programa Node.js que usando `fs.readFile` lea  un conjunto de ficheros pasados en vía de comandos y produzca como salida la concatenación de los mismos en el orden especificado. Evite usar `fs.readFileSync`:
+Escriba un programa Node.js que usando `fs.readFile` lea **en paralelo** un conjunto de ficheros pasados en vía de comandos y produzca como salida la concatenación de los mismos en el orden especificado. Evite usar `fs.readFileSync`:
 
 ```
 $ concat -f one.txt -f two.txt -f three.txt -o salida.txt

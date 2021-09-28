@@ -2,8 +2,8 @@
 layout: post
 name: p7-t2-asyncmap
 myurl: /tema2-async/practicas/p7-t2-asyncmap/
-visible: false
-date: 0000-01-07
+visible: true
+date: 0000-01-05
 ---
 
 {% include practicas/p7-t2-asyncmap.md %}
