@@ -1,19 +1,20 @@
 
 # Descripción de la Práctica p2-t1-vscode
 
-## Acepte la tarea
-
-* [Asignación p2-t1-vscode](https://classroom.github.com/a/L0PUJIfV)
-
 ## Objetivos
 
 1. Instale VSCode en su máquina
 2. Siga los tutoriales de VSCode
 2. Instale el plugin [Remote SSH](https://code.visualstudio.com/docs/remote/ssh) y aprenda a usarlo con el sistema de archivo de una máquina remota via SSH
 3. Use Live Share para colaborar con un compañero
+5. Aprenda a usar [GitPod]({{site.baseurl}}/tema1-introduccion/gitpod)
 4. Elabore un informe con la experiencia adquirida
 
 ## Tutoriales
+
+### Gitpod 
+
+Véase [GitPod]({{site.baseurl}}/tema1-introduccion/gitpod)
 
 ### Guía de Usuario
 <ul id="editor-articles" class="collapse ">
