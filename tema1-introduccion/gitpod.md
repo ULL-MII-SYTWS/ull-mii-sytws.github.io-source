@@ -1,7 +1,3 @@
----
-title: GitPod
----
-
 Gitpod is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. It enables developers to describe their dev environment as code and start instant and fresh development environments for each new task directly from your browser.
 
 See [Introduction to Gitpod](https://www.gitpod.io/docs)
