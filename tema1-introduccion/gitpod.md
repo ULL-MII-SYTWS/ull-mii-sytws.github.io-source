@@ -1,8 +1,47 @@
+# VS Code in Browsers
+
+## Period in a repo
+
+From any repo or pull request, developers can simply press the period (`.`) key to bring up the browser-based VS Code environment with the source code file ready for editing. 
+
+## Substitute github by github.dev in a GitHub URL
+
+That dot press to bring up the web-based editor takes you to <https://github.dev/>, so the same one-press `.` functionality can be duplicated just by changing a URL from "github.com" to "github.dev".
+
+### Documentation
+
+Esta documentación es sólo para usuarios GitHub Enterprise
+
+* [Web-based editor](https://docs.github.com/es/codespaces/developing-in-codespaces/web-based-editor)
+
+## Referencias
+
+* [One-Click VS Code in Browser from GitHub Repo ](https://visualstudiomagazine.com/articles/2021/08/31/github-vs-code.aspx)
+
+# GitPod 
+
 Gitpod is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. It enables developers to describe their dev environment as code and start instant and fresh development environments for each new task directly from your browser.
 
-See [Introduction to Gitpod](https://www.gitpod.io/docs)
+## Aprendiendo GitPod
 
-##  Oferta Plan Personal (2021)
+* See [Introduction to Gitpod](https://www.gitpod.io/docs)
+* [Getting Started](https://www.gitpod.io/docs/getting-started)
+
+## Botón GitPod
+
+Para tener el botón GitPod instala la correspondiente extensión en Chrome o Firefox
+
+* [GitPod Browser Extension](https://www.gitpod.io/docs/browser-extension/)
+* [Chrome extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki?hl=es) in the webstore
+* [fireFox addon](https://addons.mozilla.org/es/firefox/addon/gitpod/)
+
+
+## Oferta para Estudiantes
+
+* [GitHub Student Developer Pack](https://www.gitpod.io/github-student-developer-pack)
+
+
+##  Oferta Plan Personal (2021) Profesores
 
 En esta URL [https://gitpod.io/plans](https://gitpod.io/plans)
 se puede solicitar un upgrade al plan "personal"  que permite acceder a repositorios privados si eres un miembro de una comunidad educativa. No he tenido que introducir tarjetas.
