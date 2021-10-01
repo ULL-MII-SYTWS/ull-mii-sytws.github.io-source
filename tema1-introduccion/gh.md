@@ -4,16 +4,29 @@ title: GitHub Command Line Interface
 
 ## Introduction
 
+### What is 
+
 [gh](https://cli.github.com/manual/) pretends to facilitate the access to GitHub from the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
 
+### Version 
+
 ```
-➜ gh help
+➜  apuntes git:(main) gh --version
+gh version 2.0.0 (2021-08-23)
+https://github.com/cli/cli/releases/tag/v2.0.0
+```
+
+### Help
+
+```
+➜  apuntes git:(main) ✗ gh help
 Work seamlessly with GitHub from the command line.
 
 USAGE
   gh <command> <subcommand> [flags]
 
 CORE COMMANDS
+  browse:     Open the repository in the browser
   gist:       Manage gists
   issue:      Manage issues
   pr:         Manage pull requests
@@ -31,9 +44,15 @@ ADDITIONAL COMMANDS
   auth:       Login, logout, and refresh your authentication
   completion: Generate shell completion scripts
   config:     Manage configuration for gh
+  extension:  Manage gh extensions
   help:       Help about any command
   secret:     Manage GitHub secrets
   ssh-key:    Manage SSH keys
+
+EXTENSION COMMANDS
+  clone-org
+  gp
+  project
 
 FLAGS
   --help      Show help for command
@@ -54,6 +73,8 @@ LEARN MORE
 FEEDBACK
   Open an issue using 'gh issue create -R github.com/cli/cli'
 ```
+
+### Installation
 
 To install it, see  the [installation instructions](https://github.com/cli/cli#installation).
 
@@ -476,6 +497,11 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 
 [Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
 -->
+
+## Extensions
+
+* [gh-extension](https://github.com/topics/gh-extension) list
+* [matt-bartel/gh-clone-org](https://github.com/matt-bartel/gh-clone-org)
 
 ## Running Manually GitHub Workflows with gh
 
