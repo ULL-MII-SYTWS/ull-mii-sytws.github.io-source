@@ -1,6 +1,73 @@
-# GitHub Command Line Interface
+---
+title: GitHub Command Line Interface
+---
 
-## gh api
+## Introduction
+
+[gh](https://cli.github.com/manual/) pretends to facilitate the access to GitHub from the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
+
+```
+➜ gh help
+Work seamlessly with GitHub from the command line.
+
+USAGE
+  gh <command> <subcommand> [flags]
+
+CORE COMMANDS
+  gist:       Manage gists
+  issue:      Manage issues
+  pr:         Manage pull requests
+  release:    Manage GitHub releases
+  repo:       Create, clone, fork, and view repositories
+
+ACTIONS COMMANDS
+  actions:    Learn about working with GitHub actions
+  run:        View details about workflow runs
+  workflow:   View details about GitHub Actions workflows
+
+ADDITIONAL COMMANDS
+  alias:      Create command shortcuts
+  api:        Make an authenticated GitHub API request
+  auth:       Login, logout, and refresh your authentication
+  completion: Generate shell completion scripts
+  config:     Manage configuration for gh
+  help:       Help about any command
+  secret:     Manage GitHub secrets
+  ssh-key:    Manage SSH keys
+
+FLAGS
+  --help      Show help for command
+  --version   Show gh version
+
+EXAMPLES
+  $ gh issue create
+  $ gh repo clone cli/cli
+  $ gh pr checkout 321
+
+ENVIRONMENT VARIABLES
+  See 'gh help environment' for the list of supported environment variables.
+
+LEARN MORE
+  Use 'gh <command> <subcommand> --help' for more information about a command.
+  Read the manual at https://cli.github.com/manual
+
+FEEDBACK
+  Open an issue using 'gh issue create -R github.com/cli/cli'
+```
+
+To install it, see  the [installation instructions](https://github.com/cli/cli#installation).
+
+Check the [GitHub CLI Manual](https://cli.github.com/manual/) for more details.
+
+
+There are several ways you can extend/customize `gh`:
+
+*   Create shorthands using [`gh alias set`](https://cli.github.com//manual/gh_alias_set)
+*   Make custom API queries using [`gh api`](https://cli.github.com//manual/gh_api)
+*   Use [environment variables](https://cli.github.com//manual/gh_help_environment)
+
+
+## Introduction to `gh api` 
 
 ### Authentication Token
 
@@ -13,7 +80,7 @@ to generate a new token for `gh` and set then environment variable
 Placeholder values `:owner`, `:repo`, and `:branch` in the endpoint argument will get replaced with values from the repository of the current directory.
 
 ```
-[~/.../sytws2021/apuntes(master)]$  gh api repos/:owner/:repo/issues
+$  gh api repos/:owner/:repo/issues
 [
   {
     "url": "https://api.github.com/repos/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/issues/5",
@@ -37,14 +104,14 @@ Placeholder values `:owner`, `:repo`, and `:branch` in the endpoint argument wil
 We can pipe the output to [jq](jq):
 
 ```
-[~/.../sytws2021/apuntes(master)]$  gh api repos/:owner/:repo/issues | jq '.[0] | .title'
+$  gh api repos/:owner/:repo/issues | jq '.[0] | .title'
 "tema0-presentacion/practicas/pb-gh-campus-expert/"
 ```
 
 Of course, we can explicit the repo and owner. For example:
 
 ```
-➜  learning git:(master) gh api repos/ULL-MII-SYTWS-2021/p01-t1-iaas-alu0101040882/issues | jq '.[0] | .user.login, .body'
+➜ gh api repos/ULL-MII-SYTWS-2021/p01-t1-iaas-alu0101040882/issues | jq '.[0] | .user.login, .body'
 "crguezl"
 "Hola @alu0101040882, \r\n\r\nVeo que alguno ya está trabajando en la práctica de
 ```
@@ -79,16 +146,16 @@ The option `--paginate`allow us to make additional HTTP requests to fetch
 all pages of results. Here is an example. 
 
 ```
-➜  to-meta git:(master) ✗ gh alias set get-repos 'api /orgs/$1/repos'
+➜  gh alias set get-repos 'api /orgs/$1/repos'
 - Adding alias for get-repos: api /orgs/$1/repos
 ✓ Added alias.
-➜  to-meta git:(master) ✗ gh alias list
+➜  gh alias list
 co:         pr checkout
 get-repos:  api /orgs/$1/repos
 ``` 
 
 ```
-➜  to-meta git:(master) ✗ gh get-repos ULL-MII-SYTWS-2021
+➜ gh get-repos ULL-MII-SYTWS-2021
 ```
 
 ![]({{site.baseurl}}/assets/images/gh-alias-repos.png)
@@ -96,7 +163,7 @@ get-repos:  api /orgs/$1/repos
 Now  we can pipe the output to [jq](jq) to get the names of the repos:
 
 ```
-➜  to-meta git:(master) ✗ gh get-repos ULL-MII-SYTWS-2021 | jq '.[].full_name' -
+➜  gh get-repos ULL-MII-SYTWS-2021 | jq '.[].full_name' -
 "ULL-MII-SYTWS-2021/sytws-2021-meta"
 "ULL-MII-SYTWS-2021/sytws2021-private"
 "ULL-MII-SYTWS-2021/books-shared"
@@ -109,7 +176,7 @@ Now  we can pipe the output to [jq](jq) to get the names of the repos:
 Let ask for the repos in the PL organization for the course 19/20:
 
 ```
-➜  to-meta git:(master) ✗ gh api /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
+➜ gh api /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
       30      30    1088
 ```
 It gave us 30 repos. There are much more than that in that organization.
@@ -117,24 +184,23 @@ It gave us 30 repos. There are much more than that in that organization.
 If we use `--paginate` the request takes a long time and gives us near a thousand repos:
 
 ```
-➜  to-meta git:(master) ✗ gh api --paginate /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
+➜ gh api --paginate /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
      990     990   32868
 ```
 
-## gh alias
+## Introduction to `gh alias`
 
-
-### gh alias set
 
 ```
-➜  to-meta git:(master) ✗ gh help alias set
-````
+➜ gh alias set <alias> <expansion> [flags]
+```
 
 Declare a word as a command alias that will expand to the specified command(s).
 
 The expansion may specify additional arguments and flags. If the expansion
 includes positional placeholders such as `$1`, `$2`, etc., any extra arguments
 that follow the invocation of an alias will be inserted appropriately.
+
 
 If `--shell` is specified, the alias will be run through a shell interpreter (sh). This allows you
 to compose commands with `|` or redirect with `>`. Note that extra arguments following the alias
@@ -146,17 +212,7 @@ you have installed git on Windows in some other way, shell aliases may not work 
 
 Quotes must always be used when defining a command as in the examples.
 
-
-### USAGE
-  gh alias set <alias> <expansion> [flags]
-
-### FLAGS
-  -s, --shell   Declare an alias to be passed through a shell interpreter
-
-### INHERITED FLAGS
-  --help   Show help for command
-
-### EXAMPLES
+### Simple Examples
 
 ```
   $ gh alias set pv 'pr view'
@@ -174,16 +230,17 @@ Quotes must always be used when defining a command as in the examples.
   #=> gh issue list --label="epic" | grep "foo"
 ````
 
+### Example: Search for repos inside an organization
+
 Let us search for repos inside our organization using GitHub API v3:
 
 ```
-➜  to-meta git:(master) ✗ gh api '/search/repositories?q=vscode+org:ULL-MII-SYTWS-2021+in:name'
+➜ gh api '/search/repositories?q=iaas+org:ULL-MII-SYTWS-2021+in:name'
 ```
-
 
 ![]({{site.baseurl}}/assets/images/gh-api-search-for-repos.png) 
 
-In this [link](gh-get-labs-output.json) you'll find the full output.
+Here is [the JSON with the full output](gh-get-labs-output.json).
 
 * See the [SEARCH](https://docs.github.com/en/free-pro-team@latest/rest/reference/search)
 section of the REST API GitHub docs to know more about the API.
@@ -192,10 +249,10 @@ section of the REST API GitHub docs to know more about the API.
 Now we can use `gh alias set` to make an alias `get-lab` to get the repos:
 
 ```
-➜  to-meta git:(master) ✗ gh alias set get-labs 'api /search/repositories?q=$2+org:$1+in:name'
+➜ gh alias set get-labs 'api /search/repositories?q=$2+org:$1+in:name'
 - Adding alias for get-labs: api /search/repositories?q=$2+org:$1+in:name
 ✓ Added alias.
-➜  to-meta git:(master) ✗ gh alias list
+➜  gh alias list
 co:        pr checkout
 get-labs:  api /search/repositories?q=$2+org:$1+in:name
 ```
@@ -203,13 +260,13 @@ get-labs:  api /search/repositories?q=$2+org:$1+in:name
 And now we can use it:
 
 ```
-➜  to-meta git:(master) ✗ gh get-labs ULL-MII-SYTWS-2021 iaas
+➜ gh get-labs ULL-MII-SYTWS-2021 iaas
 ```
 
 Next  we can pipe the output to [jq](jq) to get the names of the repos and the date of the last push:
 
 ```
-➜  to-meta git:(master) ✗ gh get-labs ULL-MII-SYTWS-2021 iaas | jq '.items[] | .name, .pushed_at'
+➜ gh get-labs ULL-MII-SYTWS-2021 iaas | jq '.items[] | .name, .pushed_at'
 "p01-t1-iaas-juanchojbarroso"
 "2020-10-21T15:58:32Z"
 "p01-t1-iaas-alu0101040882"
@@ -226,7 +283,7 @@ Next  we can pipe the output to [jq](jq) to get the names of the repos and the d
 We can improve it by writing a script:
 
 ```
-➜  to-meta git:(master) ✗ cat ~/bin/repos
+➜  cat ~/bin/repos
 ```
 
 ```bash
@@ -249,7 +306,7 @@ gh api --paginate /search/repositories?q=$ASSIGNMENT+org:$ORG+in:name |
 Let us make an alias for `gh`:
 
 ```
-➜  to-meta git:(master) ✗ gh alias set --shell get-repos 'repos $1 $2'
+➜ gh alias set --shell get-repos 'repos $1 $2'
 - Adding alias for get-repos: repos $1 $2
 ✓ Changed alias get-repos from !repos to !repos $1 $2
 ```
@@ -269,11 +326,6 @@ Let us use our new alias:
 "tfa-esther-sergio-tfa" => "2020-07-10T08:53:04Z"
 ...
 ```
-
-### LEARN MORE
-
-  Use `gh <command> <subcommand> --help` for more information about a command.
-  Read the manual at https://cli.github.com/manual
 
 ## GraphQL Example
 
@@ -419,11 +471,22 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 }
 ```
 
+<!--
 ## Descripción de la práctica p6-t1-gh-cli
 
-[Descripción de la práctica p6-t1-gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
+[Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
+-->
+
+## Running Manually GitHub Workflows with gh
+
+* [Running Manually GitHub Workflows with gh](gh-workflows)
+
 
 ## References
 
+* [gh manual](https://cli.github.com/manual/)
+* [GitHub REST API](https://docs.github.com/en/rest)
+* [Getting started with the REST API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
+* [Scripting with GitHub CLI by Mislav Marohnić](https://github.blog/2021-03-11-scripting-with-github-cli/)
 * Blog: [GitHub CLI is Now Available: Here’s Why You Should Be Excited by 
 Kasun Rajapakse](https://blog.bitsrc.io/github-cli-is-now-available-heres-why-you-should-be-excited-91d8bdd81a51)
