@@ -521,6 +521,9 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 
 * [Running Manually GitHub Workflows with gh](gh-workflows)
 
+## Práctica 
+
+* [GitHub cli: alias and extensions]({{site.baseurl}}/practicas/06p6-t1-gh-cli)
 
 ## References
 
