@@ -504,7 +504,7 @@ GitHub CLI extensions are repositories that provide additional gh commands.
 
 The name of the extension repository must start with "gh-" and it must contain an executable of the same name. All arguments passed to the gh <extname> invocation will be forwarded to the gh-<extname> executable of the extension.
 
-* CORE COMMANDS
+* gh extension subcommands
   *  create:     Create a new extension
   *  install:    Install a gh extension from a repository
   *  list:       List installed extension commands
