@@ -501,7 +501,21 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 ## Extensions
 
 * [gh-extension](https://github.com/topics/gh-extension) list
+
+### gh-clone-org
+
 * [matt-bartel/gh-clone-org](https://github.com/matt-bartel/gh-clone-org)
+
+```
+[/tmp/chuchu]$ gh clone-org -s set-up -y -n
+Retrieving the list of repositories: search/repositories?q=org%3AULL-MII-SYTWS-2122%20set-up
+This would have cloned the following 5 repositories to /tmp/chuchu:
+ULL-MII-SYTWS-2122/set-up-alu0100898293
+ULL-MII-SYTWS-2122/set-up-PaulaExposito
+ULL-MII-SYTWS-2122/set-up-alu0101102726
+ULL-MII-SYTWS-2122/set-up-crguezl
+ULL-MII-SYTWS-2122/set-up-Pmolmar
+```
 
 ## Running Manually GitHub Workflows with gh
 
