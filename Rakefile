@@ -23,38 +23,18 @@ task :lsd do
   sh "bundle exec jekyll serve --future --drafts --watch --incremental --port 8080"
 end
 
-desc "local: pull and bundle exec jekyll serve --watch --incremental"
-task :pls do
-  sh "git pull origin masqter"
-  sh "bundle exec jekyll serve --future --watch --incremental --port 8080"
-end
-
-desc "sytws: pull and bundle exec jekyll serve -H 10.6.128.216 -P 8080"
-task :pjs do
-  sh "git pull origin master"
-  sh "bundle exec jekyll serve --future -H 10.6.128.216 -P 8080"
-end
-
 desc "build"
 task :b do
   sh "bundle exec jekyll build --future  -d ../website"
 end
 
+desc "build and watch"
+task :bw do
+  sh "bundle exec jekyll build --watch --future  -d ../website"
+end
+
 task :pushhtml => [ :b ] do
   sh "./scripts/build-and-push.sh"
-end
-
-desc "sytws: pull and build"
-task :pb do
-  sh "git pull origin master"
-  sh "bundle exec jekyll build --future"
-end
-
-desc "sytws: pull and build and run with static-server"
-task :pbss do
-  sh "git pull origin master"
-  sh "bundle exec jekyll build"
-  sh "cd _site &&  http-server -p 8080 -a 10.6.128.216"
 end
 
 desc "sytws: build and run with http-server -p 8080 -a 10.6.128.216"
@@ -66,7 +46,7 @@ end
 require 'html-proofer'
 desc "test links in the build web site"
 task :test do
-  sh "git pull origin master"
+  sh "git pull origin main"
   sh "bundle exec jekyll build"
   options = { 
     :assume_extension => true, 
@@ -76,3 +56,19 @@ task :test do
   }
   HTMLProofer.check_directory("./_site", options).run
 end
+
+# https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
+# docker run --rm 
+# --volume="$PWD:/srv/jekyll" 
+# --volume="$PWD/vendor/bundle:/usr/local/bundle" 
+# --env JEKYLL_ENV=development -p 4000:4000 
+# jekyll/jekyll:3.8 jekyll serve
+task :docker do
+  # sh 'docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:3.8 jekyll serve'
+  sh 'docker compose up' 
+end
+
+task :dockerdown do
+  sh 'docker compose down' 
+end
+
