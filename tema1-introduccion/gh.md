@@ -500,9 +500,23 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 
 ## Extensions
 
+GitHub CLI extensions are repositories that provide additional gh commands.
+
+The name of the extension repository must start with "gh-" and it must contain an executable of the same name. All arguments passed to the gh <extname> invocation will be forwarded to the gh-<extname> executable of the extension.
+
+* CORE COMMANDS
+  *  create:     Create a new extension
+  *  install:    Install a gh extension from a repository
+  *  list:       List installed extension commands
+  *  remove:     Remove an installed extension
+  *  upgrade:    Upgrade installed extensions
+
+See also:
+
+* [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
 * [gh-extension](https://github.com/topics/gh-extension) list
 
-### gh-clone-org
+### Example of use: gh-clone-org
 
 * [matt-bartel/gh-clone-org](https://github.com/matt-bartel/gh-clone-org)
 
@@ -521,7 +535,7 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 
 * [Running Manually GitHub Workflows with gh](gh-workflows)
 
-## Práctica 
+## Prácticas
 
 * [GitHub cli: alias and extensions]({{site.baseurl}}/practicas/06p6-t1-gh-cli)
 
