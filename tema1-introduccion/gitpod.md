@@ -50,7 +50,7 @@ En el menú de arriba a la izquierda elige la opción "Open in VS Code":
 Tienes que instalar la extensión [GitPod]() the VSCode y darle los permisos.
 A partir de ese momento puedes editar con tu VSCode local en el contenedor de GitPod.
 
-See it after the VSCode has opened:
+See it running in my local machine, after the VSCode has been opened:
 
 ![]({{site.baseurl}}/assets/images/gitpod/gitpod-opened-in-vscode.png)
 
