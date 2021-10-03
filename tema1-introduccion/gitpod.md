@@ -52,7 +52,7 @@ A partir de ese momento puedes editar con tu VSCode local en el contenedor de Gi
 
 See it after the VSCode has opened:
 
-![]({{site.baseurl}}/assets/images/gitpod/gitpod-open-in-vscode.png)
+![]({{site.baseurl}}/assets/images/gitpod/gitpod-opened-in-vscode.png)
 
 Observe the terminal.
 
