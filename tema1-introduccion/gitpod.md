@@ -1,3 +1,5 @@
+---
+--- 
 # VS Code in Browsers
 
 ## Period in a repo
@@ -26,6 +28,8 @@ Gitpod is an open source platform for automated and ready-to-code development en
 
 * See [Introduction to Gitpod](https://www.gitpod.io/docs)
 * [Getting Started](https://www.gitpod.io/docs/getting-started)
+* [Custom Docker Image](https://www.gitpod.io/docs/config-docker) a tutorial  on how to make your docker image for gitpod.io
+  * [gitpod-io/workspace-images/full/Dockerfile](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)
 
 ## Botón GitPod
 
@@ -34,7 +38,21 @@ Para tener el botón GitPod instala la correspondiente extensión en Chrome o Fi
 * [GitPod Browser Extension](https://www.gitpod.io/docs/browser-extension/)
 * [Chrome extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki?hl=es) in the webstore
 * [fireFox addon](https://addons.mozilla.org/es/firefox/addon/gitpod/)
+* [GitPod Screencasts](https://www.youtube.com/playlist?list=PL3TSF5whlprXVp-7Br2oKwQgU4bji1S7H) 7 videos
 
+
+## Open in VSCode
+
+Tienes que instalar la extensión [GitPod]() the VSCode y darle los permisos.
+A partir de ese momento puedes editar con tu VSCode local en el contenedor de GitPod.
+
+![]({{site.baseurl}}/assets/images/gitpod/gitpod-open-in-vscode.png)
+
+See it after the VSCode has opened:
+
+![]({{site.baseurl}}/assets/images/gitpod/gitpod-open-in-vscode.png)
+
+Observe the terminal.
 
 ## Oferta para Estudiantes
 
