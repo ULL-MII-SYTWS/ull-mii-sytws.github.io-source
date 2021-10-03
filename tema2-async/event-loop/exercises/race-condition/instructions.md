@@ -10,7 +10,17 @@ Consider this file `index.html`:
 
 ### Experiment
 
-Copy and open this file [index.html](index.html) with your browser.
+Copy and serve this file [index.html](index.html) with:
+
+```
+http-server -p 9000 -o
+```
+
+with this line uncommented 
+```js
+let waitFor = 1000;
+```
+
 Can you see the infinite loop image?
 
 Now  comment the line where `waitFor` is initialized and uncomment the other:
@@ -18,6 +28,14 @@ Now  comment the line where `waitFor` is initialized and uncomment the other:
 ```js
 let waitFor = 0;
 ```
+
+and run:
+
+```
+http-server -p 8000 -o
+```
+
+(Change the port to avoid cache problems)
 
 What do you think it will happen? Can you explain it?
 
