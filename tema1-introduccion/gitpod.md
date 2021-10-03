@@ -43,10 +43,12 @@ Para tener el botón GitPod instala la correspondiente extensión en Chrome o Fi
 
 ## Open in VSCode
 
-Tienes que instalar la extensión [GitPod]() the VSCode y darle los permisos.
-A partir de ese momento puedes editar con tu VSCode local en el contenedor de GitPod.
+En el menú de arriba a la izquierda elige la opción "Open in VS Code":
 
 ![]({{site.baseurl}}/assets/images/gitpod/gitpod-open-in-vscode.png)
+
+Tienes que instalar la extensión [GitPod]() the VSCode y darle los permisos.
+A partir de ese momento puedes editar con tu VSCode local en el contenedor de GitPod.
 
 See it after the VSCode has opened:
 
