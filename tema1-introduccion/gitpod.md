@@ -56,6 +56,10 @@ See it running in my local machine, after the VSCode has been opened:
 
 Observe the output in the terminal. We are running on the GitPod docker container
 
+
+¡Ojo! tu VSCode local está compartiendo el GitPod Workspace. Cualquier modificación que hagas en el VSCode local se refleja en el GitPod Workspace en la nube y viceversa.
+
+
 ## Oferta para Estudiantes
 
 * [GitHub Student Developer Pack](https://www.gitpod.io/github-student-developer-pack)
