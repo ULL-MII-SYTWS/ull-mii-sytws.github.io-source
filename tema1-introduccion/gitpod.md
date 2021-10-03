@@ -54,7 +54,7 @@ See it running in my local machine, after the VSCode has been opened:
 
 ![]({{site.baseurl}}/assets/images/gitpod/gitpod-opened-in-vscode.png)
 
-Observe the terminal.
+Observe the output in the terminal. We are running on the GitPod docker container
 
 ## Oferta para Estudiantes
 
