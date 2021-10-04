@@ -1,6 +1,6 @@
 ---
+title: VS Code in Browsers
 --- 
-# VS Code in Browsers
 
 ## Period in a repo
 
@@ -26,7 +26,6 @@ Gitpod is an open source platform for automated and ready-to-code development en
 
 ## Aprendiendo GitPod
 
-* See [Introduction to Gitpod](https://www.gitpod.io/docs)
 * [Getting Started](https://www.gitpod.io/docs/getting-started)
 * [Custom Docker Image](https://www.gitpod.io/docs/config-docker) a tutorial  on how to make your docker image for gitpod.io
   * [gitpod-io/workspace-images/full/Dockerfile](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)
