@@ -46,6 +46,9 @@ Where is it:
 index.html          infinity-loop.png   instructions.md     not-race-example.js race-example.js
 ```
 
+{% include image.html url="/assets/images/event-loop.png" description="<i>There’s an endless loop, when JavaScript engine waits for tasks, executes them and then sleeps waiting for more tasks</i>" %}
+
+
 ### References 
 
 * [Meta repo de la Charla UAI2015](https://github.com/ULL-MII-SYTWS-1920/uai2015)
