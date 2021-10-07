@@ -46,8 +46,8 @@ collections:
     output: true
 campus_virtual:
   home: https://campusdoctoradoyposgrado2122.ull.es/course/view.php?id=2122110810  # https://campusdoctoradoyposgrado.ull.es/course/view.php?id=2122110810 
-  tareas: https://campusdoctoradoyposgrado.ull.es/mod/assign/index.php?id=2122110810
-calificador: https://campusdoctoradoyposgrado.ull.es/grade/report/grader/index.php?id=2122110810
+  tareas: 
+calificador: 
 covid_ull: https://campusvirtual.ull.es/doctoradoyposgrado/course/view.php?id=201913946
 horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0
 github_org: https://github.com/ULL-MII-SYTWS-2122

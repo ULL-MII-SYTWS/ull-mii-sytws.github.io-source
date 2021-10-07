@@ -10,7 +10,8 @@ end
 
 desc "sytws: serve raw html from ../website"
 task :rawserve => [:b] do
-  sh "http-server ../website -p 8000"
+  # Disable caching with -c-1
+  sh "http-server ../website -p 8000 -c-1" 
 end
 
 desc "local: bundle exec jekyll serve --watch"

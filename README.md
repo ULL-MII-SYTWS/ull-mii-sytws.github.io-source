@@ -1,22 +1,29 @@
+---
+title: "Sistemas y Tecnologías Web: Servidor"
+permalink: /index.html
+---
+
 ## Temas
 
+<ol>
+
 {% for tema in site.temas %}
-
-### <a href="{{site.baseurl}}{{tema.path}}">{{tema.title}}</a>
-
+<li><a href="{{site.baseurl}}{{tema.path}}">{{tema.title}}</a></li>
 {% endfor %}
 
-## [Clases](clases.html)
+</ol>
+
+## Clases
 
 {% include clases-impartidas.md %}
 
-## [Prácticas Publicadas](practicas)
+## Prácticas Publicadas
 
 {% include practicas-publicadas.md %}
 
 ## [Horarios y Calendarios](timetables.html)
 
-## [Evaluación](evaluacion.html)
+<!-- ## [Evaluación](evaluacion.html) -->
 
 ## [Bibliografía](references.html)
 
