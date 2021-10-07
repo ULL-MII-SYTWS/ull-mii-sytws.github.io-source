@@ -1,4 +1,4 @@
-<h2>Search</h2>
+<h2>Search in this notes</h2>
 
 {% capture initSearch %}
 
