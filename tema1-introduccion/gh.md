@@ -251,6 +251,31 @@ Quotes must always be used when defining a command as in the examples.
   #=> gh issue list --label="epic" | grep "foo"
 ````
 
+### Example search for members of an organization
+
+Este request nos da la informacion sobre los miembros de una org:
+
+```
+gh alias set org-members api --paginate "/orgs/$1/members"
+```
+
+Por ejemplo:
+
+```
+➜  bash-learning git:(master) ✗ gh org-members ULL-MII-SYTWS-2122 | jq '.[].url'
+"https://api.github.com/users/alu0100898293"
+"https://api.github.com/users/alu0101102726"
+"https://api.github.com/users/crguezl"
+"https://api.github.com/users/PaulaExposito"
+"https://api.github.com/users/Pmolmar"
+```
+
+A partir de este alias podemos construir sub-alias:
+
+```
+✗ gh alias set my-orgs-names --shell "gh my-orgs --jq '.[].organization.login'"
+```
+
 ### Example: Search for repos inside an organization
 
 Let us search for repos inside our organization using GitHub API v3:
@@ -492,6 +517,12 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 }
 ```
 
+<!--
+## Descripción de la práctica p6-t1-gh-cli
+
+[Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
+-->
+
 ## Extensions
 
 GitHub CLI extensions are repositories that provide additional gh commands.
@@ -518,7 +549,7 @@ See also:
 How it works:
 
 ```
-[/tmp/chuchu]$ gh clone-org -s set-up -y -n
+[/tmp/chuchu]$rm  gh clone-org -s set-up -y -n
 Retrieving the list of repositories: search/repositories?q=org%3AULL-MII-SYTWS-2122%20set-up
 This would have cloned the following 5 repositories to /tmp/chuchu:
 ULL-MII-SYTWS-2122/set-up-alu0100898293
@@ -535,12 +566,6 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 ## Prácticas
 
 * [GitHub cli: alias and extensions]({{site.baseurl}}/practicas/06p6-t1-gh-cli)
-
-<!--
-## Descripción de la práctica p6-t1-gh-cli
-
-[Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
--->
 
 ## References
 
