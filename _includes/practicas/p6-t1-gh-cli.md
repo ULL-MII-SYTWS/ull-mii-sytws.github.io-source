@@ -37,4 +37,7 @@ Write and publish a gh extension `gh-repo-delete [org/repo]` that deletes the sp
 * [Apuntes de gh]({{site.baseurl}}/tema1-introduccion/gh.html)
 * GitHub API doc for [Delete repository](https://docs.github.com/es/rest/reference/repos#delete-a-repository)
 * See an example of extension at [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
+* GitHub docs for [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
+* Here is a list of repos with the topic `gh-extension`: [gh-extension](https://github.com/topics/gh-extension) list
+
 
