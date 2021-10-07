@@ -28,6 +28,28 @@ Then, after issuing the command and refreshing the former page we get:
 
 See the GitHub API doc for [Delete repository](https://docs.github.com/es/rest/reference/repos#delete-a-repository)
 
+## gh org-list 
+
+Escriba un alias que muestre todas las organizaciones tanto aquellas en que sea miembro público como privado de las mismas:
+
+```
+[~/.../gh-learning/gh-clone-org(master)]$ gh org-list | tail -8
+GeneticsJS
+tfm-y-pce-mfp-2021
+MDCCVRP
+cooking-lifeboold
+ULL-MII-SYTWS-2122
+ULL-ESIT-DMSI-2121
+ULL-MFP-AET-2122
+ULL-ESIT-PL-2122
+[~/.../gh-learning/gh-clone-org(master)]$ gh org-list | wc
+      65      65    1279
+[~/.../gh-learning/gh-clone-org(master)]$ gh org-list | grep 1819
+ULL-ESIT-PL-1819
+ULL-ESIT-DSI-1819
+ULL-MII-CA-1819
+```
+
 ## Extension
 
 Write and publish a gh extension `gh-repo-delete [org/repo]` that deletes the specified remote repo.
