@@ -21,31 +21,6 @@
     
 </head>
 
-<style>
-    /*
-    hr { display: block; 
-      
-    margin-before: 0.5em; 
-    margin-after: 0.5em; 
-    margin-start: auto; 
-    margin-end: auto;
-   
-    overflow: hidden;
-    color:  white;
-    background-color: #ffcc00;
-    height: 15px;
-    border-top: 1px solid white;
-    border-style: inset; 
-    border-width: 1px;}
-*/
-    hr { 
-        display: block; 
-        height: 1px;
-        border: 0; 
-        border-top: 1px solid #ffcc00; /* #ccc; */
-        margin: 1em 0; 
-        padding: 0; }
-</style>
 <body>
     <div id="header">
             {% include navigation-bar-default.html %}
@@ -64,19 +39,18 @@
             {% include toc.html html=content id="sytwstoc" %}
         
             <h1> {{ page.title}} </h1>
-
             <div class="container">
                 {{ content }}
 
-                <br/><hr>
+                
             </div>
-
-            {% include comments.html %}
-
+            
             <br/><hr>
 
-            {% include search.md %}
 
+            {% include comments-and-search.md %}
+
+ 
             <!-- -->
             <!-- end bar -->
 
@@ -86,6 +60,7 @@
 
         </section>
     </div>
+
 
     {% if site.google_analytics %}
     <script type="text/javascript">
