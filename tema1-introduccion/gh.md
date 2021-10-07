@@ -492,12 +492,6 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 }
 ```
 
-<!--
-## Descripción de la práctica p6-t1-gh-cli
-
-[Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
--->
-
 ## Extensions
 
 GitHub CLI extensions are repositories that provide additional gh commands.
@@ -541,6 +535,12 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 ## Prácticas
 
 * [GitHub cli: alias and extensions]({{site.baseurl}}/practicas/06p6-t1-gh-cli)
+
+<!--
+## Descripción de la práctica p6-t1-gh-cli
+
+[Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
+-->
 
 ## References
 

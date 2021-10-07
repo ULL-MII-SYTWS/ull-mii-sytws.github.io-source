@@ -1,8 +1,9 @@
 ---
 layout: post
-name: p6-t1-gh-cli
+name: gh cli
+title: "Descripción de la Práctica gh cli"
 myurl: /tema1-introduccion/practicas/p6-t1-gh-cli/
-visible: false
+visible: true
 date: 0000-01-06
 ---
 

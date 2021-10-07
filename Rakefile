@@ -30,7 +30,7 @@ end
 
 desc "build and watch"
 task :bw do
-  sh "bundle exec jekyll build --watch --future  -d ../website"
+  sh "bundle exec jekyll build --watch --future  -d ../website -s ."
 end
 
 task :pushhtml => [ :b ] do

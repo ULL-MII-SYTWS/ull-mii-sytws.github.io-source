@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Add sytws and sytws2122 remotes in your machine!
 cd ../website && \
 #git init . &&\
 #git remote add origin git@github.com:ULL-MII-SYTWS-2122/ULL-MII-SYTWS-2122.github.io.git && \
