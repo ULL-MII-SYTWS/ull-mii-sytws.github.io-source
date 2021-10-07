@@ -253,7 +253,7 @@ Quotes must always be used when defining a command as in the examples.
 
 ### Example search for members of an organization
 
-Este request nos da la informacion sobre los miembros de una org:
+Este request nos da un JSON con informacion sobre los miembros de una org:
 
 ```
 gh alias set org-members api --paginate "/orgs/$1/members"
@@ -262,12 +262,22 @@ gh alias set org-members api --paginate "/orgs/$1/members"
 Por ejemplo:
 
 ```
-➜  bash-learning git:(master) ✗ gh org-members ULL-MII-SYTWS-2122 | jq '.[].url'
+✗ gh org-members ULL-MII-SYTWS-2122 | jq '.[] | .url, .id, .login'
 "https://api.github.com/users/alu0100898293"
+22496375
+"alu0100898293"
 "https://api.github.com/users/alu0101102726"
+37936358
+"alu0101102726"
 "https://api.github.com/users/crguezl"
+1142554
+"crguezl"
 "https://api.github.com/users/PaulaExposito"
+56047765
+"PaulaExposito"
 "https://api.github.com/users/Pmolmar"
+45513418
+"Pmolmar"
 ```
 
 A partir de este alias podemos construir sub-alias:
