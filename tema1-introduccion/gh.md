@@ -383,7 +383,7 @@ Let us use our new alias:
 ...
 ```
 
-## GraphQL Example
+## GraphQL Examples
 
 **GraphQL** is a query language for web services APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more.
 
@@ -412,7 +412,61 @@ Execution:
 17
 ```
 
-### Example 
+### Getting my repos
+
+```
+➜  graphql-learning git:(main) ✗ gh config set pager cat
+➜  graphql-learning git:(main) ✗ cat my-repos.bash
+gh api graphql --paginate -F number_of_repos=3 --field query=@my-repos.gql
+```
+
+In this example `$number_of_repos` is a variable that is set to `3` inside the command using the option `-F number_of_repos=3`
+
+```
+➜  graphql-learning git:(main) ✗ cat my-repos.gql 
+
+query($number_of_repos:Int!){
+  viewer {
+    name
+     repositories(last: $number_of_repos) {
+       nodes {
+         name
+       }
+     }
+   }
+}
+```
+
+Here is the output of an execution:      
+
+```
+➜  graphql-learning git:(main) ✗ gh api graphql --paginate -F number_of_repos=3 --field query=@my-repos.gql
+```
+
+```GraphQL
+{
+  "data": {
+    "viewer": {
+      "name": "Casiano Rodriguez-Leon",
+      "repositories": {
+        "nodes": [
+          {
+            "name": "asyncmap-crguezl"
+          },
+          {
+            "name": "gh-clone-org"
+          },
+          {
+            "name": "learning-graphql-with-gh"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+### Example: Getting issues
 
 Follows an example of query using GraphQL.
 
