@@ -585,3 +585,4 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 * [Scripting with GitHub CLI by Mislav Marohnić](https://github.blog/2021-03-11-scripting-with-github-cli/)
 * Blog: [GitHub CLI is Now Available: Here’s Why You Should Be Excited by 
 Kasun Rajapakse](https://blog.bitsrc.io/github-cli-is-now-available-heres-why-you-should-be-excited-91d8bdd81a51)
+* [An Introduction to GraphQL via the GitHub API](https://www.cloudbees.com/blog/an-introduction-to-graphql-via-the-github-api)  by Derek Haynes

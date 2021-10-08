@@ -79,9 +79,25 @@ prct01
 prueba
 ```
 
+### gh-user-repos
+
+Añada un alias `gh-user-repos` que nos de los repos de un usuario:
+
+```
+9:14 apuntes1920$ gh user-repos Pmolmar --jq '.[] | .name, .created_at' | pcre2grep -M '.+\n2021'
+Pmolmar
+2021-08-27T12:30:12Z
+pmolmar.github.io
+2021-08-27T12:31:13Z
+SYTW-C
+2021-09-30T17:57:17Z
+```
+
 ## Extension
 
-Write and publish a gh extension `gh-repo-delete [org/repo]` that deletes the specified remote repo.
+Write and publish a gh extension. Choose your own idea.
+
+Suggestion. It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar.
 
 ## References
 
