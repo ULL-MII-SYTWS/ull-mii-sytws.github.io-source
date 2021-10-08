@@ -468,7 +468,7 @@ Here is the output of an execution:
 
 ### Example: Getting issues
 
-Follows an example of query using GraphQL.
+Follows an example of query using GraphQL (see [The Example query in GitHub Docs](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#example-query)).
 
 We can set the GraphQL query in a separated file:
 
@@ -513,7 +513,13 @@ Because we want to read data from the server, not modify it, `query` is the **ro
 repository(owner:"ULL-MII-SYTWS-2021", name:"p01-t1-iaas-alu0101040882") 
 ```
 
-To begin the query, we want to find a [repository object](https://docs.github.com/en/free-pro-team@latest/v4/object/repository). The `schema` validation indicates this object requires an `owner` and a `name` argument. A `schema` defines a **GraphQL API's type system**. It describes the complete set of possible data (objects, fields, relationships, everything) that a client can access
+To begin the query, we want to find a [repository object](https://docs.github.com/en/free-pro-team@latest/v4/object/repository). 
+
+The `schema` validation indicates this object requires 
+* an `owner` 
+* and a `name` argument. 
+
+A `schema` defines a **GraphQL API's type system**. It describes the complete set of possible data (objects, fields, relationships, everything) that a client can access
 
 ```
 issues(last:2, states:OPEN) {
