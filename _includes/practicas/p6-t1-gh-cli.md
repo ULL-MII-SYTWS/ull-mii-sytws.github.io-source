@@ -28,12 +28,12 @@ Then, after issuing the command and refreshing the former page we get:
 
 See the GitHub API doc for [Delete repository](https://docs.github.com/es/rest/reference/repos#delete-a-repository)
 
-## gh org-list 
+### gh my-orgs-names 
 
 Escriba un alias que muestre todas las organizaciones tanto aquellas en que sea miembro público como privado de las mismas:
 
 ```
-[~/.../gh-learning/gh-clone-org(master)]$ gh org-list | tail -8
+[~/.../gh-learning/gh-clone-org(master)]$ gh my-orgs-names | tail -8
 GeneticsJS
 tfm-y-pce-mfp-2021
 MDCCVRP
@@ -42,12 +42,41 @@ ULL-MII-SYTWS-2122
 ULL-ESIT-DMSI-2121
 ULL-MFP-AET-2122
 ULL-ESIT-PL-2122
-[~/.../gh-learning/gh-clone-org(master)]$ gh org-list | wc
+[~/.../gh-learning/gh-clone-org(master)]$ gh my-orgs-names | wc
       65      65    1279
-[~/.../gh-learning/gh-clone-org(master)]$ gh org-list | grep 1819
+[~/.../gh-learning/gh-clone-org(master)]$ gh my-orgs-names | grep 1819
 ULL-ESIT-PL-1819
 ULL-ESIT-DSI-1819
 ULL-MII-CA-1819
+```
+
+### gh-org-members
+
+Escriba un alias que reciba como argumento una organización y escriba los miembros de la misma:
+
+```
+$ gh org-members ULL-MII-SYTWS-2122 --jq '.[] | .login, .repos_url'
+alu0100898293
+https://api.github.com/users/alu0100898293/repos
+alu0101102726
+https://api.github.com/users/alu0101102726/repos
+crguezl
+https://api.github.com/users/crguezl/repos
+PaulaExposito
+https://api.github.com/users/PaulaExposito/repos
+Pmolmar
+https://api.github.com/users/Pmolmar/repos
+```
+
+Ahora con la información obtenida podemos ver los repos de un miembro fácilmente:
+
+```
+[~/.../gh-learning/gh-clone-org(master)]$ gh  api https://api.github.com/users/alu0100898293/repos -q '.[].name'
+alu0100898293.github.io
+eval-tareas-iniciales-NicolasHernandezGonzalez
+express-start
+prct01
+prueba
 ```
 
 ## Extension
