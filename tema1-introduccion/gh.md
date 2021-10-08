@@ -387,6 +387,33 @@ Let us use our new alias:
 
 **GraphQL** is a query language for web services APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more.
 
+### Example: Number of repos in an Organization 
+
+```
+gh api graphql --paginate --field query=@org-num-repos.gql --jq .data.organization.repositories.totalCount
+```
+
+These are the contents of the file `org-num-repos.gql`:
+
+```GraphQL
+query {
+  organization(login: "ULL-MII-SYTWS-2122") {
+    repositories {
+      totalCount
+    }
+  }
+}
+```
+
+Execution:
+
+```
+✗ source org-num-repos.bash 
+17
+```
+
+### Example 
+
 Follows an example of query using GraphQL.
 
 We can set the GraphQL query in a separated file:
@@ -497,9 +524,10 @@ In `gh`, the `--field` flag behaves like `--raw-field` with magic type conversio
 
 For GraphQL requests, all fields other than "query" and "operationName" are interpreted as GraphQL variables.
 
+Execution:
 
 ```
-➜  bin git:(master) gh api graphql --paginate -F query=@gh-api-example.graphql | jq .
+➜  gh api graphql --paginate -F query=@gh-api-example.graphql | jq .
 {
   "data": {
     "repository": {

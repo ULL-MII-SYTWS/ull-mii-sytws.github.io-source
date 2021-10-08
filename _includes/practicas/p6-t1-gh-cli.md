@@ -107,5 +107,6 @@ Suggestion. It may be `gh-repo-delete [org/repo]` that deletes the specified rem
 * GitHub docs for [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
 * Here is a list of repos with the topic `gh-extension`: [gh-extension](https://github.com/topics/gh-extension) list
 * [GitHub GraphQL Playground](https://docs.github.com/en/graphql/overview/explorer)
+* [An Introduction to GraphQL via the GitHub API](https://www.cloudbees.com/blog/an-introduction-to-graphql-via-the-github-api)  by Derek Haynes
 
 
