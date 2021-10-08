@@ -52,6 +52,10 @@
 * [The GitHub repository `howtographql/react-apollo` contains the final project for the "REACT + APOLLO TUTORIAL" on "How to GraphQL"](https://github.com/howtographql/react-apollo)
 * [Hacker News](https://news.ycombinator.com/)
 
+## GraphQL GitHub API
+
+*[GitHub GraphQL Playground](https://docs.github.com/en/graphql/overview/explorer)
+
 ## REFERENCIAS
 
 * [GraphQL Specifications](https://graphql.github.io/graphql-spec/)
@@ -63,3 +67,6 @@
 * [GraphQL ha muerto: Vivan las APIs REST con Hypermedia - Jorge Ferrer y José Manuel Navarro](https://youtu.be/yr7Tvr9dVNY) YouTube
 * [Learning GraphQL and Relay by Samer Buna. Pack. 2016](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/9781786465757) PuntoQ BULL Safari
 * [Visual Design of GraphQL Data. Frisendal. APress. 2018](https://link-springer-com.accedys2.bbtk.ull.es/content/pdf/10.1007%2F978-1-4842-3904-9.pdf)
+
+* [An Introduction to GraphQL via the GitHub API](https://www.cloudbees.com/blog/an-introduction-to-graphql-via-the-github-api)  by Derek Haynes
+* [Bearer Authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/)
