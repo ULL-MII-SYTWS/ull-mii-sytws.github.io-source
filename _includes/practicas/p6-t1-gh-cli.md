@@ -84,7 +84,7 @@ prueba
 Añada un alias `gh-user-repos` que nos de los repos de un usuario:
 
 ```
-9:14 apuntes1920$ gh user-repos Pmolmar --jq '.[] | .name, .created_at' | pcre2grep -M '.+\n2021'
+$ gh user-repos Pmolmar --jq '.[] | .name, .created_at' | pcre2grep -M '.+\n2021'
 Pmolmar
 2021-08-27T12:30:12Z
 pmolmar.github.io
@@ -106,5 +106,6 @@ Suggestion. It may be `gh-repo-delete [org/repo]` that deletes the specified rem
 * See an example of extension at [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
 * GitHub docs for [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
 * Here is a list of repos with the topic `gh-extension`: [gh-extension](https://github.com/topics/gh-extension) list
+* [GitHub GraphQL Playground](https://docs.github.com/en/graphql/overview/explorer)
 
 

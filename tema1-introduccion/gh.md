@@ -586,3 +586,4 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 * Blog: [GitHub CLI is Now Available: Here’s Why You Should Be Excited by 
 Kasun Rajapakse](https://blog.bitsrc.io/github-cli-is-now-available-heres-why-you-should-be-excited-91d8bdd81a51)
 * [An Introduction to GraphQL via the GitHub API](https://www.cloudbees.com/blog/an-introduction-to-graphql-via-the-github-api)  by Derek Haynes
+*[GitHub GraphQL Playground](https://docs.github.com/en/graphql/overview/explorer)
