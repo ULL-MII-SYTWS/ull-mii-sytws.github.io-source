@@ -621,6 +621,42 @@ Execution:
 [Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
 -->
 
+### Mutation Example
+
+```
+➜  graphql-learning git:(main) cat findissueid.bash 
+gh api graphql --paginate --field query=@findissueid.gql
+➜  graphql-learning git:(main) cat findissueid.gql 
+query FindIssueID {
+  repository(owner:"crguezl", name:"learning-graphql-with-gh") {
+    issue(number:2) {
+      id
+    }
+  }
+}
+➜  graphql-learning git:(main) cat viewissue.bash 
+gh issue -R crguezl/learning-graphql-with-gh view $@%                                                
+➜  graphql-learning git:(main) cat addreactiontoissue.bash 
+#!/bin/bash
+# See
+# https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#example-mutation 
+# and
+# https://docs.github.com/en/enterprise-server@3.0/graphql/guides/forming-calls-with-graphql
+# for a list of supported emojis
+gh api graphql --paginate --field query=@addreactiontoissue.gql 
+➜  graphql-learning git:(main) cat addreactiontoissue.gql 
+mutation AddReactionToIssue {
+  addReaction(input:{subjectId:"I_kwDOGLyMF84838wt",content:ROCKET}) {
+    reaction {
+      content
+    }
+    subject {
+      id
+    }
+  }
+}
+```
+
 ## Extensions
 
 GitHub CLI extensions are repositories that provide additional gh commands.
@@ -667,6 +703,7 @@ ULL-MII-SYTWS-2122/set-up-Pmolmar
 
 ## References
 
+* [Repo crguezl/learning-graphql-with-gh](https://github.com/crguezl/learning-graphql-with-gh)
 * [gh manual](https://cli.github.com/manual/)
 * [GitHub REST API](https://docs.github.com/en/rest)
 * [Getting started with the REST API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
