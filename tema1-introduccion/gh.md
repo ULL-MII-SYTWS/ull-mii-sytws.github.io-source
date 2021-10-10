@@ -670,6 +670,20 @@ The name of the extension repository must start with "gh-" and it must contain a
   *  remove:     Remove an installed extension
   *  upgrade:    Upgrade installed extensions
 
+gh extensions repos are stored in `~/.local/share/gh/extensions/`
+
+```
+➜  gh-learning git:(master) ✗ ls -la ~/.local/share/gh/extensions/
+total 0
+drwxr-xr-x  7 casianorodriguezleon  staff  224  6 oct 10:11 .
+drwxr-xr-x  3 casianorodriguezleon  staff   96 17 sep 13:07 ..
+drwxr-xr-x  7 casianorodriguezleon  staff  224  6 oct 10:11 gh-clone-org
+drwxr-xr-x  5 casianorodriguezleon  staff  160  1 oct 17:18 gh-delete-repo
+lrwxr-xr-x  1 casianorodriguezleon  staff   89  1 oct 16:23 gh-gitpod-open -> /Users/casianorodriguezleon/campus-virtual/shared/2021learning/gh-learning/gh-gitpod-open
+drwxr-xr-x  8 casianorodriguezleon  staff  256 17 sep 13:07 gh-gp
+drwxr-xr-x  8 casianorodriguezleon  staff  256 17 sep 13:19 gh-project
+```
+
 See also:
 
 * [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
