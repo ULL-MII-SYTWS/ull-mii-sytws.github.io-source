@@ -212,15 +212,29 @@ If we use `--paginate` the request takes a long time and gives us near a thousan
 ###  Templates for the output
 
 The option `-t, --template string`of `gh api`
-allows to format the response using a [Go template](https://pkg.go.dev/text/template):
+allows to format the response using a [Go template](https://pkg.go.dev/text/template).
+
+Here is an example of template:
 
 ```
-➜  gh-learning git:(master) ✗ cat  template
- {{range .}}{{.title}}{{"\n"}}{{.body}} ({{.labels | pluck "name" | join ", " | color "yellow"}}){{"\n"}}{{end}}
-➜  gh-learning git:(master) ✗ gh api repos/crguezl/learning-bash/issues --template "$(cat template)"
- issue de prueba
-👍  blah ... (bug, documentation, duplicate, enhancement, help wanted, good first issue, invalid, question)
+➜  gh-learning git:(master) ✗ cat template.gotemplate
+Title: {{range .}}{{.title}}
+Labels: ({{.labels | pluck "name" | join ", " | color "yellow"}})
+Body: {{.body}}
+{{end}}
 ```
+
+and let us use it:
+
+```
+➜  gh-learning git:(master) ✗ gh api repos/crguezl/learning-bash/issues --template "$(cat template.gotemplate)"
+Title: issue de prueba
+Labels: (bug, documentation, duplicate, enhancement, help wanted, good first issue, invalid, question)
+Body: 👍  blah ...
+```
+
+The `Labels` appear in yellow.
+
 
 ## Introduction to `gh alias`
 
