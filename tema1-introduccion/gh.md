@@ -209,6 +209,19 @@ If we use `--paginate` the request takes a long time and gives us near a thousan
      990     990   32868
 ```
 
+###  Templates for the output
+
+The option `-t, --template string`of `gh api`
+allows to format the response using a [Go template](https://pkg.go.dev/text/template):
+
+```
+➜  gh-learning git:(master) ✗ cat  template
+ {{range .}}{{.title}}{{"\n"}}{{.body}} ({{.labels | pluck "name" | join ", " | color "yellow"}}){{"\n"}}{{end}}
+➜  gh-learning git:(master) ✗ gh api repos/crguezl/learning-bash/issues --template "$(cat template)"
+ issue de prueba
+👍  blah ... (bug, documentation, duplicate, enhancement, help wanted, good first issue, invalid, question)
+```
+
 ## Introduction to `gh alias`
 
 
@@ -382,6 +395,8 @@ Let us use our new alias:
 "tfa-esther-sergio-tfa" => "2020-07-10T08:53:04Z"
 ...
 ```
+
+
 
 ## GraphQL Examples
 
