@@ -216,6 +216,7 @@ allows to format the response using a [Go template](https://pkg.go.dev/text/temp
 
 Here is an example of template:
 
+{% raw %}
 ```
 ➜  gh-learning git:(master) ✗ cat template.gotemplate
 Title: {{range .}}{{.title}}
@@ -223,6 +224,7 @@ Labels: ({{.labels | pluck "name" | join ", " | color "yellow"}})
 Body: {{.body}}
 {{end}}
 ```
+{% endraw %}
 
 and let us use it:
 
