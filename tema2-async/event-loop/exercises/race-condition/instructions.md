@@ -1,4 +1,6 @@
-# Race Conditions
+---
+title: Race Conditions
+---
 
 ## Loading an image with some delay
 
@@ -48,6 +50,9 @@ index.html          infinity-loop.png   instructions.md     not-race-example.js 
 
 {% include image.html url="/assets/images/event-loop.png" description="<i>There’s an endless loop, when JavaScript engine waits for tasks, executes them and then sleeps waiting for more tasks</i>" %}
 
+### Comentarios
+
+* [Comentarios](comments)
 
 ### References 
 
