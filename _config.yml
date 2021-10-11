@@ -7,6 +7,7 @@ description: 'Master de II. ULL. 1er cuatrimestre'
 future: true
 baseurl: ""
 include: [".nojekyll"]
+light: true
 exclude: 
   - Gemfile # to avoid messages from GH dependences
   - Gemfile.lock
