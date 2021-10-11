@@ -39,8 +39,11 @@ $ node repeatable-option-commander.js -c a -c b -c c
 
 Versiones usadas de los módulos en los ejemplos:
 
-```json
+```
 ➜  daniel-alu0101040882 git:(main) ✗ jq '.dependencies' package.json 
+```
+
+```json
 {
   "async": "^3.2.0",
   "commander": "^6.2.0"
