@@ -28,19 +28,9 @@ Gitpod is an open source platform for automated and ready-to-code development en
 
 * [Getting Started](https://www.gitpod.io/docs/getting-started)
 
+## Configure Gitpod
 
-*   [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file)
-*   [Custom Docker Image](https://www.gitpod.io/docs/config-docker)
-  * [gitpod-io/workspace-images/full/Dockerfile](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)
-*   [Start Tasks](https://www.gitpod.io/docs/config-start-tasks)
-*   [VS Code Extensions](https://www.gitpod.io/docs/vscode-extensions)
-*   [Exposing Ports](https://www.gitpod.io/docs/config-ports)
-*   [Prebuilds](https://www.gitpod.io/docs/prebuilds)
-*   [Environment Variables](https://www.gitpod.io/docs/environment-variables)
-*   [Checkout and Workspace Location](https://www.gitpod.io/docs/checkout-location)
-*   [Browser Settings](https://www.gitpod.io/docs/configure/browser-settings)
-
-
+-
 ## Botón GitPod
 
 Para tener el botón GitPod instala la correspondiente extensión en Chrome o Firefox
