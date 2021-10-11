@@ -1,11 +1,13 @@
 
-# Descripción de la Práctica p7-t2-asyncmap 
+## Descripción de la Práctica 
 
 Escriba un programa Node.js que usando `fs.readFile` lea **en paralelo** un conjunto de ficheros pasados en vía de comandos y produzca como salida la concatenación de los mismos en el orden especificado. Evite usar `fs.readFileSync` y use `fs.readFile(path[, options], callback)`:
 
 ```
 $ concat -f one.txt -f two.txt -f three.txt -o salida.txt
 ```
+
+## commander
 
 Con [commander](https://www.npmjs.com/package/commander?activeTab=readme) es posible indicar una opción que se puede repetir
 
@@ -23,6 +25,7 @@ console.log(program.collect)
 $ node repeatable-option-commander.js -c a -c b -c c
 [ 'a', 'b', 'c' ]
 ```
+## Requisitos
 
 1. Lea la sección [The Async Module]({{site.baseurl}}/tema2-async/async-js) de los apuntes y encuentre una solución usando `Async`. Considere la posibilidad de excepciones debidas a que alguno de los ficheros no exista
 3. Encuentre  una solución sin hacer uso de `Async` ¿Cómo lo haría?
@@ -31,3 +34,19 @@ $ node repeatable-option-commander.js -c a -c b -c c
   ```js
   asyncMap(inputs, (item, cb) => fs.readFile(item, cb), (err, contents) => { ... });
   ```
+
+## Versiones usadas en este texto
+
+Versiones usadas de los módulos en los ejemplos:
+
+```json
+➜  daniel-alu0101040882 git:(main) ✗ jq '.dependencies' package.json 
+{
+  "async": "^3.2.0",
+  "commander": "^6.2.0"
+}
+```
+
+## Referencias
+
+* Sección [The Async Module]({{site.baseurl}}/tema2-async/async-js)

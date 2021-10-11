@@ -1,6 +1,4 @@
 
-# Descripción de la Práctica VSCode y GitPod
-
 ## Objetivos
 
 1. Instale VSCode en su máquina
