@@ -7,7 +7,7 @@ description: 'Master de II. ULL. 1er cuatrimestre'
 future: true
 baseurl: ""
 include: [".nojekyll"]
-light: true
+light: true # change theme to midday instead of night
 exclude: 
   - Gemfile # to avoid messages from GH dependences
   - Gemfile.lock
