@@ -53,3 +53,4 @@ Versiones usadas de los módulos en los ejemplos:
 ## Referencias
 
 * Sección [The Async Module]({{site.baseurl}}/tema2-async/async-js)
+* <https://caolan.github.io/async/v3/>
