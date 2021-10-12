@@ -7,7 +7,7 @@
     {% if page.previous.visible %}  
     <li><a href="{{page.previous.url}}" title="Previous">&#x2190;</a></li>
     {% endif %}
-    {% if page.next.visible %}
+    {% if page.next %}
     <li><a href="{{page.next.url}}" title="Next">&#x2192;</a></li>
     {% endif %}
     <li><a href="{{site.repo_url_master}}/{{page.path}}" title="Edit this page at GitHub">🐙</a>
