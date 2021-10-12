@@ -1,0 +1,20 @@
+{% if page.rubrica %} 
+<h2 id="rubrica">Rúbrica</h2>
+
+Incidencias para el Project Board para la práctica <i>{{ page.title | markdownify }}</i>
+<ul>
+    {% for criterio in page.rubrica -%}
+    {% if criterio.first %}
+     <li> {{ criterio.first | markdownify }}
+      <ol>
+      {% for sub in criterio offset: 1 %}
+      <li>{{ sub | markdownify }}</li>      
+      {% endfor %}
+      </ol>
+    </li>
+    {% else %}
+    <li>{{ criterio | markdownify }}</li> 
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
