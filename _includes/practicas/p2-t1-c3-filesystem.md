@@ -1,4 +1,4 @@
-# Descripción de la práctica p2-t1-c3-filesystem
+# Descripción de la práctica filesystem in node.js
 
 * Autentíquese en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * Una vez autenticado obtendrá acceso al libro [Node.js 8 the Right Way](https://puntoq.ull.es/permalink/f/1rcchus/TN_safari_s9781680505344). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ y dentro dela VPN de la ULL)

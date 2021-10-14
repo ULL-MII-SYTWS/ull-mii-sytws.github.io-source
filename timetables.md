@@ -1,4 +1,6 @@
-# Calendarios, Horarios y Exámenes
+---
+title: "Calendarios, Horarios y Exámenes"
+---
 
 ## Calendario Académico
 
