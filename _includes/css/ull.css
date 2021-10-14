@@ -145,7 +145,7 @@ body {
   
           a {
             color: white;
-            border: 1px solid #5d910b;
+            border: 1px solid #67097f;
             background: linear-gradient(#bd20bd, #25109e);
             border-radius: 2px;
             box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
@@ -160,7 +160,7 @@ body {
   
             &:hover {
               background: linear-gradient(#b366df, #0e487f);
-              background-color:  #659e10;
+              background-color: #659e10;
               border: 1px solid #527f0e;
               box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
             }

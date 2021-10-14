@@ -9,4 +9,6 @@
 {% include css/light.css %}
 {% elsif site.skin == "white" %}
 {% include css/white.css %}
+{% elsif site.skin == "ull" %}
+{% include css/ull.css %}
 {% endif %}

@@ -1,13 +1,12 @@
 title: 'Sistemas y Tecnologías Web: Servidor'
 subtitle: 'Master de Ingeniería Informática'
 #remote_theme: mmistakes/minimal-mistakes
-#minimal_mistakes_skin: "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 theme: jekyll-theme-midnight
 description: 'Master de II. ULL. 1er cuatrimestre'
 future: true
 baseurl: ""
 include: [".nojekyll"]
-skin: "white" # "light" # change theme to midday instead of night
+skin: "ull"# "white" # "light" # default # change theme to midday instead of night
 exclude: 
   - Gemfile # to avoid messages from GH dependences
   - Gemfile.lock
