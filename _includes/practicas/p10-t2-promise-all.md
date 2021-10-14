@@ -1,4 +1,3 @@
-# Descripción de la Práctica p10-t2-promise-all
 
 Given an array of promises, `Promise.all` returns a promise that waits for all of the promises in the array to finish. 
 It then succeeds, yielding an array of result values. 
@@ -89,7 +88,10 @@ Make sure you take into account the situation where the input array is empty (an
 
 Handling failure requires some thought but turns out to be extremely simple. Just pass the reject function of the wrapping promise to each of the promises in the array as a catch handler or as a second argument to then so that a failure in one of them triggers the rejection of the whole wrapper promise.
 
+{% comment %}
 ## See
 
 * `tema2-async/practicas/p10-t2-promise-all/`
 * This lab is duplicated at [Reto 1: Building Promise.all]({{site.baseurl}}/tema2-async/practicas/p3-t2-handling-events/reto2.html)
+
+{% endcomment %}
