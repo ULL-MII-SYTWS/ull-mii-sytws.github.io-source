@@ -5,6 +5,8 @@
 
 @import "{{ site.theme }}";
 
-{% if site.light %}
+{% if site.skin == "light" %}
 {% include css/light.css %}
+{% elsif site.skin == "white" %}
+{% include css/white.css %}
 {% endif %}
