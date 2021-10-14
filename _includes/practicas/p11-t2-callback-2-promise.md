@@ -1,5 +1,3 @@
-# Descripción de la Práctica p11-t2-callback-2-promise
-
 Promisification it’s the conversion of a function that accepts a callback into a function returning a promise.
 
 Write a function `promisify(f)` that receives a function `f`that accepts a callback 
@@ -100,6 +98,9 @@ undefined
 undefined
 ```
 
+{% comment %}
 ## See
 
 `tema2-async/event-loop/exercises/promises/promisify/`
+
+{% endcomment %}
