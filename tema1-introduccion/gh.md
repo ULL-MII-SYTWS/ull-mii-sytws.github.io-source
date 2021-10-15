@@ -90,6 +90,8 @@ There are several ways you can extend/customize `gh`:
 
 ## Introduction to `gh api` 
 
+* [Manual de gh api](https://cli.github.com/manual/gh_api)
+
 ### Authentication Token
 
 Go to [github.com/settings/tokens](https://github.com/settings/tokens)
@@ -137,6 +139,8 @@ Of course, we can explicit the repo and owner. For example:
 "Hola @alu0101040882, \r\n\r\nVeo que alguno ya está trabajando en la práctica de
 ```
 
+### POST Example 
+
 Let us see an example using the `POST` method. We will start from this `curl` example 
 in the [GitHub API getting started guide](https://docs.github.com/en/free-pro-team@latest/rest/guides/getting-started-with-the-rest-api#repositories):
 
@@ -160,6 +164,12 @@ and let us adapt to `gh api`. We use `-X` or `--method string`to set the HTTP me
 This way we have created a private repo inside the user scope:
 
 ![]({{site.baseurl}}/assets/images/gh-api-post-create-repo.png)
+
+
+```
+➜  input-option git:(master) ✗ gh repo-delete crguezl/repo-prueba-gh-api
+➜  input-option git:(master) ✗ gh api -f name=repo-prueba-gh-api -f private=true /user/repos
+```
 
 ### Pagination
 
