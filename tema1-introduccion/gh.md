@@ -94,9 +94,19 @@ There are several ways you can extend/customize `gh`:
 
 ### Authentication Token
 
+* [Manual de gh auth](https://cli.github.com/manual/gh_auth)
+  * [Manual de gh auth login](https://cli.github.com/manual/gh_auth_login)
+
 Go to [github.com/settings/tokens](https://github.com/settings/tokens)
 to generate a new token for `gh` and set then environment variable 
 `GITHUB_TOKEN` (`export GITHUB_TOKEN= ...`)
+
+Para generar el token:
+
+[user -> settings -> developer settings -> Personal access tokens](https://github.com/settings/tokens) 
+
+o mas rápido vete a <https://github.com/settings/tokens>
+
 
 ### Example
 
