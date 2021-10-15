@@ -101,7 +101,7 @@ Suggestions.
 
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
-* May be too much work: `gh-repo-create-super <orgName/repoName> '<[org1]/repo1>,...,<[orgN]/repoN>'` creates a repo with name `repoName` inside the organization `orgName` that has as [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) the repos specified in the comma separated list `org1/repo1`, `org2/repo2`, etc. If `org1` is not specified it is assumed to be  the org `orgName`
+* May be too much work: `gh-repo-submodule '<[org1]/repo1>,...,<[orgN]/repoN>'` adds to the current repo the repos specified in the comma separated list `org1/repo1`, `org2/repo2`, etc as [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) . If `org1` is not specified it is assumed to be  the same organization of the current repo
 
 
 {% comment%}
