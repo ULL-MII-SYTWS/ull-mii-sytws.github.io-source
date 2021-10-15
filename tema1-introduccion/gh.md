@@ -114,7 +114,25 @@ Una vez se tiene un token:
 $ gh auth login --with-token < mytoken.txt
 ```
 
-### Example
+También es posible autenticarse con el browser usando la opción `-w`:
+
+```
+➜  graphql-examples git:(main) ✗ gh auth login -w
+
+! First copy your one-time code: F4D5-59E6
+- Press Enter to open github.com in your browser...
+```
+
+Esto abre el browser, nos pide la contraseña que aparece arriba 
+
+![]({{site.baseurl}}/assets/images/gh-auth-browser-1.png)
+
+y nos pide confirmar los permisos.
+
+
+![]({{site.baseurl}}/assets/images/gh-auth-browser-2.png)
+
+### Example: Issues of a repo
 
 Placeholder values `:owner`, `:repo`, and `:branch` in the endpoint argument will get replaced with values from the repository of the current directory.
 
@@ -140,7 +158,7 @@ $  gh api repos/:owner/:repo/issues
 ]
 ```
 
-We can pipe the output to [jq](jq):
+We can pipe the output to [jq](jq) or use the [`-q` or `--jq` option of `gh api`](https://cli.github.com/manual/gh_api):
 
 ```
 $  gh api repos/:owner/:repo/issues | jq '.[0] | .title'
