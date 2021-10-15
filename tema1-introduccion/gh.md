@@ -107,6 +107,12 @@ Para generar el token:
 
 o mas rápido vete a <https://github.com/settings/tokens>
 
+Una vez se tiene un token:
+
+```
+# authenticate against github.com by reading the token from a file
+$ gh auth login --with-token < mytoken.txt
+```
 
 ### Example
 
