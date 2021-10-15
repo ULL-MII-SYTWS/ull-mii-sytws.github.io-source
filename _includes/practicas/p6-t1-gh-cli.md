@@ -97,7 +97,10 @@ SYTW-C
 
 Write and publish a gh extension. Choose your own idea.
 
-Suggestion. It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar.
+Suggestions. 
+
+* It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
+* Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` 
 
 ## References
 
