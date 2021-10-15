@@ -100,8 +100,14 @@ Write and publish a gh extension. Choose your own idea.
 Suggestions. 
 
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
-* Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` 
+* Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
 
+{% comment%}
+this is possible with the GitHub API by sending a PATCH request to /repos/{owner}/{repo} and specifying a different name parameter (docs).
+
+gh api -X PATCH --raw-field name=new-name repos/account-name/current-name
+
+{% endcomment%}
 ## References
 
 * [Apuntes de gh]({{site.baseurl}}/tema1-introduccion/gh.html)
