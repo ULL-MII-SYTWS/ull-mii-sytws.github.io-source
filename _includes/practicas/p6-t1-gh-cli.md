@@ -101,6 +101,8 @@ Suggestions.
 
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
+* `gh-repo-create-super <org/repoName> <[org1]/repo1>,...,<[orgN]/repoN>` creates a repo with name `repoName` inside `org` that has as [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) the repos specified in the comma separated list.
+
 
 {% comment%}
 this is possible with the GitHub API by sending a PATCH request to /repos/{owner}/{repo} and specifying a different name parameter (docs).
