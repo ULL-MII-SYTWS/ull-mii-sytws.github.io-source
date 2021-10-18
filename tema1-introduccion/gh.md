@@ -799,7 +799,7 @@ The name of the extension repository must start with "gh-" and it must contain a
   *  remove:     Remove an installed extension
   *  upgrade:    Upgrade installed extensions
 
-gh extensions repos are stored in `~/.local/share/gh/extensions/`
+inside my mac the gh extensions repos are stored in `~/.local/share/gh/extensions/`
 
 ```
 ➜  gh-learning git:(master) ✗ ls -la ~/.local/share/gh/extensions/
@@ -818,7 +818,9 @@ See also:
 * [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
 * [gh-extension](https://github.com/topics/gh-extension) list
 
-### Example of an extension: gh-clone-org
+### Examples of  extensions 
+
+#### gh-clone-org
 
 * [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
 * Original [matt-bartel/gh-clone-org](https://github.com/matt-bartel/gh-clone-org)
@@ -835,6 +837,12 @@ ULL-MII-SYTWS-2122/set-up-alu0101102726
 ULL-MII-SYTWS-2122/set-up-crguezl
 ULL-MII-SYTWS-2122/set-up-Pmolmar
 ```
+
+#### gh-submodule-add 
+
+This is a extension written in Node.js
+
+* [gh-submodule-add](https://github.com/crguezl/gh-submodule-add)
 
 ## Running Manually GitHub Workflows with gh
 
