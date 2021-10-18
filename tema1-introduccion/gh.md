@@ -96,7 +96,7 @@ This is suitable for passing structured data to scripts. The JSON output is enab
 Use the flag without a value to get the list of available fields.
 
 ```
-[~/campus-virtual/2122/learning/graphql-learning(main)]$ gh issue list
+$ gh issue list
 
 Showing 2 of 2 open issues in crguezl/learning-graphql-with-gh
 
@@ -107,7 +107,7 @@ Showing 2 of 2 open issues in crguezl/learning-graphql-with-gh
 If we specify a list of comma separated fields we get those fields in JSON format:
 
 ```
-[~/campus-virtual/2122/learning/graphql-learning(main)]$ gh issue list --json number,title,body
+$ gh issue list --json number,title,body
 [
   {
     "body": "second",
