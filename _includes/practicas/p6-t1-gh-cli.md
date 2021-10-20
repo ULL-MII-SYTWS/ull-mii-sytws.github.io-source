@@ -95,7 +95,7 @@ SYTW-C
 
 ## Extension
 
-Write and publish a gh extension. Choose your own idea.
+Write and publish a gh extension using preferably Node.JS. Choose your own idea.
 
 Suggestions. 
 
