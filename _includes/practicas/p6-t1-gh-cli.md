@@ -101,6 +101,9 @@ Suggestions.
 
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
+* Rewriting an existing extension in Node.JS. For example [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
+See an example of how to write a gh extension in Node.JS in [crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add)
+
 {% comment %}
 * May be too much work: `gh-submodule-add '<[org1]/repo1>,...,<[orgN]/repoN>'` adds to the current repo the repos specified in the comma separated list `org1/repo1`, `org2/repo2`, etc as [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of the current repo. 
   - If some org as  `org1` is not specified, it is assumed to be  the same organization of the current repo.
@@ -113,11 +116,13 @@ this is possible with the GitHub API by sending a PATCH request to /repos/{owner
 gh api -X PATCH --raw-field name=new-name repos/account-name/current-name
 
 {% endcomment%}
+
 ## References
 
 * [Apuntes de gh]({{site.baseurl}}/tema1-introduccion/gh.html)
 * GitHub API doc for [Delete repository](https://docs.github.com/es/rest/reference/repos#delete-a-repository)
-* See an example of extension at [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
+* See an example of extension at [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org) in bash
+* An example of a gh extension in Node.JS in [crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add)
 * GitHub docs for [Creating GitHub CLI extensions](https://docs.github.com/es/github-cli/github-cli/creating-github-cli-extensions)
 * Here is a list of repos with the topic `gh-extension`: [gh-extension](https://github.com/topics/gh-extension) list
 * [GitHub GraphQL Playground](https://docs.github.com/en/graphql/overview/explorer)
