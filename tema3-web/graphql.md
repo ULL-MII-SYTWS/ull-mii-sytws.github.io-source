@@ -64,6 +64,10 @@ You can run queries on real GitHub data using the GraphQL Explorer, an integrate
 
 ## REFERENCIAS
 
+* [Repo de ejemplos crguezl/learning-graphql-with-gh](https://github.com/crguezl/learning-graphql-with-gh)
+  - En la carpeta [simple-graphql-express-server-example/](https://github.com/crguezl/learning-graphql-with-gh/tree/main/simple-graphql-express-server-example) hay un ejemplo simple de servidor graphql
+  - Youtube video [GraphQL Tutorial. Nos montamos una API con Nodejs y Express](https://youtu.be/atRadu-DKCE)
+
 * [GraphQL Specifications](https://graphql.github.io/graphql-spec/)
 * [Hands-On Full-Stack Web Development with GraphQL and React](https://puntoq.ull.es/permalink/f/15vbjs7/ullsfx4100000007651096) Sebastian Grebe 2019. Libro. PuntoQ ULL
 * [React Quickly: Painless web apps with React, JSX, Redux, and GraphQL](https://puntoq.ull.es/permalink/f/15vbjs7/ullsfx4100000000880800) by Azat Mardan. Manning. 2017. Libro. PuntoQ ULL
