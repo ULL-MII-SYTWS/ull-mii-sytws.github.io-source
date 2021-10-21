@@ -1,5 +1,3 @@
-# Descripción de la Práctica p14-t2-async-await
-
 Read chapter [Async/Await](https://javascript.info/async-await) and make a report using the GitHub Classroom assigned repo. Solve the exercises.
 
 ## Exercise 1: MicroTask and MacroTask Queues

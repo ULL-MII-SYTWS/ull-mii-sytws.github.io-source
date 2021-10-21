@@ -31,7 +31,7 @@ classroom:
 collections: 
   practicas: 
     output: true
-    sorted_by: order
+    sort_by: order
 campus_virtual:
   home: https://campusdoctoradoyposgrado2122.ull.es/course/view.php?id=2122110810  # https://campusdoctoradoyposgrado.ull.es/course/view.php?id=2122110810 
   tareas: 
