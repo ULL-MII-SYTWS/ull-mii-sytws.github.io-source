@@ -97,14 +97,22 @@ async function main () {
     let classroom=await csv().fromFile(csvFilePath);
     const root = {
         students: () => classroom,
-        student: (aluId) => {
-            let result = classroom.find(s => s["AluXXXX"] == aluId.AluXXXX);
+        student: ({AluXXXX}) => {
+            let result = classroom.find(s => {
+                return s["AluXXXX"] == AluXXXX
+            });
             return result
         },
         addStudent: ({AluXXXX, Nombre}) => { 
-            let result = classroom.find(s => s["AluXXXX"] == AluXXXX);
+            console.log(AluXXXX, Nombre)
+            let result = classroom.find(s => {
+                // console.log(`Processing ${insp(s, {depth:null})}`);
+                return s["AluXXXX"] == AluXXXX
+            });
             if (!result) {
                 let alu = {AluXXXX : AluXXXX, Nombre: Nombre}
+                console.log("Not found! Inserting ")
+
                 classroom.push(alu)
                 return alu    
             }
