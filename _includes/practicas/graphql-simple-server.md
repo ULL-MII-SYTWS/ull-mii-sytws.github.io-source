@@ -171,6 +171,9 @@ export default {
     }
 }
 ```
+
+This is the reason why there is no need to implement the resolvers for these fields.
+
 ## Starting the express-graphql middleware
 
 Now what remains is to set the `graphqlHTTP`  the **[express middleware]({{site.baseurl}}/tema3-web/express)** provided by the module `express-graphql` to work
