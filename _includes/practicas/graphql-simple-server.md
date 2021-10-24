@@ -95,7 +95,7 @@ To define our resolvers we create now the object `root` mapping the  schema fiel
 ```js
 async function main () {
     let classroom=await csv().fromFile(csvFilePath);
-    const root = {
+        const root = {
         students: () => classroom,
         student: ({AluXXXX}) => {
             let result = classroom.find(s => {
@@ -103,16 +103,15 @@ async function main () {
             });
             return result
         },
-        addStudent: ({AluXXXX, Nombre}) => { 
-            console.log(AluXXXX, Nombre)
+        addStudent: (obj, args, context, info) => {
+            const {AluXXXX, Nombre} = obj; 
+
             let result = classroom.find(s => {
-                // console.log(`Processing ${insp(s, {depth:null})}`);
                 return s["AluXXXX"] == AluXXXX
             });
             if (!result) {
                 let alu = {AluXXXX : AluXXXX, Nombre: Nombre}
-                console.log("Not found! Inserting ")
-
+                console.log(`Not found ${Nombre}! Inserting ${AluXXXX}`)
                 classroom.push(alu)
                 return alu    
             }
