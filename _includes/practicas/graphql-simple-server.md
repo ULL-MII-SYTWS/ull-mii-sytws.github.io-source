@@ -156,7 +156,7 @@ There is no exclamation `!` at the value returned in the declaration of the `set
 A resolver is a function that resolves a value for a type or field in a schema. 
 - Resolvers can return objects or scalars like Strings, Numbers, Booleans, etc. 
 - If an Object is returned, execution continues to the next child field. 
-- If a scalar is returned (typically at a leaf node), execution completes. 
+- If a scalar is returned (typically at a leaf node of the AST), execution completes. 
 - If `null` is returned, execution halts and does not continue.
 
 
@@ -216,7 +216,7 @@ Para ello vea este video:
 * [GraphiQL Shortcuts](https://defkey.com/graphiql-shortcuts)
 * [GraphQL fragments explained](https://blog.logrocket.com/graphql-fragments-explained/)
 * [GraphQL Resolvers: Best Practices](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55) by Mark Stuart
-
+* <https://astexplorer.net/>
 
 ## FootNotes
 
