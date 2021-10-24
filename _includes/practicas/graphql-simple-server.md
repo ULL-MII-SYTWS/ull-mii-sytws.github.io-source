@@ -143,6 +143,23 @@ Observe how `setMarkDown` and `addStudent` sometimes return `null` since it is a
 
 There is no exclamation `!` at the value returned in the declaration of the `setMarkDown` mutation.
 
+[Every GraphQL query goes through three phases](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55):
+
+1. Queries are parsed into an abstract syntax tree (or AST). See <https://astexplorer.net/> 
+2. Validated: Checks for  query  correctness and check if the fields exist. 
+3. Executed: The runtime walks through the AST, 
+  1. Descending from the root of the tree, 
+  2. Invoking resolvers, 
+  3. Collecting up results, and 
+  4. Emiting the final JSON
+
+A resolver is a function that resolves a value for a type or field in a schema. 
+- Resolvers can return objects or scalars like Strings, Numbers, Booleans, etc. 
+- If an Object is returned, execution continues to the next child field. 
+- If a scalar is returned (typically at a leaf node), execution completes. 
+- If `null` is returned, execution halts and does not continue.
+
+
 ## Starting the express-graphql middleware
 
 Now what remains is to set the `graphqlHTTP`  the **[express middleware]({{site.baseurl}}/tema3-web/express)** provided by the module `express-graphql` to work
@@ -198,6 +215,8 @@ Para ello vea este video:
 * [Queries y GraphiQL con la API de Rick & Morty (Curso express GraphQL)](https://youtu.be/5BwmvekYCpY)
 * [GraphiQL Shortcuts](https://defkey.com/graphiql-shortcuts)
 * [GraphQL fragments explained](https://blog.logrocket.com/graphql-fragments-explained/)
+* [GraphQL Resolvers: Best Practices](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55) by Mark Stuart
+
 
 ## FootNotes
 
