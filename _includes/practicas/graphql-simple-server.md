@@ -1,6 +1,6 @@
 ## Requisitos
 
-Usando los módulos npm [express](https://expressjs.com/), [express-graphql](https://graphql.org/graphql-js/running-an-express-graphql-server/) y [graphql](https://graphql.org/) escriba un servicio web con una API GraphQL y pruébela usando [Graphiql]().
+Usando los módulos npm [express](https://expressjs.com/), [express-graphql](https://graphql.org/graphql-js/running-an-express-graphql-server/) y [graphql](https://graphql.org/) escriba un servicio web con una API GraphQL y pruébela usando [Graphiql](https://youtu.be/5BwmvekYCpY).
 
 ## Set up
 
@@ -184,7 +184,7 @@ Para ello vea este video:
 * Youtube video [GraphQL Tutorial. Nos montamos una API con Nodejs y Express](https://youtu.be/atRadu-DKCE) 
 * [GraphQL HTTP Server Middleware: GitHub repo graphql/express-graphql](https://github.com/graphql/express-graphql)
 * [GRaphQL Glossary](https://www.apollographql.com/docs/resources/graphql-glossary/)
-
+* [Queries y GraphiQL con la API de Rick & Morty (Curso express GraphQL)](https://youtu.be/5BwmvekYCpY)
 ## FootNotes
 
 [^1]: For more detail on the GraphQL schema language, see the <a href="https://graphql.org/learn/schema/">schema language docs</a> 
