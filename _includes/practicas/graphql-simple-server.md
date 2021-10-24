@@ -181,10 +181,15 @@ Para ello vea este video:
 ## References
 
 * See inside the repo [crguezl/learning-graphql-with-gh](https://github.com/crguezl/learning-graphql-with-gh/tree/main/simple-graphql-express-server-example) the folder `simple-graphql-express-server-example/` with the example used in this description
+
 * Youtube video [GraphQL Tutorial. Nos montamos una API con Nodejs y Express](https://youtu.be/atRadu-DKCE) 
+
 * [GraphQL HTTP Server Middleware: GitHub repo graphql/express-graphql](https://github.com/graphql/express-graphql)
 * [GRaphQL Glossary](https://www.apollographql.com/docs/resources/graphql-glossary/)
+
 * [Queries y GraphiQL con la API de Rick & Morty (Curso express GraphQL)](https://youtu.be/5BwmvekYCpY)
+* [GraphiQL Shortcuts](https://defkey.com/graphiql-shortcuts)
+
 ## FootNotes
 
 [^1]: For more detail on the GraphQL schema language, see the <a href="https://graphql.org/learn/schema/">schema language docs</a> 
