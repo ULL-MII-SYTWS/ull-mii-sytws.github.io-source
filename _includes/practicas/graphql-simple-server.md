@@ -68,7 +68,8 @@ GraphQL ships with some scalar types out of the box; `Int`, `Float`, `String`, `
 
 The fields whose types have an exclamation mark, `!`, next to them are **non-null** fields. These are fields that won’t return a `null` value when you query them.
 
-The function
+The function `buildSchema` provided by the `graphql` module has the signature:
+
 
 ```js
 function buildSchema(source: string | Source): GraphQLSchema
@@ -189,6 +190,7 @@ Para ello vea este video:
 
 * [Queries y GraphiQL con la API de Rick & Morty (Curso express GraphQL)](https://youtu.be/5BwmvekYCpY)
 * [GraphiQL Shortcuts](https://defkey.com/graphiql-shortcuts)
+* [GraphQL fragments explained](https://blog.logrocket.com/graphql-fragments-explained/)
 
 ## FootNotes
 
