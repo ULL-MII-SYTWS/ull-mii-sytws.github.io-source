@@ -82,7 +82,7 @@ The schema will use default **resolvers**[^3].
 const AluSchema = buildSchema(StringWithMySchemaDefinition)
 ```
 
-### Resolvers
+## Resolvers
 
 A **resolver** is a function that connects **schema fields** and **types** to various backends. 
 Resolvers provide the instructions for turning a GraphQL operation into data. 
