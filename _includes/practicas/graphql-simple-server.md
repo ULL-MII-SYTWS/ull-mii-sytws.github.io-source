@@ -1,6 +1,6 @@
 ## Requisitos
 
-Usando los módulos npm [express](https://expressjs.com/), [express-graphql](https://graphql.org/graphql-js/running-an-express-graphql-server/) y [graphql](https://graphql.org/) escriba un servicio web con una API GraphQL y pruébela usando [Graphiql](https://youtu.be/5BwmvekYCpY).
+Usando los módulos npm [express](https://expressjs.com/), [express-graphql](https://graphql.org/graphql-js/running-an-express-graphql-server/) y [graphql](https://graphql.org/) escriba un servicio web con una API GraphQL y pruébela usando [GraphiQL](https://youtu.be/5BwmvekYCpY).
 
 ## Set up
 
