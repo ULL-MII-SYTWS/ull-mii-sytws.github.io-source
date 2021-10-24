@@ -148,10 +148,10 @@ There is no exclamation `!` at the value returned in the declaration of the `set
 1. Queries are parsed into an abstract syntax tree (or AST). See <https://astexplorer.net/> 
 2. Validated: Checks for  query  correctness and check if the fields exist. 
 3. Executed: The runtime walks through the AST, 
-  1. Descending from the root of the tree, 
-  2. Invoking resolvers, 
-  3. Collecting up results, and 
-  4. Emiting the final JSON
+    1. Descending from the root of the tree, 
+    2. Invoking resolvers, 
+    3. Collecting up results, and 
+    4. Emiting the final JSON
 
 A resolver is a function that resolves a value for a type or field in a schema. 
 - Resolvers can return objects or scalars like Strings, Numbers, Booleans, etc. 
@@ -159,7 +159,18 @@ A resolver is a function that resolves a value for a type or field in a schema.
 - If a scalar is returned (typically at a leaf node of the AST), execution completes. 
 - If `null` is returned, execution halts and does not continue.
 
+it’s worth noting that a GraphQL server has built-in default resolvers, so you don’t have to specify a resolver function for every field. A default resolver will look in root to find a property with the same name as the field. An implementation likely looks like this:
 
+```js
+export default {
+    Student: {
+        AluXXXX: (root, args, context, info) => root.AluXXXX,
+        Nombre: (root, args, context, info) => root.Nombre,
+        markdown: (root, args, context, info) => root.markdown
+
+    }
+}
+```
 ## Starting the express-graphql middleware
 
 Now what remains is to set the `graphqlHTTP`  the **[express middleware]({{site.baseurl}}/tema3-web/express)** provided by the module `express-graphql` to work
