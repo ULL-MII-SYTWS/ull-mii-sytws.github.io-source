@@ -23,7 +23,7 @@ const csvFilePath = process.argv[3] || 'SYTWS-2122.csv'
 const data = String(fs.readFileSync(csvFilePath))
 ```
 
-Para hacer el parsing del fichero CSV podemos llamar a `csv().fromFile(<file>)`:
+Para hacer el parsing del fichero CSV podemos llamar a `csv().fromFile(<file>)` o bien puede usar el ejecutable de línea de comandos que provee `$ csvtojson [options] <csv file path>`.
 
 ```js
 async function main () {
