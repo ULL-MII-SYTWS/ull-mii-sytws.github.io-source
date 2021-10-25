@@ -160,7 +160,7 @@ There is no exclamation `!` at the value returned in the declaration of the `set
 
 <table>
 <tr>
-<td><img src="{{site.baseurl}}/assets/images/graphql-query.png" height="80%"/></td>
+<td><img src="{{site.baseurl}}/assets/images/graphql-query.png" height="80%" /></td>
 <td><img src="{{site.baseurl}}/assets/images/graphql-ast.png" /></td>
 </tr>
 </table>
@@ -192,7 +192,7 @@ export default {
 }
 ```
 
-This is the reason why there is no need to implement the resolvers for these fields.
+This is the reason why there wass no need to implement the resolvers for these fields.
 
 ## Starting the express-graphql middleware
 
