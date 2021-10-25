@@ -14,7 +14,7 @@ const { buildSchema } = require("graphql")
 
 Puede aprovechar cualquier hoja de cálculo que tenga a mano y la exporta a CSV, para  usarla como datos de entrada para hacer las pruebas en esta práctica.
 
-Después, puede usar el módulo [csvtojson]() para convertir los datos a un objeto JS.
+Después, puede usar el módulo [csvtojson](https://github.com/Keyang/node-csvtojson#command-line-usage) para convertir los datos a un objeto JS.
 
 ```js
 const csv=require('csvtojson')
