@@ -61,7 +61,7 @@ Here is an example of a GraphQL Schema written in SDL:
   }
 ```
 
-In addition to queries and mutations, GraphQL supports a third operation type: **subscriptions**
+In addition to queries and mutations, GraphQL supports a third operation type: **[subscriptions](https://www.apollographql.com/docs/react/data/subscriptions/)**
 
 Like queries, subscriptions enable you to fetch data. Unlike queries, subscriptions are long-lasting operations that can change their result over time. They can maintain an active connection to your GraphQL server (most commonly via [WebSocket]({{site.baseurl}}/tema3-web/websockets)), enabling the server to push updates to the subscription's result.
 
