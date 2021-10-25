@@ -105,7 +105,7 @@ Suggestions.
 
 
 See an example of how to write a gh extension in Node.JS in 
-crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add).
+[crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add).
 
 An example of how to write an extension in TypeScript is here:
 [mcataford/gh-assigned](https://github.com/mcataford/gh-assigned)
