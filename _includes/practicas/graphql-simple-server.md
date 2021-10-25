@@ -228,6 +228,8 @@ It  has the following properties:
 
 ## Testing with GraphiQL
 
+We can now run the app and open the browser at  the url `http://localhost:4000/graphql`  to make graphql queries using GraphiQL.
+
 Use **GraphiQL** to test your API. GraphiQL is an in-browser IDE for GraphQL development and workflow.
 Para ello vea este video:
 
