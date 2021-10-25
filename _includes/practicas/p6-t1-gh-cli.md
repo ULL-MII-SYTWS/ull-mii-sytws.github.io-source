@@ -102,7 +102,14 @@ Suggestions.
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
 * Rewriting an existing extension in Node.JS. For example [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
-See an example of how to write a gh extension in Node.JS in [crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add)
+
+
+See an example of how to write a gh extension in Node.JS in 
+crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add).
+
+An example of how to write an extension in TypeScript is here:
+[mcataford/gh-assigned](https://github.com/mcataford/gh-assigned)
+
 
 {% comment %}
 * May be too much work: `gh-submodule-add '<[org1]/repo1>,...,<[orgN]/repoN>'` adds to the current repo the repos specified in the comma separated list `org1/repo1`, `org2/repo2`, etc as [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of the current repo. 
