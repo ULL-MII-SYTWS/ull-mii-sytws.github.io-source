@@ -92,7 +92,7 @@ const AluSchema = buildSchema(StringWithMySchemaDefinition)
 A **resolver** is a function that connects **schema fields** and **types** to various backends. 
 Resolvers provide the instructions for turning a GraphQL operation into data. 
 
-A resolver can retrieve data from or write data to anywhere, including a SQL, No-SQL, or graph database, a micro-service, 
+A resolver can retrieve data from or write data to anywhere, including a SQL, No-SQL, or graph database, a [micro-service]({{site.baseurl}}/tema2-async/message-queues.html), 
 and a REST API. Resolvers can also return strings, ints, null, and other types.
 
 To define our resolvers we create now the object `root` mapping the  schema fields (`students`, `student`, `addStudent`, `setMarkdown`) to their corresponding functions:
