@@ -158,13 +158,24 @@ There is no exclamation `!` at the value returned in the declaration of the `set
     3. Collecting up results, and 
     4. Emiting the final JSON
 
+<table>
+<tr>
+<td><img src="{{site.baseurl}}/assets/images/graphql-query.png" height="80%"/></td>
+<td><img src="{{site.baseurl}}/assets/images/graphql-ast.png" /></td>
+</tr>
+</table>
+
+In this example, the root Query type is the entry point to the tree and contains our two root fields, user and album. The user and album resolvers are executed in parallel (which is typical among all runtimes). The tree is executed breadth-first, meaning user must be resolved before its children name and email are executed. If the user resolver is asynchronous, the user branch delays until its resolved. Once all leaf nodes, name, email, title, are resolved, execution is complete.
+
+Root Query fields, like user and album, are executed in parallel but in no particular order. Typically, fields are executed in the order they appear in the query, but it’s not safe to assume that. Because fields are executed in parallel, they are assumed to be atomic, idempotent, and side-effect free.
+
 A resolver is a function that resolves a value for a type or field in a schema. 
 - Resolvers can return objects or scalars like Strings, Numbers, Booleans, etc. 
-- If an Object is returned, execution continues to the next child field. 
+- If an Object is returned, execution **continues to the next child field**. 
 - If a scalar is returned (typically at a leaf node of the AST), execution completes. 
 - If `null` is returned, execution halts and does not continue.
 
-it’s worth noting that a GraphQL server has built-in default resolvers, so you don’t have to specify a resolver function for every field. A default resolver will look in root to find a property with the same name as the field. An implementation likely looks like this:
+It’s worth noting that a GraphQL server has built-in default resolvers, so you don’t have to specify a resolver function for every field. A default resolver will look in root to find a property with the same name as the field. An implementation likely looks like this:
 
 ```js
 export default {
