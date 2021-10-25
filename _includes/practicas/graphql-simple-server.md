@@ -165,9 +165,13 @@ There is no exclamation `!` at the value returned in the declaration of the `set
 </tr>
 </table>
 
-In this example, the root Query type is the entry point to the tree and contains our two root fields, user and album. The user and album resolvers are executed in parallel (which is typical among all runtimes). The tree is executed breadth-first, meaning user must be resolved before its children name and email are executed. If the user resolver is asynchronous, the user branch delays until its resolved. Once all leaf nodes, name, email, title, are resolved, execution is complete.
+In this example, the root Query type is the entry point to the AST and contains two fields, `user` and `album`. The `user` and `album` resolvers are usually executed in parallel or in no particular order. 
 
-Root Query fields, like user and album, are executed in parallel but in no particular order. Typically, fields are executed in the order they appear in the query, but it’s not safe to assume that. Because fields are executed in parallel, they are assumed to be atomic, idempotent, and side-effect free.
+The AST is traversed breadth-first, meaning `user` must be resolved before its children `name` and `email` are visited. 
+
+If the user resolver is asynchronous, the user branch delays until its resolved. Once all leaf nodes, `name`, `email`, `title`, are resolved, execution is complete.
+
+Typically, fields are executed in the order they appear in the query, but it’s not safe to assume that. Because fields can be executed in parallel, they are assumed to be atomic, idempotent, and side-effect free.
 
 A resolver is a function that resolves a value for a type or field in a schema. 
 - Resolvers can return objects or scalars like Strings, Numbers, Booleans, etc. 
