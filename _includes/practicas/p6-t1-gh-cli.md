@@ -97,12 +97,14 @@ SYTW-C
 
 Write and publish a gh extension using preferably Node.JS. Choose your own idea.
 
-Suggestions. 
+### Suggestions. 
 
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
 * Rewriting an existing extension in Node.JS. For example [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
 
+
+### Examples in JS and TS
 
 See an example of how to write a gh extension in Node.JS in 
 [crguezl/gh-submodule-add](https://github.com/crguezl/gh-submodule-add).
