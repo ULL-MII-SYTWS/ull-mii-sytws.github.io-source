@@ -201,14 +201,27 @@ In our example the nodes are of the type [SearchResultItem](https://docs.github.
 
 ## unions
 
-Unions do not define any fields, so no fields may be queried on this type without the use of type **refining fragments** or **inline fragments**.
+Unions do not define any fields, **so no fields may be queried on this type** without the use of type **refining fragments** or **inline fragments**[^1].
+
+
+
 
 Let us make an attempt using the explorer:
 
+
+
 ```gql
-query numghextensions {
-  search(query: "topic:gh-extension", type: REPOSITORY) {
+query searchGHExtensions {
+  search(query: "topic:gh-extension, sort:interactions", type: REPOSITORY, first: 2) {
     repositoryCount
+    edges {
+      cursor
+      node {
+        ... on Repository {
+          nameWithOwner
+        }
+      }
+    }
   }
 }
 ```
@@ -238,4 +251,4 @@ that give us the number of repositories corresponding to gh-extensions.
 
 ## References
 
-* [GraphQL Spec 2018](http://spec.graphql.org/June2018/)
+[^1]: http://spec.graphql.org/June2018/
