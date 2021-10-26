@@ -39,6 +39,7 @@ calificador:
 covid_ull: https://campusvirtual.ull.es/doctoradoyposgrado/course/view.php?id=201913946
 horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0
 github_org: https://github.com/ULL-MII-SYTWS-2122
+ghd: "https://docs.github.com" 
 repo_apuntes: https://github.com/ULL-MII-SYTWS/ull-mii-sytws.github.io-source/
 repo_url_master: https://github.com/ULL-MII-SYTWS/ull-mii-sytws.github.io-source/tree/main/
 despliegue_apuntes: https://ull-mii-sytws.github.io/

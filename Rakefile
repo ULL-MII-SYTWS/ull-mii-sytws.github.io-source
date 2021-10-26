@@ -21,7 +21,7 @@ end
 
 desc "local serve drafts: bundle exec jekyll serve  --drafts --watch --incremental"
 task :lsd do 
-  sh "bundle exec jekyll serve --future --drafts --watch --incremental --port 8080"
+  sh "bundle exec jekyll serve --future --drafts --watch --incremental --port 8082"
 end
 
 desc "build"
