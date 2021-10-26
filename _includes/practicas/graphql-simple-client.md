@@ -300,13 +300,3 @@ that give us the number of repositories corresponding to gh-extensions.
 [^1]: https://spec.graphql.org/June2018/#sec-Unions
 [^2]: https://spec.graphql.org/June2018/#sec-Language.Fragments
 
-## Prueba GraphQL
-
-<ul>
-{% graphql endpoint: "github", query: "last_touched_repositories" %}
-  {% for repo in data["viewer"]["repositories"]["nodes"] %}
-    <li>{{repo["name"]}}</li>
-  {% endfor %}
-{% endgraphql %}
-</ul>
-
