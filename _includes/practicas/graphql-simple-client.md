@@ -203,12 +203,58 @@ In our example the nodes are of the type [SearchResultItem](https://docs.github.
 
 Unions do not define any fields, **so no fields may be queried on this type** without the use of type **refining fragments** or **inline fragments**[^1].
 
+## fragments 
+
+Fragments are the primary unit of composition in GraphQL.
+
+Fragments allow for the reuse of common repeated selections of fields, reducing duplicated text in the document. 
+Inline Fragments can be used directly within a selection to condition upon a type condition when querying against an interface or union[^2].
+
+For example:
+
+```gql 
+query noFragments {
+  user(id: 4) {
+    friends(first: 10) {
+      id
+      name
+      profilePic(size: 50)
+    }
+    mutualFriends(first: 10) {
+      id
+      name
+      profilePic(size: 50)
+    }
+  }
+}
+```
+
+The repeated fields could be extracted into a fragment and composed by a parent fragment or query.
+
+
+```gql
+query withFragments {
+  user(id: 4) {
+    friends(first: 10) {
+      ...friendFields
+    }
+    mutualFriends(first: 10) {
+      ...friendFields
+    }
+  }
+}
+
+fragment friendFields on User {
+  id
+  name
+  profilePic(size: 50)
+}
+```
 
 
 
-Let us make an attempt using the explorer:
 
-
+Let us make an attempt using this query in the explorer:
 
 ```gql
 query searchGHExtensions {
@@ -251,4 +297,16 @@ that give us the number of repositories corresponding to gh-extensions.
 
 ## References
 
-[^1]: http://spec.graphql.org/June2018/
+[^1]: https://spec.graphql.org/June2018/#sec-Unions
+[^2]: https://spec.graphql.org/June2018/#sec-Language.Fragments
+
+## Prueba GraphQL
+
+<ul>
+{% graphql endpoint: "github", query: "last_touched_repositories" %}
+  {% for repo in data["viewer"]["repositories"]["nodes"] %}
+    <li>{{repo["name"]}}</li>
+  {% endfor %}
+{% endgraphql %}
+</ul>
+
