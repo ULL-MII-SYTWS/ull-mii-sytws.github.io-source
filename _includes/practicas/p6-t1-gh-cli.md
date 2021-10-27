@@ -103,6 +103,9 @@ Write and publish a gh extension using preferably Node.JS. Choose your own idea.
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
 * Rewriting an existing extension in Node.JS. For example [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
 
+### Considerations
+
+Create a repo for your extension in a repo `ULL-MII-SYTWS-2122/gh-my-extension-name`  inside the classroom organization `ULL-MII-SYTWS-2122`. Add that repo as a git submodule to the repo associated to this lab assignment.
 
 ### Examples in JS and TS
 
@@ -112,12 +115,6 @@ See an example of how to write a gh extension in Node.JS in
 An example of how to write an extension in TypeScript is here:
 [mcataford/gh-assigned](https://github.com/mcataford/gh-assigned)
 
-
-{% comment %}
-* May be too much work: `gh-submodule-add '<[org1]/repo1>,...,<[orgN]/repoN>'` adds to the current repo the repos specified in the comma separated list `org1/repo1`, `org2/repo2`, etc as [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of the current repo. 
-  - If some org as  `org1` is not specified, it is assumed to be  the same organization of the current repo.
-  - If one of the repos does'nt exist, throw an error.
-{% endcomment %}
 
 {% comment%}
 this is possible with the GitHub API by sending a PATCH request to /repos/{owner}/{repo} and specifying a different name parameter (docs).
