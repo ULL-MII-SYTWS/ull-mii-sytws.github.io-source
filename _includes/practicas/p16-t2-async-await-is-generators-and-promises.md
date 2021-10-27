@@ -1,5 +1,3 @@
-# Descripción de la Práctica p16-t2-async-await-is-generators-and-promises
-
 ## Goal: Async-Await ≈ Generators + Promises
 
 Imagine we are given a piece of code like the one below that uses async functions, how can we rewrite it using only promises and generator functions?
