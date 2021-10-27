@@ -1,9 +1,0 @@
----
-layout: post
-name: p15-t2-generators
-myurl: /tema2-async/practicas/p15-t2-generators/
-visible: false
-date: 0000-01-15
----
-
-{% include practicas/p15-t2-generators.md %}

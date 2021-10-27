@@ -1,40 +1,6 @@
-# Descripción de la Práctica p15-t2-generators
-
 ## Description
 
-Read the chapter [Generators](https://javascript.info/generators) of JavaScript.info reproducing the examples and exercises. Submit a report. Here is an example of how to organize your report:
-
-```
-➜  learning-generators git:(master) tree 
-.
-├── 00-symbol-iterator # For lesson https://javascript.info/iterable
-│   └── hello-symbol-iterator.js
-├── 01-generator-functions # Section "Generator Functions"
-│   └── hello-generators.js
-├── 02-generators-are-iterable
-│   ├── hello-generators-2.js
-│   └── spread.js
-├── 03-using-generators-for-iterables
-│   ├── README.md
-│   ├── eloquent-js-6-2-group-with-generators.js
-│   ├── iterator-revisited.js
-│   ├── main-eloquent-js-6-2-group-with-generators.js
-│   └── package.json
-├── 04-generator-composition
-│   └── hello-composition.js
-├── 05-yield-is-a-two-way-street
-│   └── hello-entry-argument.js
-├── 06-yield-is-a-two-way-street
-│   └── hello-entry-argument.js
-├── 07-generator-throw
-│   └── hello-throw.js
-├── 08-tasks-pseudo-random-generator
-│   ├── README.md
-│   ├── package.json
-│   └── solution.js
-├── README.md
-└── package.json
-```
+Read the chapter [Generators](https://javascript.info/generators) of JavaScript.info reproducing the examples and exercises. Submit a report.   
 
 Surely you are going to have a look at the chapter [Iterables](https://javascript.info/iterable). You can add the examples and exercises of the [Iterables](https://javascript.info/iterable) chapter at the beginning of the report.
 
@@ -117,5 +83,5 @@ Surely you are going to have a look at the chapter [Iterables](https://javascrip
 * Chapter [Iterables](https://javascript.info/iterable)
 * Chapter [Generators](https://javascript.info/generators) of JavaScript.info
 * See the Node.js doc [Modules: Packages](https://nodejs.org/api/packages.html#packages_determining_module_system) for more details on the use of ECMA 6 Modules in Node.js.
-* [How Can I use en es6 Import in Node.JS](https://stackoverflow.com/questions/45854169/how-can-i-use-an-es6-import-in-node-js#:~:text=You%20can%20also%20use%20npm,import%20in%20your%20JavaScript%20files.
+* [How Can I use an es6 Import in Node.JS](https://stackoverflow.com/questions/45854169/how-can-i-use-an-es6-import-in-node-js#:~:text=You%20can%20also%20use%20npm,import%20in%20your%20JavaScript%20files.
 ) Stackoverflow
