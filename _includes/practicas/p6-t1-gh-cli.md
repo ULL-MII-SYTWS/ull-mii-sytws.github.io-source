@@ -103,9 +103,9 @@ Write and publish a gh extension using preferably Node.JS. Choose your own idea.
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
 * Rewriting an existing extension in Node.JS. For example [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
 
-### Considerations
+### Considerations about the  delivery 
 
-Create a repo for your extension in a repo `ULL-MII-SYTWS-2122/gh-my-extension-name`  inside the classroom organization `ULL-MII-SYTWS-2122`. Add that repo as a git submodule to the repo associated to this lab assignment.
+Create a repo for your extension in a repo `ULL-MII-SYTWS-2122/gh-my-extension-name`  inside the classroom organization `ULL-MII-SYTWS-2122`. Add that repo as a git submodule to the repo associated to this lab assignment. Just leave the link to the assignment and extensions repos in the campus virtual 
 
 ### Examples in JS and TS
 
