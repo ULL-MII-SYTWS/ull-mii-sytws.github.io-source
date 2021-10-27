@@ -210,21 +210,22 @@ Fragments are the primary unit of composition in GraphQL.
 Fragments allow for the reuse of common repeated selections of fields, reducing duplicated text in the document. 
 Inline Fragments can be used directly within a selection to condition upon a type condition when querying against an interface or union[^2].
 
-For example:
+For example,let's say we had a page in our app, which lets us look at the marks of two students side by side. 
+You can imagine that such a query implies to repeat the fields at least once - one for each side of the comparison.
 
 ```gql 
-query noFragments {
-  user(id: 4) {
-    friends(first: 10) {
-      id
-      name
-      profilePic(size: 50)
-    }
-    mutualFriends(first: 10) {
-      id
-      name
-      profilePic(size: 50)
-    }
+query compare2studentsNoFragment($id1: String!, $id2: String!) {
+  
+  left: student(AluXXXX: $id1) {
+    Nombre
+    AluXXXX
+    markdown
+  }
+  
+  right: student(AluXXXX: $id2) {
+    Nombre
+    AluXXXX
+    markdown
   }
 }
 ```
@@ -233,25 +234,33 @@ The repeated fields could be extracted into a fragment and composed by a parent 
 
 
 ```gql
-query withFragments {
-  user(id: 4) {
-    friends(first: 10) {
-      ...friendFields
-    }
-    mutualFriends(first: 10) {
-      ...friendFields
-    }
-  }
+fragment studentInfo on Student {
+  Nombre
+  AluXXXX
+  markdown
 }
 
-fragment friendFields on User {
-  id
-  name
-  profilePic(size: 50)
+query compare2students($id1: String!, $id2: String!) {
+  # fragment example
+  
+  left: student(AluXXXX: $id1) {
+    ... studentInfo
+  }
+  
+  right: student(AluXXXX: $id2) {
+    ... studentInfo
+  }
 }
 ```
 
+## Aliases
 
+If you have a sharp eye, you may have noticed that, since the result object fields match the name of the field in the query but don't include arguments, 
+**you can't directly query for the same field with different arguments**.
+
+That's why you need **aliases** - they let you rename the result of a field to anything you want. 
+In the above example, thw two `student` fields would have conflicted, but 
+since we can alias them to different names `left` and `right`, we can get both results in one request.
 
 
 Let us make an attempt using this query in the explorer:
