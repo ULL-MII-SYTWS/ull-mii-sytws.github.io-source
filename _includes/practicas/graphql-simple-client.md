@@ -262,6 +262,19 @@ That's why you need **aliases** - they let you rename the result of a field to a
 In the above example, thw two `student` fields would have conflicted, but 
 since we can alias them to different names `left` and `right`, we can get both results in one request.
 
+## Default Values
+
+Default values can also be assigned to the variables in the query by adding the default value after the type declaration.
+
+
+```gql
+query getStudent($id1: String = "232566@studenti.unimore.it") {
+  student(AluXXXX: $id1) {
+    Nombre
+    markdown
+  }
+}
+```
 
 Let us make an attempt using this query in the explorer:
 
