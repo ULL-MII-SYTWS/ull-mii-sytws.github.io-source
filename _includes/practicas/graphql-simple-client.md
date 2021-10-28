@@ -358,6 +358,38 @@ that give us the number of repositories corresponding to gh-extensions.
 ```
 Now we can use the cursor of the last element to make the next request.
 
+## Building the Apollo Client
+
+```
+const cache = new InMemoryCache();
+const client = new ApolloClient({
+  link: new HttpLink({
+    uri: "https://api.github.com/graphql", 
+    fetch, 
+    headers: { 'Authorization': `Bearer ${process.env['GITHUB_TOKEN']}`, },
+  }),
+  cache
+});
+```
+
+
+## Caching
+
+In an endpoint-based API, clients can use HTTP caching to easily avoid refetching resources, and for identifying when two resources are the same. The URL in these APIs is a globally unique identifier that the client can leverage to build a cache. 
+
+HTTP cache semantics allow for cacheable responses to be stored locally by clients, moving the cache away from the server-side and closer to the client for better performance and reduced network dependence.
+
+To support this, HTTP makes available several caching options through the `Cache-Control` response header that defines if the response is cacheable and, if so, for how long. Responses may only be cached if the HTTP method is `GET` or `HEAD` and the proper `Cache-Control` header indicates the content is cacheable.
+
+In GraphQL, though, there's no URL-like primitive that provides this globally unique identifier for a given object. It's hence a best practice for the API to expose such an identifier for clients to use. 
+
+See the section [Caching in Apollo Client](https://www.apollographql.com/docs/react/caching/overview/) for  details on how the Apollo Client
+stores the results of your GraphQL queries in a local, <a href="https://www.apollographql.com/docs/react/caching/overview/#data-normalization">normalized</a>, in-memory cache. This enables Apollo Client to respond immediately to queries for already-cached data, without  sending a network request.
+
+
+
+
+
 ## References
 
 * [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE) YouTube list by Ben Awad
@@ -368,6 +400,8 @@ Now we can use the cursor of the last element to make the next request.
   *   [ObservableQuery](https://www.apollographql.com/docs/react/api/core/ObservableQuery/)
   *   [`query(options): Promise<ApolloQueryResult>`](https://www.apollographql.com/docs/react/api/core/ApolloClient/#ApolloClient.query)
   
+* [Caching in GraphQL](https://graphql.org/learn/caching/)
+  * [Caching in Apollo Client](https://www.apollographql.com/docs/react/caching/overview/)
 
 ## Footnotes
 
