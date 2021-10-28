@@ -62,6 +62,11 @@ You can run queries on real GitHub data using the GraphQL Explorer, an integrate
 
 * [GitHub GraphQL Playground](https://docs.github.com/en/graphql/overview/explorer)
 
+## Prácticas
+
+* [GraphQL Simple Server]({{site.baseurl}}/practicas/graphql-simple-server)
+* [GraphQL Simple Client]({{site.baseurl}}/practicas/graphql-simple-client)
+  
 ## REFERENCIAS
 
 * [Repo de ejemplos crguezl/learning-graphql-with-gh](https://github.com/crguezl/learning-graphql-with-gh)

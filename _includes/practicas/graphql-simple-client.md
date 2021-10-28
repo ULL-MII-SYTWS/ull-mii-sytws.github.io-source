@@ -1,10 +1,10 @@
-## Published GH Cli extensions sorted by stars
+## Goal
 
 Write an express web app that shows the published GH cli extensions sorted by stars.
 Use The GitHub GRaphQL API to get the data.
 
 
-## Getting Familia with the GraphQL Explorer
+## Getting Familiar with the GraphQL Explorer
 
 You can run queries on **real GitHub data** using the GraphQL Explorer, an integrated development environment in your browser that includes docs, syntax highlighting, and validation errors. 
 
@@ -282,7 +282,7 @@ query getStudent($id1: String = "232566@studenti.unimore.it") {
 }
 ```
 
-## First query
+## The query
 
 After what we have explained, we can make an attempt using this query in the [explorer](https://docs.github.com/en/graphql/overview/explorer):
 
