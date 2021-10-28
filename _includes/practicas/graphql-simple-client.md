@@ -1,10 +1,16 @@
-## The GraphQL Explorer
+## Published GH Cli extensions sorted by stars
+
+Write an express web app that shows the published GH cli extensions sorted by stars.
+Use The GitHub GRaphQL API to get the data.
+
+
+## Getting Familia with the GraphQL Explorer
 
 You can run queries on **real GitHub data** using the GraphQL Explorer, an integrated development environment in your browser that includes docs, syntax highlighting, and validation errors. 
 
 Visit <https://docs.github.com/en/graphql/overview/explorer>
 
-## Exercise: Obtain the published GH Cli extensions sorted by stars
+## Designing the query to obtain the published GH Cli extensions sorted by stars
 
 Let us try to design a query to obtain the published GH Cli extensions sorted by stars.
 
