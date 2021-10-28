@@ -276,46 +276,70 @@ query getStudent($id1: String = "232566@studenti.unimore.it") {
 }
 ```
 
-Let us make an attempt using this query in the explorer:
+## First query
+
+After what we have explained, we can make an attempt using this query in the [explorer](https://docs.github.com/en/graphql/overview/explorer):
 
 ```gql
-query searchGHExtensions {
-  search(query: "topic:gh-extension, sort:interactions", type: REPOSITORY, first: 2) {
+const firstQuery = gql`
+{
+  search(query: "topic:gh-extension sort:stars", type: REPOSITORY, first: 2 ) {
     repositoryCount
     edges {
       cursor
       node {
         ... on Repository {
           nameWithOwner
+          description
+          url
+          stargazers {
+            totalCount
+          }
         }
       }
     }
   }
 }
+`;
 ```
 
 that give us the number of repositories corresponding to gh-extensions.
 
-```gql
-      {
-        search(query: "topic:gh-extension sort:stars", type: REPOSITORY, first: ${numRepos}, after: "${cursor}") {
-          repositoryCount
-          edges {
-            cursor
-            node {
-              ... on Repository {
-                nameWithOwner
-                description
-                url
-                stargazers {
-                  totalCount
-                }
-              }
+
+```json
+{
+  "data": {
+    "search": {
+      "repositoryCount": 101,
+      "edges": [
+        {
+          "cursor": "Y3Vyc29yOjE=",
+          "node": {
+            "nameWithOwner": "mislav/gh-branch",
+            "description": "GitHub CLI extension for fuzzy finding, quickly switching between and deleting branches.",
+            "url": "https://github.com/mislav/gh-branch",
+            "stargazers": {
+              "totalCount": 117
+            }
+          }
+        },
+        {
+          "cursor": "Y3Vyc29yOjI=",
+          "node": {
+            "nameWithOwner": "vilmibm/gh-screensaver",
+            "description": "full terminal animations",
+            "url": "https://github.com/vilmibm/gh-screensaver",
+            "stargazers": {
+              "totalCount": 61
             }
           }
         }
-      }
+      ]
+    }
+  }
+}
 ```
+Now we can use the cursor of the last element to make the next request.
 
 ## References
 
