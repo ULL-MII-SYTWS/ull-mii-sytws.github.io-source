@@ -1,6 +1,6 @@
 ## The GraphQL Explorer
 
-You can run queries on real GitHub data using the GraphQL Explorer, an integrated development environment in your browser that includes docs, syntax highlighting, and validation errors. 
+You can run queries on **real GitHub data** using the GraphQL Explorer, an integrated development environment in your browser that includes docs, syntax highlighting, and validation errors. 
 
 Visit <https://docs.github.com/en/graphql/overview/explorer>
 
