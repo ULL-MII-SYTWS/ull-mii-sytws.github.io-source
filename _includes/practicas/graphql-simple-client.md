@@ -15,17 +15,53 @@ const fetch = require('node-fetch');
 ```
 
 
+the `gql` function is a tagged template literal. [Tagged template literals](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals) are literals delimited with backticks (`) that call a function (called the tag function) with
+
+1. an array of any text segments from the literal followed by 
+2. arguments with the values of any substitutions
+
+`gql` returns the AST of the query:
+
+```js
+> let { ApolloClient, InMemoryCache, HttpLink, gql } = require('@apollo/client');
+undefined
+> result = gql`
+... query GetDogs {
+...     dogs {
+.....       id
+.....   }
+... }
+... `
+{
+  kind: 'Document',
+  definitions: [
+    {
+      kind: 'OperationDefinition',
+      operation: 'query',
+      name: [Object],
+      variableDefinitions: [],
+      directives: [],
+      selectionSet: [Object]
+    }
+  ],
+  loc: { start: 0, end: 43 }
+}
+```
+
+
 ## Getting Familiar with the GraphQL Explorer
 
 You can run queries on **real GitHub data** using the GraphQL Explorer, an integrated development environment in your browser that includes docs, syntax highlighting, and validation errors. 
 
 Visit <https://docs.github.com/en/graphql/overview/explorer>
 
-## Designing the query to obtain the published GH Cli extensions sorted by stars
+## Designing the **search** query
 
 Let us try to design a query to obtain the published GH Cli extensions sorted by stars.
 
 Let us go to the [documentation for `search`](https://docs.github.com/en/graphql/reference/queries#searchresultitemconnection) in the GraphQL API. It give us s.t. like:
+
+<b>Type:</b> <a href="{{site.ghd}}/en/graphql/reference/objects#searchresultitemconnection">SearchResultItemConnection!</a>
 
 <table class="fields width-full">
 <thead>
@@ -295,10 +331,9 @@ query getStudent($id1: String = "232566@studenti.unimore.it") {
 
 ## The query
 
-After what we have explained, we can make an attempt using this query in the [explorer](https://docs.github.com/en/graphql/overview/explorer):
+After what we have explained, we can make an attempt trying this query in the [explorer](https://docs.github.com/en/graphql/overview/explorer):
 
 ```gql
-const firstQuery = gql`
 {
   search(query: "topic:gh-extension sort:stars", type: REPOSITORY, first: 2 ) {
     repositoryCount
@@ -317,7 +352,6 @@ const firstQuery = gql`
     }
   }
 }
-`;
 ```
 
 that give us the number of repositories corresponding to gh-extensions.
@@ -356,6 +390,7 @@ that give us the number of repositories corresponding to gh-extensions.
   }
 }
 ```
+
 Now we can use the cursor of the last element to make the next request.
 
 ## Building the Apollo Client
@@ -386,9 +421,41 @@ In GraphQL, though, there's no URL-like primitive that provides this globally un
 See the section [Caching in Apollo Client](https://www.apollographql.com/docs/react/caching/overview/) for  details on how the Apollo Client
 stores the results of your GraphQL queries in a local, <a href="https://www.apollographql.com/docs/react/caching/overview/#data-normalization">normalized</a>, in-memory cache. This enables Apollo Client to respond immediately to queries for already-cached data, without  sending a network request.
 
+## The constructor ApolloClient
 
 
+## Pagination
 
+```js
+ app.get('/', function(req, res) {
+  client
+    .query({query: firstQuery})
+    .then(queryRes => handler(res, queryRes))
+    .catch(error => console.error(error))
+});
+
+app.get('/next/:cursor', function(req, res) {
+  client
+    .query({ query: subsequentQueries(req.params.cursor)})
+    .then(queryRes => handler(res,queryRes))
+    .catch(error => console.error(error))
+});
+```
+
+
+```js
+const handler = (res, queryRes) => {
+  const repos = queryRes.data.search.edges;
+  const repoCount = queryRes.data.search.repositoryCount
+  if (repos.length) {
+    let lastCursor = repos[repos.length-1].cursor;
+    res.render('pages/index',{ repos: repos, lastCursor: lastCursor });
+  } else {
+      console.log('No more repos found!');
+      console.log(`Array came empty repoCount=${repoCount}`)
+  }
+}
+```
 
 ## References
 
