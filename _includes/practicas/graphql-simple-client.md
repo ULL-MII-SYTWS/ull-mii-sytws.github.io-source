@@ -4,6 +4,17 @@ Write an express web app that shows the published GH cli extensions sorted by st
 Use The GitHub GRaphQL API to get the data.
 
 
+## Libraries
+
+
+```js
+const express = require('express');
+const app = express()
+const { ApolloClient, InMemoryCache, HttpLink, gql } = require('@apollo/client');
+const fetch = require('node-fetch');
+```
+
+
 ## Getting Familiar with the GraphQL Explorer
 
 You can run queries on **real GitHub data** using the GraphQL Explorer, an integrated development environment in your browser that includes docs, syntax highlighting, and validation errors. 
@@ -351,8 +362,14 @@ Now we can use the cursor of the last element to make the next request.
 
 * [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE) YouTube list by Ben Awad
 
+* Apollo Client API Core
+  *   [ApolloClient](https://www.apollographql.com/docs/react/api/core/ApolloClient/)
+  *   [InMemoryCache](https://www.apollographql.com/docs/react/api/cache/InMemoryCache/)
+  *   [ObservableQuery](https://www.apollographql.com/docs/react/api/core/ObservableQuery/)
+  *   [`query(options): Promise<ApolloQueryResult>`](https://www.apollographql.com/docs/react/api/core/ApolloClient/#ApolloClient.query)
+  
 
-## Foot notes
+## Footnotes
 
 [^1]: https://spec.graphql.org/June2018/#sec-Unions
 [^2]: https://spec.graphql.org/June2018/#sec-Language.Fragments
