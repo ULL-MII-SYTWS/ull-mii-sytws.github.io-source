@@ -392,7 +392,7 @@ stores the results of your GraphQL queries in a local, <a href="https://www.apol
 
 ## References
 
-* [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE) YouTube list by Ben Awad
+* [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE). A YouTube list of videos by Ben Awad
 
 * Apollo Client API Core
   *   [ApolloClient](https://www.apollographql.com/docs/react/api/core/ApolloClient/)
