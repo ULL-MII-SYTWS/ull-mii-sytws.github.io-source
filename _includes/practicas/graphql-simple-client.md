@@ -20,7 +20,7 @@ the `gql` function is a tagged template literal. [Tagged template literals](http
 1. an array of any text segments from the literal followed by 
 2. arguments with the values of any substitutions
 
-`gql` returns the AST of the query:
+`gql` returns the AST of the query. See this repl node session:
 
 ```js
 > let { ApolloClient, InMemoryCache, HttpLink, gql } = require('@apollo/client');
