@@ -456,20 +456,11 @@ Now the handler for requests to the main  `/` route is simple:
 });
 ```
 
-We make the GraphQL query using the `query` method of the ApolloClient `client`
+We make the GraphQL query `firstQuery` using the `query` method of the ApolloClient `client`
 that it is sent to the GitHub GraphQL API endpoint. It returns a Promise. 
 When the promise is fulfilled, we get in the variable `queryRes` the response of the GitHub server.
-We pass both our object `res`to elaborate the response and the `queryRes` 
-object to our `handler` function that renders the results of the query.
-
-```js
-app.get('/next/:cursor', function(req, res) {
-  client
-    .query({ query: subsequentQueries(req.params.cursor)})
-    .then(queryRes => handler(res,queryRes))
-    .catch(error => console.error(error))
-});
-```
+We pass both our object `res` to elaborate the response and the `queryRes` 
+object to our `handler` function that renders the results of the query:
 
 
 ```js
@@ -485,6 +476,17 @@ const handler = (res, queryRes) => {
   }
 }
 ```
+
+```js
+app.get('/next/:cursor', function(req, res) {
+  client
+    .query({ query: subsequentQueries(req.params.cursor)})
+    .then(queryRes => handler(res,queryRes))
+    .catch(error => console.error(error))
+});
+```
+
+
 
 ## References
 
