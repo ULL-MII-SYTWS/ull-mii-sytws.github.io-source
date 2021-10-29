@@ -253,6 +253,8 @@ Para ello vea este video:
 * [GraphQL fragments explained](https://blog.logrocket.com/graphql-fragments-explained/)
 * [GraphQL Resolvers: Best Practices](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55) by Mark Stuart
 * <https://astexplorer.net/>
+* [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE). A YouTube list of videos by Ben Awad
+  * [How GraphQL Resolvers Work](https://youtu.be/pI5CKxyrbiI)
 
 ## FootNotes
 
