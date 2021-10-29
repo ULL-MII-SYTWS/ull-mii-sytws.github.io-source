@@ -102,6 +102,7 @@ Write and publish a gh extension using preferably Node.JS. Choose your own idea.
 * It may be `gh-repo-delete [org/repo]` that deletes the specified remote repo or something similar. 
 * Another idea: `gh-repo-rename org/reponame newname` changes the name of the repo to `org/newname` . See <https://docs.github.com/en/rest/reference/repos#update-a-repository>
 * Rewriting an existing extension in Node.JS. For example [crguezl/gh-clone-org](https://github.com/crguezl/gh-clone-org)
+  * To compact all the dependencies you can use [vercel/ncc](https://github.com/vercel/ncc)
 
 ### Considerations about the  delivery 
 

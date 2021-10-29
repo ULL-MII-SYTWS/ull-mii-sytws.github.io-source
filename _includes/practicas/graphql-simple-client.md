@@ -443,7 +443,9 @@ stores the results of your GraphQL queries in a local, <a href="https://www.apol
 
 See [Pagination in Apollo Client](https://www.apollographql.com/docs/react/pagination/overview/)
 
-Now the handler for requests to the `/` route is simple:
+## Express Routes
+
+Now the handler for requests to the main  `/` route is simple:
 
 ```js
  app.get('/', function(req, res) {
@@ -456,8 +458,9 @@ Now the handler for requests to the `/` route is simple:
 
 We make the GraphQL query using the `query` method of the ApolloClient `client`
 that it is sent to the GitHub GraphQL API endpoint. It returns a Promise. 
-When the promise is fulfilled with get in `queryRes` the response of the GitHub server.
-We pass both our `res`ponse object and the `queryRes`object to our `handler` function.
+When the promise is fulfilled, we get in the variable `queryRes` the response of the GitHub server.
+We pass both our object `res`to elaborate the response and the `queryRes` 
+object to our `handler` function that renders the results of the query.
 
 ```js
 app.get('/next/:cursor', function(req, res) {
