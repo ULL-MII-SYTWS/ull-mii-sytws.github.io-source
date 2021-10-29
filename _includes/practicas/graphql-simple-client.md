@@ -536,6 +536,15 @@ app.get('/next/:cursor', function(req, res) {
 });
 ```
 
+After we the `app` to listen for requests 
+
+```js
+app.listen(7000, () => console.log(`App listening on port 7000!`))
+```
+
+we can visit the page with our browser:
+
+![]({{site.bseurl}}/assets/images/most-starred-github-cli-extensions.png)
 
 
 ## References
