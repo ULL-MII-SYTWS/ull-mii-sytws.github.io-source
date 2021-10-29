@@ -523,6 +523,10 @@ Both the array `repos` and `lastCursor` are passed to the view in  `views/pages/
 </html>%        
 ```
 
+A request to the route `/next/:cursor` is sent when the link button 
+to get the next extensions is clicked. The parameter `:cursor` is 
+filled with the value of the last cursor of the previous page.
+
 ```js
 app.get('/next/:cursor', function(req, res) {
   client
