@@ -15,7 +15,9 @@ const fetch = require('node-fetch');
 ```
 
 
-the `gql` function is a tagged template literal. [Tagged template literals](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals) are literals delimited with backticks (`) that call a function (called the tag function) with
+## gql
+
+The `gql` function is a tagged template literal. [Tagged template literals](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals) are literals delimited with backticks (`) that call a function (called the tag function) with
 
 1. an array of any text segments from the literal followed by 
 2. arguments with the values of any substitutions
