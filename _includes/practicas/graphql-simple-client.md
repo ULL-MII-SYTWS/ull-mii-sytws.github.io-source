@@ -552,6 +552,7 @@ we can visit the page with our browser:
 ## References
 
 * [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE). A YouTube list of videos by Ben Awad
+  * [How GraphQL Resolvers Work](https://youtu.be/pI5CKxyrbiI)
 
 * Apollo Client API Core
   *   [ApolloClient](https://www.apollographql.com/docs/react/api/core/ApolloClient/)
