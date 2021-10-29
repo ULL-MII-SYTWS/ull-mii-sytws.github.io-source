@@ -520,7 +520,7 @@ Both the array `repos` and `lastCursor` are passed to the view in  `views/pages/
 </footer>
 
 </body>
-</html>%        
+</html>       
 ```
 
 A request to the route `/next/:cursor` is sent when the link button 
