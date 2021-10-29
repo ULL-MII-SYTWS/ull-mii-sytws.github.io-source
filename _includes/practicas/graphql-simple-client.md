@@ -477,6 +477,52 @@ const handler = (res, queryRes) => {
 }
 ```
 
+The first call to `handler` gets from `queryRes` the array `repos` 
+corresponding to the first page of json objects describing the matching repositories.
+Then it computes `lastCursor`, the cursor of the last item in the incoming page.
+Both the array `repos` and `lastCursor` are passed to the view in  `views/pages/index.ejs`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Most Starred GitHub Cli Extensions</h1>
+   
+      <ol start="<%= offset %>">
+        <% repos.forEach(function(repo) { %>
+          <li>
+            <a href="<%= repo.node.url %>" target="_blank">
+                <strong><%= repo.node.nameWithOwner %></strong>
+            </a>
+            <%= repo.node.description %>
+          </li>
+        <% }); %>
+      </ol>
+ 
+        <a href="/next/<%= lastCursor %>">
+            <button type="button" class="btn btn-primary btn-sm float-right">Next extensions</button>
+        </a>
+ 
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>%        
+```
+
 ```js
 app.get('/next/:cursor', function(req, res) {
   client
