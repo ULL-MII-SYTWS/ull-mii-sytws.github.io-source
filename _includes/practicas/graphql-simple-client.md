@@ -407,6 +407,20 @@ const client = new ApolloClient({
 });
 ```
 
+[HttpLink](https://www.apollographql.com/docs/react/api/link/apollo-link-http/) is a terminating link that sends a GraphQL operation to a remote endpoint over HTTP. Apollo Client uses HttpLink by default when you provide the uri option to the [ApolloClient constructor]().
+
+The HttpLink constructor takes an options object that can include:
+
+- The `uri`  parameter is the URL of the GraphQL endpoint to send requests to. 
+The default value is `/graphql`.
+
+- The `fetch` parameter is A function to use instead of calling the Fetch API directly when sending HTTP requests to your GraphQL endpoint. The function must conform to the signature of `fetch`.
+
+- The `headers` parameter is an object representing headers to include in every HTTP request.
+
+By default, the Fetch API is used unless it isn't available in your runtime environment.
+
+
 
 ## Caching
 
@@ -423,8 +437,11 @@ stores the results of your GraphQL queries in a local, <a href="https://www.apol
 
 ## The constructor ApolloClient
 
-
+* [](https://www.apollographql.com/docs/react/api/core/ApolloClient/#the-apolloclient-constructor)
+ 
 ## Pagination
+
+See [Pagination in Apollo Client](https://www.apollographql.com/docs/react/pagination/overview/)
 
 ```js
  app.get('/', function(req, res) {
