@@ -407,7 +407,12 @@ const client = new ApolloClient({
 });
 ```
 
-[HttpLink](https://www.apollographql.com/docs/react/api/link/apollo-link-http/) is a terminating link that sends a GraphQL operation to a remote endpoint over HTTP. Apollo Client uses HttpLink by default when you provide the uri option to the [ApolloClient constructor]().
+[HttpLink](https://www.apollographql.com/docs/react/api/link/apollo-link-http/) is a 
+<a href="https://www.apollographql.com/docs/react/api/link/introduction/">**terminating link**</a>
+that sends a **GraphQL operation** to a remote endpoint over HTTP. 
+
+
+
 
 The HttpLink constructor takes an options object that can include:
 
@@ -417,8 +422,6 @@ The default value is `/graphql`.
 - The `fetch` parameter is A function to use instead of calling the Fetch API directly when sending HTTP requests to your GraphQL endpoint. The function must conform to the signature of `fetch`.
 
 - The `headers` parameter is an object representing headers to include in every HTTP request.
-
-By default, the Fetch API is used unless it isn't available in your runtime environment.
 
 
 
@@ -435,13 +438,12 @@ In GraphQL, though, there's no URL-like primitive that provides this globally un
 See the section [Caching in Apollo Client](https://www.apollographql.com/docs/react/caching/overview/) for  details on how the Apollo Client
 stores the results of your GraphQL queries in a local, <a href="https://www.apollographql.com/docs/react/caching/overview/#data-normalization">normalized</a>, in-memory cache. This enables Apollo Client to respond immediately to queries for already-cached data, without  sending a network request.
 
-## The constructor ApolloClient
 
-* [](https://www.apollographql.com/docs/react/api/core/ApolloClient/#the-apolloclient-constructor)
- 
 ## Pagination
 
 See [Pagination in Apollo Client](https://www.apollographql.com/docs/react/pagination/overview/)
+
+Now the handler for requests to the `/` route is simple:
 
 ```js
  app.get('/', function(req, res) {
@@ -450,7 +452,14 @@ See [Pagination in Apollo Client](https://www.apollographql.com/docs/react/pagin
     .then(queryRes => handler(res, queryRes))
     .catch(error => console.error(error))
 });
+```
 
+We make the GraphQL query using the `query` method of the ApolloClient `client`
+that it is sent to the GitHub GraphQL API endpoint. It returns a Promise. 
+When the promise is fulfilled with get in `queryRes` the response of the GitHub server.
+We pass both our `res`ponse object and the `queryRes`object to our `handler` function.
+
+```js
 app.get('/next/:cursor', function(req, res) {
   client
     .query({ query: subsequentQueries(req.params.cursor)})
