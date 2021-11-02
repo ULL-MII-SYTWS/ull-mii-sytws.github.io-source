@@ -66,12 +66,16 @@ You can run queries on real GitHub data using the GraphQL Explorer, an integrate
 
 * [GraphQL Simple Server]({{site.baseurl}}/practicas/graphql-simple-server)
 * [GraphQL Simple Client]({{site.baseurl}}/practicas/graphql-simple-client)
+* [GraphQL Subscriptions]({{site.baseurl}}/practicas/graphql-subscriptions)
   
 ## REFERENCIAS
 
 * [Repo de ejemplos crguezl/learning-graphql-with-gh](https://github.com/crguezl/learning-graphql-with-gh)
   - En la carpeta [simple-graphql-express-server-example/](https://github.com/crguezl/learning-graphql-with-gh/tree/main/simple-graphql-express-server-example) hay un ejemplo simple de servidor graphql
   - Youtube video [GraphQL Tutorial. Nos montamos una API con Nodejs y Express](https://youtu.be/atRadu-DKCE)
+* [Repo GitHub crguezl/graphql-chat-app](https://github.com/crguezl/graphql-chat-app) Chat with Subscriptions
+* [Tutorial](https://pusher.com/tutorials/chat-graphql-subscriptions/) *Building live chat app with GraphQL subscriptions*
+
 
 * [GraphQL Specifications](https://graphql.github.io/graphql-spec/)
 * [Hands-On Full-Stack Web Development with GraphQL and React](https://puntoq.ull.es/permalink/f/15vbjs7/ullsfx4100000007651096) Sebastian Grebe 2019. Libro. PuntoQ ULL
