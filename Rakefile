@@ -1,4 +1,4 @@
-desc "Publicar en GitHub los apuntes de PL"
+desc "Publicar en GitHub los apuntes"
 task :default => [ :pushhtml ] do # trabajamos en la rama curso2021
   sh "git ci -am '2020-2021' && git push -u origin main"
 end
