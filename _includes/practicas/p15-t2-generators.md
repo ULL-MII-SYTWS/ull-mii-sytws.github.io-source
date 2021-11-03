@@ -74,8 +74,6 @@ Surely you are going to have a look at the chapter [Iterables](https://javascrip
     };
     ```
 
-  Leave your solution to this exercise inside the folder corresponding to section `03-using-generators-for-iterables`
-
 ## See
 
 * [ULL-MII-SYTWS-2022/learning-generators](https://github.com/ULL-MII-SYTWS-2022/learning-generators) (Private)
