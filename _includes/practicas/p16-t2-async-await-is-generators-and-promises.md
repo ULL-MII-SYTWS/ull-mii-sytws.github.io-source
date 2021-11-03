@@ -144,7 +144,7 @@ So that, when we run it with the [generator above](#generator), we obtain:
 
 It sounds complicated, but takes only a few lines to implement.
 
-Heres is a [solution](solutions/p16-t2-async-await-is-generators-and-promises)
+Heres is a [solution]({{site.baseurl}}/practicas/async-await-is-generators-and-promises/solution)
 
 ## See
 

@@ -4,7 +4,7 @@ layout: default
 
 # Solution
 
-Solution to [p16-t2-async-await-is-generators-and-promises]({{site.baseurl}}/practicas/p16-t2-async-await-is-generators-and-promises)
+Solution to [async-await-is-generators-and-promises]({{site.baseurl}}/practicas/p16-t2-async-await-is-generators-and-promises)
 
 ```js
 function doTask1(arg) {

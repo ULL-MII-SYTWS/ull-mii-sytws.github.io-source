@@ -2,7 +2,7 @@
 layout: practica
 title: Async Await is generators and promises
 visible: true
-permalink: practicas/async-await-is-generators-and-promises
+permalink: practicas/async-await-is-generators-and-promises.html
 order: 16
 ---
 

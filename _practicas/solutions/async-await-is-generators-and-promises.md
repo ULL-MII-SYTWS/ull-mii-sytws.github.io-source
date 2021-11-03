@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /practicas/async-await-is-generators-and-promises/solution
 ---
 
 # Solution
