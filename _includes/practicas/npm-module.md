@@ -13,7 +13,7 @@ El módulo lo puede publicar como CommonJS o ES
 
 ## Ámbitos
 
-Deberá publicar el paquete en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX` y con nombre `addlogging`.
+Deberá publicar el paquete en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX` y con nombre `gh-...`.
 
 Para saber sobre ámbitos, vea la sección [Scopes and Registries]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#scopes-and-registries).
 
@@ -37,7 +37,7 @@ Repase la sección [Documenting the JavaScript Sources]({{site.baseurl}}/tema1-i
 
 ## Pruebas de Producción
 
-En el repo asignado `testing-addlogging-aluXXX` añada las pruebas necesarias
+En el repo creado `testing-gh-...` añada las pruebas necesarias
 para comprobar que la última versión del paquete publicado se instala y puede ser usado.
 Repase la sección [Testing in Production]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#testing-in-production)
 
@@ -47,20 +47,14 @@ Compruebe que las pruebas pasan en los tres O.S: Linux, MacOS y Windows.
 
 ## Superproject with Git Submodule
 
-Usando `git submodule` configure como super-project el repo asignado `super-addloggin-aluXXX` para que contenga
-a a los dos repos: en el que ha desarrollado el módulo npm `addlogging-aluXXX` y el repo para las pruebas en tiempo de producción `testing-addlogging-aluXXX`.
+Usando `git submodule` configure como super-project el repo asignado `super-gh-...` para que contenga
+a a los dos repos: en el que ha desarrollado el módulo npm `gh-...` y el repo para las pruebas en tiempo de producción `testing-gh-...`.
 
 Repase la sección [Making a Project with the two repos: git submodule]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#making-a-project-with-the-two-repos-git-submodule)
 
 ## Semantic Versioning
 
 Publique alguna mejora en la funcionalidad del módulo.  
-Por poner algunos ejemplos 
-* puede hacer que el ejecutable `add-logging` admita como especificación de patrón  una expresión regular, 
-* que admita mas de un fichero de entrada,  
-* que admita un directorio (en cuyo caso procesaría todos los ficheros `*.js` en el directorio),
-* etc.
-
 ¿Como debe en tales casos cambiar el nº de versión?
 
 Repase la sección [Semantic Versioning]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#semantic-versioning)
