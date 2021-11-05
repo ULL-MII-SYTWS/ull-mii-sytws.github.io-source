@@ -1,3 +1,9 @@
+## Práctica de Grupo individual
+
+Al aceptar la asignación se le pedirá el nombre del equipo. Deberá darle como nombre 
+`Nombre-Apellidos-aluXXX` (sin acentos ni caracteres especiales). Los equipos son de un sólo miembro.
+
+
 ## Objetivos
 
 Partiendo de la gh extension escrita en la práctica [gh-cli]({{site.baseurl}}/practicas/06p6-t1-gh-cli.html) construya un paquete npm y 
