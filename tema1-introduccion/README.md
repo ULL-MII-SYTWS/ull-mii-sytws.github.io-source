@@ -36,6 +36,8 @@
 
 ## [Módulos](modulos)
 
+* [Descripción de la práctica npm-module]({{site.baseurl}}/practicas/npm-module)
+
 ## [Functional Programming](functional)
 
 ## [Diseño, Principios](design)

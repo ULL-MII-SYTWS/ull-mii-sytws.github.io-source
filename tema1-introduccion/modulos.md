@@ -17,6 +17,7 @@
 * [Veáse la sección *GitHub Package Registry* de estos apuntes]({{site.baseurl}}/tema4-devops/control-version#github-package-registry)
 * [Using npm update and npm outdated to update dependencies](https://bytearcher.com/articles/using-npm-update-and-npm-outdated-to-update-dependencies/)
 
+* [Descripción de la práctica npm-module]({{site.baseurl}}/practicas/npm-module)
 
 ## Capítulo. Módulos en ECMA6
 
