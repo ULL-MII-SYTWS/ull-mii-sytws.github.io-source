@@ -13,7 +13,7 @@ El módulo lo puede publicar como CommonJS o ES
 
 ## Ámbitos
 
-Deberá publicar el paquete en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX` y con nombre `gh-...`.
+Deberá publicar el paquete en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX` y con nombre `gh-...`. Sustituya los tres puntos por el nombre de su extensión.
 
 Para saber sobre ámbitos, vea la sección [Scopes and Registries]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#scopes-and-registries).
 
@@ -37,18 +37,23 @@ Repase la sección [Documenting the JavaScript Sources]({{site.baseurl}}/tema1-i
 
 ## Pruebas de Producción
 
-En el repo creado `testing-gh-...` añada las pruebas necesarias
-para comprobar que la última versión del paquete publicado se instala y puede ser usado.
+Crea un repo `testing-gh-...`  dentro de la organización. 
+
+Añada las pruebas necesarias
+para comprobar que **la última versión del paquete publicado** se instala y puede ser usado.
+
 Repase la sección [Testing in Production]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#testing-in-production)
 
 Use [GitHub Actions]({{site.baseurl}}/tema1-introduccion/github-actions) para la ejecución de las pruebas
 
-Compruebe que las pruebas pasan en los tres O.S: Linux, MacOS y Windows.
+**Compruebe que las pruebas pasan en los tres O.S: Linux, MacOS y Windows**
 
 ## Superproject with Git Submodule
 
-Usando `git submodule` configure como super-project el repo asignado `super-gh-...` para que contenga
+Crea dentro de la organización un repo con nombre para que contenga
 a a los dos repos: en el que ha desarrollado el módulo npm `gh-...` y el repo para las pruebas en tiempo de producción `testing-gh-...`.
+
+Usando `git submodule` configura como super-project dicho repo. 
 
 Repase la sección [Making a Project with the two repos: git submodule]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module#making-a-project-with-the-two-repos-git-submodule)
 
