@@ -5,7 +5,7 @@ publíquelo en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX`.
 
 El módulo además de exportar las funciones que sean necesarias deberá proveer el ejecutable `gh-my-extension`
 
-Reescriba la extensión gh-cli que escribió en la práctica anterior para que haga uso del módulo creado en esta práctica.
+Reescriba la extensión gh-cli que escribió en la práctica anterior para que haga uso del módulo creado en esta práctica. Recuerde que el ejecutable queda en `node_modules/.bin`
 
 La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion/creating-and-publishing-npm-module). Léala con detenimiento antes de hacer esta práctica. 
 
