@@ -9,6 +9,8 @@ Al aceptar la asignación se le pedirá el nombre del equipo. Deberá darle como
 Partiendo de la gh extension escrita en la práctica [gh-cli]({{site.baseurl}}/practicas/06p6-t1-gh-cli.html) construya un paquete npm y 
 publíquelo en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX`.
 
+Si no lo hizo, intente reescribir los requests en GraphQL.
+
 El módulo además de exportar las funciones que sean necesarias deberá proveer el ejecutable `gh-my-extension`
 
 Reescriba la extensión gh-cli que escribió en la práctica anterior para que haga uso del módulo creado en esta práctica. Recuerde que el ejecutable queda en `node_modules/.bin`
