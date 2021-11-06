@@ -1,6 +1,3 @@
----
-layout: single
----
 
 # A quick demo showing how to use GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries.
 
