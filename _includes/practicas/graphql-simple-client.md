@@ -345,6 +345,10 @@ After what we have explained, we can make an attempt trying this query in the [e
 {
   search(query: "topic:gh-extension sort:stars", type: REPOSITORY, first: 2 ) {
     repositoryCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
     edges {
       cursor
       node {
@@ -369,7 +373,11 @@ that give us the number of repositories corresponding to gh-extensions.
 {
   "data": {
     "search": {
-      "repositoryCount": 101,
+      "repositoryCount": 111,
+      "pageInfo": {
+        "hasNextPage": true,
+        "endCursor": "Y3Vyc29yOjI="
+      },
       "edges": [
         {
           "cursor": "Y3Vyc29yOjE=",
@@ -389,7 +397,7 @@ that give us the number of repositories corresponding to gh-extensions.
             "description": "full terminal animations",
             "url": "https://github.com/vilmibm/gh-screensaver",
             "stargazers": {
-              "totalCount": 61
+              "totalCount": 63
             }
           }
         }
@@ -399,7 +407,7 @@ that give us the number of repositories corresponding to gh-extensions.
 }
 ```
 
-Now we can use the cursor of the last element to make the next request.
+Now we can use the `endCursor` to make the next request.
 
 ## Building the Apollo Client
 
@@ -420,14 +428,12 @@ const client = new ApolloClient({
 that sends a **GraphQL operation** to a remote endpoint over HTTP. 
 
 
-
-
 The HttpLink constructor takes an options object that can include:
 
 - The `uri`  parameter is the URL of the GraphQL endpoint to send requests to. 
 The default value is `/graphql`.
 
-- The `fetch` parameter is A function to use instead of calling the Fetch API directly when sending HTTP requests to your GraphQL endpoint. The function must conform to the signature of `fetch`.
+- The `fetch` parameter is a function to use instead of calling the Fetch API directly when sending HTTP requests to your GraphQL endpoint. The function must conform to the signature of `fetch`.
 
 - The `headers` parameter is an object representing headers to include in every HTTP request.
 
