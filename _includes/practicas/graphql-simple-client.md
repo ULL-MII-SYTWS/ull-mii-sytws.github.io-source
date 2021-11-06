@@ -490,7 +490,7 @@ const handler = (res, r) => {
 
 ```
 
-The first call to `handler` gets from `queryRes` the array `repos` 
+The first call to `handler` gets the array `repos` 
 corresponding to the first page of json objects describing the matching repositories.
 Then it computes `lastCursor`, the cursor of the last item in the incoming page.
 Both the array `repos` and `lastCursor` are passed to the view in  `views/pages/index.ejs`:
@@ -549,7 +549,25 @@ app.get('/next/:cursor', function(req, res) {
 });
 ```
 
-After we the `app` to listen for requests 
+where `subsequentQueries` only differs from the first query in the `after: $cursor` argument:
+
+```gql
+{
+  search(query: "topic:gh-extension sort:stars", type: REPOSITORY, first: 2, after: $cursor) {
+    repositoryCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      ...
+    }
+  }
+}
+```
+
+
+After we set the `app` to listen for requests 
 
 ```js
 app.listen(7000, () => console.log(`App listening on port 7000!`))
