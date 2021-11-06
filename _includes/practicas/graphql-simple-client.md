@@ -1,3 +1,9 @@
+## Práctica de Grupo individual
+
+Al aceptar la asignación se le pedirá el nombre del equipo. Deberá darle como nombre 
+`Nombre-Apellidos-aluXXX` (sin acentos ni caracteres especiales). Los equipos son de un sólo miembro.
+
+
 ## Goal
 
 Write an express web app that shows the published GH cli extensions sorted by stars.
