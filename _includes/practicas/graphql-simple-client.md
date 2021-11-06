@@ -478,17 +478,16 @@ object to our `handler` function that renders the results of the query:
 
 
 ```js
-const handler = (res, queryRes) => {
-  const repos = queryRes.data.search.edges;
-  const repoCount = queryRes.data.search.repositoryCount
-  if (repos.length) {
-    let lastCursor = repos[repos.length-1].cursor;
-    res.render('pages/index',{ repos: repos, lastCursor: lastCursor });
-  } else {
-      console.log('No more repos found!');
-      console.log(`Array came empty repoCount=${repoCount}`)
-  }
+const handler = (res, r) => {
+  const result = r.data.search;
+  const repos = result.edges;
+  const repoCount = result.repositoryCount
+  if (result.pageInfo.hasNextPage) {
+    let lastCursor = result.pageInfo.endCursor; 
+    res.render('pages/index', { repos: repos, lastCursor: lastCursor});
+  } 
 }
+
 ```
 
 The first call to `handler` gets from `queryRes` the array `repos` 
