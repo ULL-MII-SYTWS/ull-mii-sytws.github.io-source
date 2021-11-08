@@ -10,6 +10,12 @@
 * [Core Concpets](https://www.howtographql.com/basics/2-core-concepts/)
 * [Big Picture (Architecture)](https://www.howtographql.com/basics/3-big-picture/)
 
+#### Lab Exercise
+
+Reproduce the steps of this introductory video:
+* [Fetch Data From Github Using GraphQL API byAshutosh Hathidara](https://youtu.be/B9PwBp_V0WA)
+
+
 ### Advanced Tutorial (Skip the first time and come back again after the next tutorials)
 
 * [Advanced Tutorial - Clients](https://www.howtographql.com/advanced/0-clients/)
