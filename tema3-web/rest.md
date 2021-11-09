@@ -96,6 +96,45 @@ Un API Gateway es la pieza encargada de unificar la publicación de APIs para qu
    3. [Google APIs Client Library for JavaScript](https://github.com/google/google-api-javascript-client)
    4. [Google API Client Libraries JavaScript. Tutorial](https://developers.google.com/api-client-library/javascript/start/start-js)
 
+## Jekyll y Rest
+
+* [Jekyll - how to build a REST API](https://gist.github.com/MichaelCurrin/f8d908596276bdbb2044f04c352cb7c7)
+
+This is useful if you want to make your data available for another service or for others to consume (like GitHub, Twitter and Facebook make their data available on APIs). Or perhaps you have JavaScript single-page application that reads from your API backend to serve the app or build a search index.
+
+
+## Example
+
+Given data in page frontmatter or a YAML data file:
+
+```yaml
+---
+my_data:
+  - a: 1
+    b: 2
+  - a: 100
+    b: 200
+---
+```
+
+Or CSV data as:
+
+```
+a,  b
+1,  2
+100,200
+```
+
+The rendered JSON page will look like this:
+
+- `localhost:4000/foo.json`
+    ```json
+    [
+      { "a": "1", "b": "2" },
+      { "a": "100", "b": "200" }
+    ]
+    ```
+    
 ## Prácticas
 
 * [Descripción de la práctica p10-t3-commanding-databases](practicas/p10-t3-commanding-databases)
