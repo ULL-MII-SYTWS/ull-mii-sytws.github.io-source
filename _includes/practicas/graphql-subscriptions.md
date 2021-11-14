@@ -70,3 +70,5 @@ Now when we visit `localhost:4000` and subscribe we can see the counters moving:
 * [Repo GitHub crguezl/graphql-chat-app](https://github.com/crguezl/graphql-chat-app) Chat with Subscriptions
 * [Tutorial](https://pusher.com/tutorials/chat-graphql-subscriptions/) *Building live chat app with GraphQL subscriptions*
 * [Realtime GraphQL Subscriptions](https://www.howtographql.com/graphql-js/7-subscriptions/) from GRAPHQL-NODE TUTORIAL. Written by Maira Bello: Build your own GraphQL server
+
+{% include video provider="youtube" id="bn8qsi8jVew" %}
