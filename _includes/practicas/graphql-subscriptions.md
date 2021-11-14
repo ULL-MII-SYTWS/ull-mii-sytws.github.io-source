@@ -8,6 +8,14 @@ Use the corresponding repo [GitHub crguezl/graphql-chat-app](https://github.com/
 
 ## Hello Subscriptions
 
+GraphQL subscriptions enable you to subscribe to events under a source stream and receive notifications in real time via a response stream when a selected event executes. 
+
+Once a GraphQL subscription is executed, a persistent function is created on the server that maps an underlying source stream to a returned response stream.
+
+GraphQL subscriptions differ from queries in the way the data is delivered to the client. 
+
+Queries immediately returns a single response, while subscriptions return a result every time data is published on a topic the client has subscribed.
+
 
 ```js 
 import { GraphQLServer, PubSub } from 'graphql-yoga'
@@ -52,7 +60,10 @@ const server = new GraphQLServer({ typeDefs, resolvers, context: { pubsub } })
 server.start(() => console.log('Server is running on localhost:4000'))
 ```
 
+Now when we visit `localhost:4000` and subscribe we can see the counters moving:
+
 ![]({{ site.baseurl }}/assets/images/graphql-hello-subscriptions.png)
+
 
 ## References
 
