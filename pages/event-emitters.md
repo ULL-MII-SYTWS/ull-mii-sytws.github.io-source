@@ -1,7 +1,7 @@
 ---
 ---
 
-### The Observer Pattern
+## The Observer Pattern
 
 > The **observer pattern** is a software design pattern in which an object, called the **subject**, maintains a list of its dependents, called **observers**, and notifies them automatically of any state changes, usually by calling one of their methods.
 
@@ -11,13 +11,13 @@ See also
 
 * [Learning JavaScript Design Patterns. A book by Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript)
 
-### La Clase EventEmitter
+## La Clase EventEmitter
 
 * Algunos métodos de los objetos de la clase [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter):
 
 ![](/assets/images/event-emitter-methods.png)
 
-#### on
+### on
 
 ```js
 [~/.../p4-t2-networking/networking-with-sockets-chapter-3-crguezl(master)]$ node
@@ -50,7 +50,7 @@ an event occurred!
 yet another event occurred!
 true
 ```
-#### once
+### once
 
 ```js
 > myEmitter.once('eventOnce', () => console.log('eventOnce once fired')); 
@@ -70,7 +70,7 @@ false
 > myEmitter.emit('eventOnce');
 false
 ```
-#### Argumentos
+## Argumentos
 
 ```js
 > myEmitter.on('status', (code, msg)=> console.log(`Got ${code} and ${msg}`));
@@ -82,11 +82,11 @@ EventEmitter {
   _eventsCount: 2,
   _maxListeners: undefined
 }
-> myEmitter.emit('status', 200, 'ok');
+> myEmitter.emit('status', 200, 'ok'); // Synchronously calls each of the listeners registered for the event named 'status', in the order they were registered, passing the supplied arguments to each
 Got 200 and ok
 ```
 
-#### off
+## off
 
 ```js
 > myEmitter.off('eventOne', c1);
@@ -103,7 +103,7 @@ yet another event occurred!
 true
 ```
 
-#### listenerCount and rawListeners
+## listenerCount and rawListeners
 
 ```js
 > myEmitter.listenerCount('eventOne')
@@ -112,7 +112,7 @@ true
 [ [Function: c2] ]
 ```
 
-### Ejercicio
+# Ejercicio
 
 Vamos ahora a escribir una clase `WithTime` cuyos objetos disponen de un método `execute` que permite ejecutar 
 una función asíncrona `asyncfun` que acepta como último argumento una callback `cb`. 
