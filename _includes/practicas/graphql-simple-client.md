@@ -119,7 +119,7 @@ Let us go to the GitHub docs for search syntax. We need to read:
 
 ### Exercise
 
-**[try different searches](https://github.com/search/advanced)**. 
+**[Try different searches](https://github.com/search/advanced)** at <https://github.com/search/advanced>
 
 * Here is a [Solution]({{ site.baseurl }}/pages/solution-to-query-search-for-topic-in-github.md)
 
