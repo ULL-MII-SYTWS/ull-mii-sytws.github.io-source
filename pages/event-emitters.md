@@ -65,7 +65,7 @@ EventEmitter {
 > myEmitter.emit('eventOnce');
 eventOnce once fired
 true
-> myEmitter.emit('eventOnce');
+> myEmitter.emit('eventOnce'); // Returns true if the event had listeners, false otherwise.
 false
 > myEmitter.emit('eventOnce');
 false
