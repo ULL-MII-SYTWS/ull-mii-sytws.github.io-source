@@ -119,7 +119,7 @@ true
 
 # Ejercicio
 
-Vamos ahora a escribir una clase `WithTime` cuyos objetos disponen de un método `execute` con una firma como esta:
+Escriba una clase `WithTime` que extienda la clase [EventEmitter](https://nodejs.org/api/events.html#class-eventemitter) y cuyos objetos disponen de un método `execute` con una firma como esta:
 
 
 ```js 
