@@ -150,7 +150,7 @@ There is no exclamation `!` at the value returned in the declaration of the `set
 
 ![]({{site.baseurl}}/assets/images/graphql-stages.png)
 
-[Every GraphQL query goes through three phases](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55):
+[Every GraphQL query goes through these phases](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55):
 
 1. Queries are parsed into an abstract syntax tree (or AST). See <https://astexplorer.net/> 
 2. Validated: Checks for  query  correctness and check if the fields exist. 
