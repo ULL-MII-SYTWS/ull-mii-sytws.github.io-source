@@ -148,6 +148,7 @@ Observe how `setMarkDown` and `addStudent` sometimes return `null` since it is a
 
 There is no exclamation `!` at the value returned in the declaration of the `setMarkDown` mutation.
 
+BLAH!!!
 ![]({{site.baseurl}}/assets/images/graphql-stages.png)
 
 [Every GraphQL query goes through these phases](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55):
@@ -172,6 +173,9 @@ In this example, the root Query type is the entry point to the AST and contains 
 The AST is traversed breadth-first, meaning `user` must be resolved before its children `name` and `email` are visited. 
 
 If the user resolver is asynchronous, the user branch delays until its resolved. Once all leaf nodes, `name`, `email`, `title`, are resolved, execution is complete.
+
+![]({{site.baseurl}}/assets/images/graphql-schema-vs-query.jpeg)
+
 
 Typically, fields are executed in the order they appear in the query, but it’s not safe to assume that. Because fields can be executed in parallel, they are assumed to be atomic, idempotent, and side-effect free.
 
@@ -246,7 +250,7 @@ Para ello vea este video:
 * See inside the repo [crguezl/learning-graphql-with-gh](https://github.com/crguezl/learning-graphql-with-gh/tree/main/simple-graphql-express-server-example) the folder `simple-graphql-express-server-example/` with the example used in this description
 
 * Youtube video [GraphQL Tutorial. Nos montamos una API con Nodejs y Express](https://youtu.be/atRadu-DKCE) 
-
+* [Life of a GraphQL Query — Validation](https://medium.com/@cjoudrey/life-of-a-graphql-query-validation-18a8fb52f189) Christian Joudrey
 * [GraphQL HTTP Server Middleware: GitHub repo graphql/express-graphql](https://github.com/graphql/express-graphql)
 * [GRaphQL Glossary](https://www.apollographql.com/docs/resources/graphql-glossary/)
 
