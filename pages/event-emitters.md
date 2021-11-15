@@ -108,6 +108,8 @@ true
 
 ## listenerCount and rawListeners
 
+`emitter.rawListeners(eventName)` returns a copy of the array of listeners for the event named `eventName`, including any wrappers (such as those created by `.once()`).
+
 ```js
 > myEmitter.listenerCount('eventOne')
 1
@@ -117,18 +119,28 @@ true
 
 # Ejercicio
 
-Vamos ahora a escribir una clase `WithTime` cuyos objetos disponen de un método `execute` que permite ejecutar 
-una función asíncrona `asyncfun` que acepta como último argumento una callback `cb`. 
+Vamos ahora a escribir una clase `WithTime` cuyos objetos disponen de un método `execute` con una firma como esta:
 
-Como es habitual, se supone que la callback es llamada  `cb(err, data)` por `asyncfun` cuando esta termina su tarea asíncrona. 
 
-El primer parámetro `err` indica el error si lo hubo y el segundo `data` con el resultado de la operación asíncrona:  `cb(err, data)`.
+```js 
+const WithTime = require("./with-time.js");
+const withTime = new WithTime();
+withTime.execute(readFile, 'https://jsonplaceholder.typicode.com/posts/3');
+```
+
+Esto es, `execute` recibe como primer argumento una función asíncrona `asyncfun` cuyo último argumento es una callback  
+
+```js
+asyncfun(..., cb)
+```
+
+Como es el convenio habitual en JS, se supone que la callback será llamada  `cb(err, data)` por `asyncfun` cuando esta termina su tarea asíncrona. El primer parámetro `err` indica el error si lo hubo y el segundo `data` con el resultado de la operación asíncrona:  `cb(err, data)`.
 
 Se pide que:
 
 1. La función `execute` emita eventos `begin` y `end`  señalando el comienzo y final de la ejecución de `asyncfun`
 2. Deberá así mismo emitir un evento `result` con el resultado de la operación asíncrona.
-3. Deberá emitir un evento `time` indicando el tiempo que ha tomado la ejecución en nanosegundos (use [`process.hrtime.bigint`](https://nodejs.org/api/process.html#process_process_hrtime_bigint) para ello)
+3. Deberá emitir un evento `time` indicando el tiempo que ha tomado la ejecución en nanosegundos (puede usar [`process.hrtime.bigint`](https://nodejs.org/api/process.html#process_process_hrtime_bigint) para ello)
 
 Por ejemplo, un código como:
 
