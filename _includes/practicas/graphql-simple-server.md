@@ -148,7 +148,6 @@ Observe how `setMarkDown` and `addStudent` sometimes return `null` since it is a
 
 There is no exclamation `!` at the value returned in the declaration of the `setMarkDown` mutation.
 
-BLAH!!!
 ![]({{site.baseurl}}/assets/images/graphql-stages.png)
 
 [Every GraphQL query goes through these phases](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55):
@@ -198,7 +197,9 @@ export default {
 }
 ```
 
-This is the reason why there wass no need to implement the resolvers for these fields.
+This is the reason why there was no need to implement the resolvers for these fields.
+
+![]({{site.baseurl}}/assets/images/graphql-resolver-arguments.png)
 
 ## Starting the express-graphql middleware
 
