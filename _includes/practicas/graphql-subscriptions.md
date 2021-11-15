@@ -53,10 +53,30 @@ const resolvers = {
     }
   },
 }
+```
 
+Now, let's create a simple **PubSub** instance - it is a simple pubsub implementation, based on [EventEmitter](). Alternative [EventEmitter]({{site.baseurl}}/pages/event-emitters) implementations can be passed by an options object to the PubSub constructor.
+
+```js
 const pubsub = new PubSub()
-const server = new GraphQLServer({ typeDefs, resolvers, context: { pubsub } })
+```
 
+Before to continue with the rest of the code let us review the 
+
+* [EventEmitter]({{site.baseurl}}/pages/event-emitters) class 
+
+```js
+const server = new GraphQLServer({ typeDefs, resolvers, context: { pubsub } })
+``` 
+[pubsub](https://www.apollographql.com/docs/graphql-subscriptions/setup/) is a class that exposes a simple `publish` and `subscribe` API.
+
+It sits between your application's logic and the GraphQL subscriptions engine - it receives a *publish* command from your app logic and pushes it to your GraphQL execution engine.
+
+graphql-subscriptions exposes a default PubSub class you can use for a simple usage of data publication.
+
+The PubSub implementation also includes a mechanism that **converts a specific PubSub event into a stream of AsyncIterator**, which you can use with *graphql subscriptions resolver*.
+
+```js  
 server.start(() => console.log('Server is running on localhost:4000'))
 ```
 
@@ -69,6 +89,7 @@ Now when we visit `localhost:4000` and subscribe we can see the counters moving:
 
 * [Repo GitHub crguezl/graphql-chat-app](https://github.com/crguezl/graphql-chat-app) Chat with Subscriptions
 * [Tutorial](https://pusher.com/tutorials/chat-graphql-subscriptions/) *Building live chat app with GraphQL subscriptions*
+* [apollographql/graphql-subscriptions)](https://github.com/apollographql/graphql-subscriptions)
 * [Realtime GraphQL Subscriptions](https://www.howtographql.com/graphql-js/7-subscriptions/) from GRAPHQL-NODE TUTORIAL. Written by Maira Bello: Build your own GraphQL server
 
 {% include video provider="youtube" id="bn8qsi8jVew" %}

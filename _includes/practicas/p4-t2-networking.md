@@ -1,4 +1,4 @@
-# Práctica p4-t2-networking
+# Práctica Networking
 
 * Lea el Capítulo 3 "Networking with Sockets" de [Node.js 8 the Right Way]({{site.bull_permanente}}/15vbjs7/ullsfx4340000000247287) y resuelva los problemas en la secciónes *Testability* y *Robustness*
 
@@ -24,7 +24,6 @@
 * [Añada documentación](#documentaci%C3%B3n)
 * Añada Integración Contínua usando Travis (Haga un badge en su README.md) o bien use [GitHub Actions]({{site.baseurl}}/tema4-devops/github-actions)
 * Use Jekyll y GitHub Pages para desplegar su informe de práctica
-* Añada un `gulpfile.js` para facilitar la ejecución de las tareas
 
 ## Recursos
 
@@ -68,7 +67,6 @@
 * [docco](http://jashkenas.github.io/docco/)
 
 ### Pruebas
-
 
 * [Apuntes: Sección pruebas]({{site.baseurl}}/tema1-introduccion/pruebas)
 * [Mocha](https://mochajs.org/)
