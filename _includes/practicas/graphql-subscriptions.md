@@ -61,6 +61,8 @@ Now, let's create a simple **PubSub** instance - it is a simple pubsub implement
 const pubsub = new PubSub()
 ```
 
+{% include graphql-subscriptions-technologies.md %}
+
 Before to continue with the rest of the code let us review the 
 
 * [EventEmitter]({{site.baseurl}}/pages/event-emitters) class 
