@@ -203,38 +203,7 @@ Function readFile error:
 'Buf! TypeError: Only absolute URLs are supported'
 ```
 
-Esta es una Solución
-
-```
-[~/.../networking-with-sockets-chapter-3-crguezl/event-emitter-tutorial(master)]$ cat with-time.js 
-```
-
-```js
-const { EventEmitter } = require("events");
-
-class WithTime extends EventEmitter {
-
-  // This function executes asyncFunc(...args)
-  execute(asyncFunc, ...args) {
-    let label = asyncFunc.name;
-
-    this.emit('begin', label);
-    let old = process.hrtime.bigint();
-    asyncFunc(...args, (err, data) => {
-      if (err) { 
-        this.emit('error', err); 
-      } else {
-        this.emit('result', label, data);
-        this.emit('time', label, process.hrtime.bigint() - old);
-        this.emit('end', label);
-      }
-    });
-  }
-
-}
-
-module.exports = WithTime;
-```
+* [Esta es una Solución]({{site.baseurl}}/pages/solution-to-event-emitters-exercise)
 
 Si quieres prácticar mas con los event emitters puedes realizar **opcionalmente** la práctica 
 [networking]({{site.baseurl}}/tema2-async/practicas/networking/). 
