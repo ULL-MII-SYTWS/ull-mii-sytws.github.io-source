@@ -208,6 +208,6 @@ class WithTime extends EventEmitter {
 module.exports = WithTime;
 ```
 
-Si quieres prácticar mas con los event emitters puedes realizar opcionalmente la práctica 
+Si quieres prácticar mas con los event emitters puedes realizar **opcionalmente** la práctica 
 [networking]({{site.baseurl}}/tema2-async/practicas/networking/). 
 
