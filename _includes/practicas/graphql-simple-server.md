@@ -148,6 +148,8 @@ Observe how `setMarkDown` and `addStudent` sometimes return `null` since it is a
 
 There is no exclamation `!` at the value returned in the declaration of the `setMarkDown` mutation.
 
+![]({{site.baseurl}}/assets/images/graphql-stages.png)
+
 [Every GraphQL query goes through three phases](https://medium.com/paypal-tech/graphql-resolvers-best-practices-cd36fdbcef55):
 
 1. Queries are parsed into an abstract syntax tree (or AST). See <https://astexplorer.net/> 
