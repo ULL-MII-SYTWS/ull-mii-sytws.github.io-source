@@ -117,7 +117,10 @@ Let us go to the GitHub docs for search syntax. We need to read:
 1. [Understanding the search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)
 2. [Sorting Search Results](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/sorting-search-results)
 
-try different searches
+try different searches. Here is a solution:
+
+**query:** [topic:gh-extension sort:stars](https://github.com/search?q=topic%3Agh-extension+sort%3Astars)
+
 
 ## The SearchResultItemConnection Type
 
