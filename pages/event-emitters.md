@@ -158,6 +158,7 @@ withTime.on('begin', (label) => console.log('About to execute '+label));
 withTime.on('end', (label) => console.log('Done with execution of '+label));
 
 withTime.on('result', (label, data) => console.log('Function '+label+' produced:\n'+ins(data)));
+withTime.on('error', (label, error) => console.log('Function '+label+' error:\n'+ins(error)));
 
 withTime.on('time', (label, t) => console.log('Function '+label+' took '+t+' nanoseconds'));
 
@@ -167,10 +168,10 @@ const readFile = (url, cb) => {
     .then(function(data) {
       cb(null, data);
     })
-    .catch(e => console.log(`Buf!\n${e}`));
+    .catch(e => cb(`Buf! ${e}`));
 }
 
-withTime.execute(readFile, 'https://jsonplaceholder.typicode.com/posts/3');
+withTime.execute(readFile, process.argv[2] || 'https://jsonplaceholder.typicode.com/posts/3');
 ```
 
 Debería producir una salida como está:
@@ -189,6 +190,15 @@ Function readFile produced:
 }
 Function readFile took 331675217 nanoseconds
 Done with execution of readFile
+```
+
+y si se producen errores una salida como esta:
+
+```
+➜  event-emitter-tutorial git:(master) ✗ node client.js no-existe
+About to execute readFile
+Function readFile error:
+'Buf! TypeError: Only absolute URLs are supported'
 ```
 
 Esta es una Solución
