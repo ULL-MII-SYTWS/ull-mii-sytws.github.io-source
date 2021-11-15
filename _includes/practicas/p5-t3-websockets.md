@@ -19,7 +19,7 @@ Estudie también y desarrolle el ejemplo explicado en:
       Session affinity, sometimes referred to as sticky sessions, is a platform feature that associates all HTTP requests coming from an end-user with a single application instance (web dyno).
     * Repo [ULL-ESIT-DSI-1819/websocket-ws-heroku](https://github.com/ULL-ESIT-DSI-1819/websocket-ws-heroku)
 
-## Reto 1 para la práctica p5-t3-websockets
+## Reto 1 para la práctica websockets
 
 * Add *{user} is typing ...* functionality.
 
@@ -49,7 +49,7 @@ target.addEventListener(tipo, listener);
 * `listener`: normalmente la function que será llamada cuando ocurre el evento `tipo` sobre el elemento del DOM representado por `target`. En este caso el código de `listener` deberá emitir un mensaje indicando que el usuario esta tecleando.
 * El server debería recoger el mensaje y hacer un broadcast del mismo al resto de clientes conectados
 
-## Reto 2 para la práctica p5-t3-websockets
+## Reto 2 para la práctica websockets
 
 * Añáda rooms a su chat. Establezca dos rooms llamadas `practicas` y `ocio`
 
