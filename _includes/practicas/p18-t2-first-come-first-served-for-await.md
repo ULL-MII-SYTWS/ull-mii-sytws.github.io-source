@@ -1,4 +1,4 @@
-# Descripción de la Práctica p18-t2-first-come-first-served-for-await.md
+# Descripción de la Práctica first-come-first-served-for-await
 
 
 If you use for-await-of on an array of promises, you iterate over it in the specified order, doesn't matter if the next promise in the given array is resolved before the previous one:
@@ -150,7 +150,8 @@ allsettled: 331.935ms
 ## See
 
 * Here is a [solution](https://github.com/crguezl/frstcmfrstsvd). Don't look at it unless you are blocked
-* [ULL-MII-SYTWS-2022/learning-async-iteration-and-generators](https://github.com/ULL-MII-SYTWS-2022/learning-async-iteration-and-generators) (Private)
+* [Stackoverflow question: Performance of Promise.all and for-await-of](https://stackoverflow.com/questions/51916636/performance-of-promise-all-and-for-await-of)
+* [ULL-MII-SYTWS-2022/learning-async-iteration-and-generators](https://github.com/ULL-MII-SYTWS-2022/learning-async-iteration-and-generators) (Private repo)
   * campus-virtual/2021/learning/asyncjs-learning/learning-async-iteration-and-generators
 * Chapter [Async iteration and generators](https://javascript.info/async-iterators-generators)
 * Chapter [Iterables](https://javascript.info/iterable)
