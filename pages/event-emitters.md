@@ -138,8 +138,9 @@ Como es el convenio habitual en JS, se supone que la callback será llamada  `cb
 
 Se pide que:
 
-1. La función `execute` emita eventos `begin` y `end`  señalando el comienzo y final de la ejecución de `asyncfun`
-2. Deberá así mismo emitir un evento `result` con el resultado de la operación asíncrona.
+1. La llamada `withTime.execute(asyncFun, ...args)` emita eventos `begin` y `end`  señalando 
+   el comienzo y final de la ejecución de `asyncfun`
+2. Deberá así mismo emitir un evento `result` con el resultado de la operación asíncrona al final de la misma.
 3. Deberá emitir un evento `time` indicando el tiempo que ha tomado la ejecución en nanosegundos (puede usar [`process.hrtime.bigint`](https://nodejs.org/api/process.html#process_process_hrtime_bigint) para ello)
 
 Por ejemplo, un código como:
