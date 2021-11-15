@@ -1,4 +1,5 @@
 ---
+title: Events
 ---
 
 ## The Observer Pattern
