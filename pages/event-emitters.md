@@ -208,3 +208,6 @@ Function readFile error:
 Si quieres prácticar mas con los event emitters puedes realizar **opcionalmente** la práctica 
 [networking]({{site.baseurl}}/tema2-async/practicas/networking/). 
 
+## References
+
+* [How to code your own event emitter in Node.js: a step-by-step guide](https://www.freecodecamp.org/news/how-to-code-your-own-event-emitter-in-node-js-a-step-by-step-guide-e13b7e7908e1/)
