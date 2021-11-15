@@ -125,10 +125,12 @@ Escriba una clase `WithTime` que extienda la clase [EventEmitter](https://nodejs
 ```js 
 const WithTime = require("./with-time.js");
 const withTime = new WithTime();
-withTime.execute(readFile, 'https://jsonplaceholder.typicode.com/posts/3');
+withTime.execute(asyncFun, ...args);
 ```
 
-Esto es, `execute` recibe como primer argumento una función asíncrona `asyncfun` cuyo último argumento es una callback  
+Esto es, `execute` recibe como primer argumento una función asíncrona `asyncfun` y emite distintos tipos de eventos `begin`, `end`, `error`, etc, indicando los cambios de estado en la ejecución de  `asyncFun`. 
+
+La firma de `asyncFun` es
 
 ```js
 asyncfun(..., cb)
