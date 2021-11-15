@@ -1,4 +1,4 @@
-# {{site.temas[2].title}}
+# Asynchronous Programming in JS
 
 ## [Event Loop, Race Conditions y Web Workers](event-loop/index.html)
 
