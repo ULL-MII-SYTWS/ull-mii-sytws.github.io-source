@@ -86,7 +86,9 @@ EventEmitter {
 Got 200 and ok
 ```
 
-## off
+## off / emitter.removeListener(eventName, listener)
+
+Removes the specified `listener` from the listener array for the event named `eventName`.
 
 ```js
 > myEmitter.off('eventOne', c1);
