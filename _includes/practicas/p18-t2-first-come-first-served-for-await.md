@@ -1,4 +1,4 @@
-# Descripción de la Práctica first-come-first-served-for-await
+# Descripción de la Práctica *Async Generators: First Come First Served For Await*
 
 
 If you use for-await-of on an array of promises, you iterate over it in the specified order, doesn't matter if the next promise in the given array is resolved before the previous one:
