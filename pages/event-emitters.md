@@ -71,7 +71,7 @@ false
 > myEmitter.emit('eventOnce');
 false
 ```
-## Argumentos
+### Argumentos
 
 ```js
 > myEmitter.on('status', (code, msg)=> console.log(`Got ${code} and ${msg}`));
@@ -87,7 +87,7 @@ EventEmitter {
 Got 200 and ok
 ```
 
-## off / emitter.removeListener(eventName, listener)
+### off / emitter.removeListener(eventName, listener)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -106,7 +106,7 @@ yet another event occurred!
 true
 ```
 
-## listenerCount and rawListeners
+### listenerCount and rawListeners
 
 `emitter.rawListeners(eventName)` returns a copy of the array of listeners for the event named `eventName`, including any wrappers (such as those created by `.once()`).
 
@@ -117,7 +117,7 @@ true
 [ [Function: c2] ]
 ```
 
-# Ejercicio
+## Ejercicio
 
 Escriba una clase `WithTime` que extienda la clase [EventEmitter](https://nodejs.org/api/events.html#class-eventemitter) y cuyos objetos disponen de un método `(new WithTime()).execute` con una firma como esta:
 
