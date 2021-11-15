@@ -262,6 +262,8 @@ Para ello vea este video:
 * <https://astexplorer.net/>
 * [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE). A YouTube list of videos by Ben Awad
   * [How GraphQL Resolvers Work](https://youtu.be/pI5CKxyrbiI)
+* [Advanced GraphQL Patterns: Embrace the AST!](https://blog.smartive.ch/advanced-graphql-patterns-embrace-the-ast-4929647c5bd3) Overcoming the Fear of Apollo Server Internals. Nick Redmark
+
 
 ## FootNotes
 
