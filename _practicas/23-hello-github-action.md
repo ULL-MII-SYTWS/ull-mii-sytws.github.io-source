@@ -1,11 +1,15 @@
 ---
 title: "GitHub Action Hello World"
-published: true
 rubrica:
   - La acción está publicada y se usa correctamente
   - Las GitHub pages funcionan correctamente en el super repo
   - Se ha instalado Jekyll y puede ver las páginas generadas en local
   - "Opcional: En la práctica anterior se ha extendido la CI para Mac OS y Windows"
+layout: practica
+permalink: /practicas/github-action
+visible: true
+video: ["a3Ycya8S_0A", "qX88QdrlDqg", "FOlIeuTNkw8", "xeH67k2Vxl0"]
+order: 21
 ---
 
 <!--
@@ -15,7 +19,7 @@ rubrica:
 ## Goals
 
 Write a GitHub Action *Hello World* following the tutorial 
-at section [Hello Actions World!]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-javascript-action).
+at section [Hello Actions World!]({{site.baseurl}}/pages/creating-javascript-action).
 
 1. Save the action code in repo `hello-js-action-aluXXX`, 
   - Change the visibility of this repo to `public` (go to `settings/manage access`)
@@ -43,9 +47,9 @@ steps:
 
 Pay special attention to how the tests were written in this example.
 
-## Video de la clase de PL del curso 2020-04-01 sobre GH Actions
+## Videos de clases relacionadas con las GH Actions
 
-{% include video provider="youtube" id="xeH67k2Vxl0" %}
+{% include video-youtube.html %}
 
 ## References
 
