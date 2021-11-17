@@ -1,4 +1,4 @@
-Subscriptions are based on three technologies:
+To understand the fundamental of Subscriptions is convenient to  know these three technologies:
 
 1. [EventEmitter]({{site.baseurl}}/pages/event-emitters).  
   - Review the chapter on 
