@@ -1,6 +1,6 @@
 ## Goals
 
-Follow the [Tutorial](https://pusher.com/tutorials/chat-graphql-subscriptions/) *Building live chat app with GraphQL subscriptions* and reproduce the steps.
+Follow the two tutorials below and reproduce the steps.
 
 ![]({{site.baseurl}}/assets/images/graphql-subscriptions-playground.png)
 
