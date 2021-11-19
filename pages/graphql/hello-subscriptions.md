@@ -80,3 +80,6 @@ Now when we visit `localhost:4000` and subscribe we can see the counters moving:
 
 ![]({{ site.baseurl }}/assets/images/graphql-hello-subscriptions.png)
 
+## References
+
+* [See folder `subscriptions/hello/ in the repo `crguezl/graphql-yoga-examples`](https://github.com/crguezl/graphql-yoga-examples/blob/main/subscriptions/hello/index.js)
