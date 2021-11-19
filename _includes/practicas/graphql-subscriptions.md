@@ -16,6 +16,40 @@ See the section [hello subscriptions]({{ site.baseurl }}/pages/graphql/hello-sub
 
 See section [GraphQL Subscriptions with Node.js]({{ site.baseurl }}/pages/graphql/graphql-subscriptions-with-nodejs)
 
+## Challenge
+
+Write a graphQL server tha counts the accepts  `hello` queries like:
+
+```gql
+query paula {
+  hello(name: "paula")
+}
+
+query pablo {
+  hello(name: "pablo")
+}
+
+query nico {
+  hello(name: "nicolas")
+}
+```
+
+and clients can subscribe to a `greetings` event that occurs each time a `hello` query occurs.
+The event triggered by the `hello`  is an object that has not only the name greeted but 
+also the number of times it has been greeted.
+
+Therefore  queries like this one must be supported:
+
+```gql 
+subscription {
+  counter {
+    name
+    count
+  }
+}
+```
+
+
 ## References
 
 {% include graphql-subscriptions-references.md %}
