@@ -1,4 +1,6 @@
-# Hello Subscriptions
+---
+title: Hello Subscriptions
+---
 
 GraphQL subscriptions enable you to subscribe to events under a source stream and receive notifications in real time via a response stream when a selected event executes. 
 

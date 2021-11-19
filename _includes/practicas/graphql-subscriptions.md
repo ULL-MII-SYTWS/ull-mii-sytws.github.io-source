@@ -4,7 +4,8 @@ Follow the two tutorials below and reproduce the steps.
 
 ![]({{site.baseurl}}/assets/images/graphql-subscriptions-playground.png)
 
-Use the corresponding repo [GitHub crguezl/graphql-chat-app](https://github.com/crguezl/graphql-chat-app) to see more details.
+Use the corresponding repo 
+[Repo crguezl/graphql-subscriptions-with-node-js](https://github.com/crguezl/graphql-subscriptions-with-node-js)
 
 ## First Example: Hello Subscriptions
 
