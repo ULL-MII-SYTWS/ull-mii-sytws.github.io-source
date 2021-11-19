@@ -49,6 +49,7 @@ subscription {
 }
 ```
 
+You can find a solution in  the folder `subscriptions/hello-name` of the repo [crguezl/graphql-yoga-examples](https://github.com/crguezl/graphql-yoga-examples/blob/main/subscriptions/hello-name/index.js)
 
 ## References
 
