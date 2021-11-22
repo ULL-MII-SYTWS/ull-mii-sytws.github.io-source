@@ -9,6 +9,11 @@ Al aceptar la asignación se le pedirá el nombre del equipo. Deberá darle como
 Write an express web app that shows the published GH cli extensions sorted by stars.
 Use The GitHub GRaphQL API to get the data.
 
+## Basic Concepts and How To
+
+* [GitHub Docs Introduction to GraphQL](https://docs.github.com/en/graphql/guides/introduction-to-graphql)
+* [GitHub Docs: Forming calls with GraphQL](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)
+
 
 ## Libraries
 
