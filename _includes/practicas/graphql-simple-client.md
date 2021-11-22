@@ -431,6 +431,7 @@ const client = new ApolloClient({
 <a href="https://www.apollographql.com/docs/react/api/link/introduction/">**terminating link**</a>
 that sends a **GraphQL operation** to a remote endpoint over HTTP. 
 
+![]({{ site.baseurl }}/assets/images/graphql/graphql-chain-of.links.png)
 
 The HttpLink constructor takes an options object that can include:
 
@@ -579,11 +580,13 @@ app.listen(7000, () => console.log(`App listening on port 7000!`))
 
 we can visit the page with our browser:
 
-![]({{site.bseurl}}/assets/images/most-starred-github-cli-extensions.png)
+![]({{site.baseurl}}/assets/images/most-starred-github-cli-extensions.png)
 
 
 ## References
 
+* [GitHub Docs Introduction to GraphQL](https://docs.github.com/en/graphql/guides/introduction-to-graphql)
+* [GitHub Docs: Forming calls with GraphQL](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)
 * [GraphQL Hello World](https://youtu.be/DyvsMKsEsyE). A YouTube list of videos by Ben Awad
   * [How GraphQL Resolvers Work](https://youtu.be/pI5CKxyrbiI)
 
