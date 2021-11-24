@@ -1,5 +1,8 @@
 * Template repo for GitHub Actions [actions/javascript-action](https://github.com/actions/javascript-action)
 * [Example of use of a GitHub Action crguezl/pandoc-gitpod-template](https://github.com/crguezl/pandoc-gitpod-template) that allows you to convert your markdown files producing the pdf as an artifact. [See the workflow file](https://github.com/crguezl/pandoc-gitpod-template/blob/main/.github/workflows/generate_pdf.yml)
+  * Here is an action [BaileyJM02/markdown-to-pdf](https://github.com/BaileyJM02/markdown-to-pdf) that creates PDF and HTML files from Markdown using the GitHub (or custom) theme.
+
+
 * [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
 * Repo [ULL-ESIT-PL-1920/hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/hello-world-javascript-action)
 * [Repo ULL-ESIT-PL-1920/use-hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/use-hello-world-javascript-action)

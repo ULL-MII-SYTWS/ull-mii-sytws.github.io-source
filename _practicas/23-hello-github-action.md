@@ -47,6 +47,17 @@ steps:
 
 Pay special attention to how the tests were written in this example.
 
+## Build your own GitHub Action 
+
+Think of ideas to write your own GH Action.
+
+For example, this repo [crguezl/pandoc-gitpod-template](https://github.com/crguezl/pandoc-gitpod-template) uses GitHub Actions  to convert some markdown files, producing the pdf as an artifact. [See the workflow file](https://github.com/crguezl/pandoc-gitpod-template/blob/main/.github/workflows/generate_pdf.yml) and the [actions running](https://github.com/crguezl/pandoc-gitpod-template/actions)
+
+Here is an action [BaileyJM02/markdown-to-pdf](https://github.com/BaileyJM02/markdown-to-pdf) that creates PDF and HTML files from Markdown using the GitHub (or custom) theme.
+
+There are actions to run MatLab, to deploy to different platforms, ... here is the [github actions marketplace](https://github.com/marketplace?category=&query=&type=actions&verification=)
+
+
 ## Videos de clases relacionadas con las GH Actions
 
 {% include video-youtube.html %}
