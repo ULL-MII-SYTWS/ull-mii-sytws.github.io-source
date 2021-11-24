@@ -8,14 +8,15 @@ video: ["jKD4ZovaVks"]
 order: 22
 ---
 
-
-## Modo de Trabajo
+## Ejemplo Simple de Servidor y Cliente GraphQL con Vanilla JS
 
 En este vídeo:
 
 {% include video-youtube.html id="jKD4ZovaVks" %}
 
 Se construye una API GraphQL para una lista de TODOs y un cliente en Vanilla JS.
+
+## Modo de Trabajo
 
 1. Cree una rama `solution`  a partir de la rama `master`. Si durante el visionado algo no le sale siempre podrá consultar esta rama.
 2. En la rama master borre los contenidos de las carpetas `todo-client` y `todo-graphql`
