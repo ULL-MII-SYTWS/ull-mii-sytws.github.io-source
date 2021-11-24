@@ -28,19 +28,19 @@ Se construye una API GraphQL para una lista de TODOs y un cliente en Vanilla JS.
 Cuando llegue a esta parte vaya intentando los pasos especificados:
 
 
-* [ ] Create node app/install graphql-yoga
-* [ ] Define Todo Type
-* [ ] Define Query Type
+1. [ ] Create node app/install graphql-yoga
+1. [ ] Define Todo Type
+1. [ ] Define Query Type
  * [ ] Get All Todos
-* [ ] Define Query Resolver
+1. [ ] Define Query Resolver
  * [ ] Get All Todos
-* [ ] Define Create Mutation
-* [ ] Define Create Resolver
-* [ ] Define Delete Mutation
-* [ ] Define Delete Resolver
-* [ ] Build a simple TODO GraphQL Client
-* [ ] Create client app/install nanographql
-* [ ] Query for all on page load
+1. [ ] Define Create Mutation
+1. [ ] Define Create Resolver
+1. [ ] Define Delete Mutation
+1. [ ] Define Delete Resolver
+1. [ ] Build a simple TODO GraphQL Client
+1. [ ] Create client app/install nanographql
+1. [ ] Query for all on page load
 
 Puede plantearse como mejora usar una base de datos como SQLite o Mongo en vez del array 
 
