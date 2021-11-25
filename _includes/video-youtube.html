@@ -1,6 +1,7 @@
 {% if page.video %}
 {% if page.video.first%}
 
+
 <!-- Warning duplicated code below-->
 {% for video in page.video %}
     {% capture video_src %} 
@@ -10,7 +11,7 @@ https://www.youtube-nocookie.com/embed/{{ video }}
 
     {% unless video_src == "" %}
 <div class="responsive-video-container">
-    <iframe src="{{ video_src }}" 
+    <iframe src="{{ video_src }}" style=" width:560px; height: 340px;  margin: 0 auto; background-color: #777; display:block;"
       frameborder="0" 
       webkitAllowFullScreen mozallowfullscreen allowfullscreen>
     </iframe>
