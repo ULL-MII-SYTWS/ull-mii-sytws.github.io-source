@@ -184,6 +184,8 @@ jobs:
 ```
 {% endraw %}
 
+* [Scheduled events in GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)
+
 This is the help for `gh create issue`:
 
 ```
