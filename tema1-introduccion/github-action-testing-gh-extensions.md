@@ -150,6 +150,7 @@ You can also execute API calls through GitHub CLI. For example, this workflow
 2. Then it stores the result in an environment variable that it can access in a later step. 
 3. In the second step, it uses the gh issue create subcommand to create an issue containing the information from the first step.
 
+{% raw %}
 ```yml 
 name: Report remaining open issues
 on: 
@@ -181,3 +182,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+{% endraw %}
