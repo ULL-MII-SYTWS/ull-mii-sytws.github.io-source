@@ -5,7 +5,8 @@ title: Testing GitHub Cli Extensions with GitHub Actions
 Véase:
 
 1. GitHub Action en [crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing) para testear la github cli  extensión 
-en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-2122/gh-repo-rename) por Carlos
+en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-2122/gh-repo-rename) por Carlos.
+    - [actions en crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing/actions)
 2. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
 
 
