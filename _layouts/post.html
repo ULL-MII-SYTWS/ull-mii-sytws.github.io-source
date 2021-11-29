@@ -34,10 +34,12 @@
 
 
 
+            {% if page.toc %}
             <h2 >Table of Contents</h2>
             
             {% include toc.html html=content id="sytwstoc" %}
-          
+            
+            {% endif %}
 
             <div class="container"> 
                 <h1> {{ page.title}} </h1>
