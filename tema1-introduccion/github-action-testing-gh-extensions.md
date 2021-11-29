@@ -61,17 +61,17 @@ LEARN MORE
 ```
 
 
-## Testing Carlos ULL-MII-SYTWS-2122/gh-repo-rename in production 
+## Testing in production 
 
 Véase:
 
-1. GitHub Action en [crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing) para testear la github cli  extensión 
-en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-2122/gh-repo-rename) por Carlos.
-    - [actions en crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing/actions)
-2. The action at gh-extension 
+1. The action at gh-extension 
    - [Repo ULL-ESIT-DMSI-1920/gh-cli-graphql-casiano-rodriguez-leon-alumnoudv5 branch as-module](https://github.com/ULL-ESIT-DMSI-1920/gh-cli-graphql-casiano-rodriguez-leon-alumnoudv5/tree/as-module)
    - [crguezl/gh-repo-rename](https://github.com/crguezl/gh-repo-rename)
-3. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
+2. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
+4. GitHub Action en [crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing) para testear la github cli  extensión 
+en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-2122/gh-repo-rename) por Carlos.
+    - [actions en crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing/actions)
 
 
 ```
@@ -133,7 +133,7 @@ jobs:
 ```
 {% endraw %}
 
-## Observaciones
+### Observaciones
 
 * He tenido que hacer el repo de la extensión público para que el step `gh extension install ULL-MII-SYTWS-2122/gh-repo-rename` no requiera de autenticaciones adicionales
 * `jobs.<job_id>.steps[*].continue-on-error` Prevents a job from failing when a step fails. 
