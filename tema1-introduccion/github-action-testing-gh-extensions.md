@@ -2,6 +2,8 @@
 title: Testing GitHub Cli Extensions with GitHub Actions
 ---
 
+Read the article [Using GitHub CLI in workflows](https://docs.github.com/en/actions/advanced-guides/using-github-cli-in-workflows). You can script with GitHub CLI in GitHub Actions workflows.
+
 GitHub CLI is preinstalled on all GitHub-hosted runners. For each step that uses GitHub CLI, you must set an environment variable called `GITHUB_TOKEN` to a token with the required scopes.
 
 You can execute any GitHub CLI command. 
@@ -24,7 +26,9 @@ jobs:
           ISSUE: ${{ github.event.issue.html_url }}
 ```
 
-See [Event object properties](https://docs.github.com/en/developers/webhooks-and-events/events/issue-event-types#event-object-properties-6): the `htm_url` property is a string that contains the HTML URL of the issue comment.
+See 
+* [Event object properties](https://docs.github.com/en/developers/webhooks-and-events/events/issue-event-types#event-object-properties-6)
+*  and [Issue event object common properties](https://docs.github.com/en/developers/webhooks-and-events/events/issue-event-types#issue-event-object-common-properties)]: the `htm_url` property is a string that contains the HTML URL of the issue comment.
 
 Here is the help of `gh issue comment`:
 
@@ -110,3 +114,4 @@ jobs:
 * He tenido que hacer el repo de la extensión público para que el step `gh extension install ULL-MII-SYTWS-2122/gh-repo-rename` no requiera de autenticaciones adicionales
 * `jobs.<job_id>.steps[*].continue-on-error` Prevents a job from failing when a step fails. 
   Set to `true` to allow a job to pass when this step fails.
+
