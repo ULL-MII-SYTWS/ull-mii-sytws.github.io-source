@@ -98,19 +98,21 @@ jobs:
           run: gh extension install ULL-MII-SYTWS-2122/gh-repo-rename  
 
         - name: create repo with user as owner
-          run: gh api /user/repos -X POST --field name=prueba   
-          continue-on-error: true        
+          run: gh api /user/repos -X POST --field name=${OLDNAME}           
 
         - name: probar a renombrarlo
-          run: gh repo-rename ${OWNER}/prueba repoRenombrado           
+          run: gh repo-rename ${OWNER}/${OLDNAME} ${NEWNAME}           
 
         - name: delete repo
-          run: gh api -X DELETE "/repos/${OWNER}/repoRenombrado"           
+          run: gh api -X DELETE "/repos/${OWNER}/${NEWNAME}"           
         
     env:
       GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN}}
       # Instead of crguezl. To make it more generic
       OWNER: ${{ github.repository_owner }}
+      OLDNAME: "prueba"
+      NEWNAME: "repoRenombrado"
+
 ```
 {% endraw %}
 
