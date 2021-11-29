@@ -34,6 +34,7 @@ See
 
 Here is the help of `gh issue comment`:
 
+
 ```
 ➜  gh-repo-rename-testing git:(main) ✗ gh help issue comment
 Create a new issue comment
