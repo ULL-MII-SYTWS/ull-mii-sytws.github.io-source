@@ -68,21 +68,36 @@ Véase:
 1. GitHub Action en [crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing) para testear la github cli  extensión 
 en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-2122/gh-repo-rename) por Carlos.
     - [actions en crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing/actions)
-2. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
+2. The action at gh-extension [Repo ULL-ESIT-DMSI-1920/gh-cli-graphql-casiano-rodriguez-leon-alumnoudv5 branch as-module](https://github.com/ULL-ESIT-DMSI-1920/gh-cli-graphql-casiano-rodriguez-leon-alumnoudv5/tree/as-module)
+1. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
 
 
+```
+➜  gh-cli-graphql-casiano-rodriguez-leon-alumnoudv5 git:(as-module) cat .github/workflows/npm-publish.yml 
+```
 {% raw %}
 ```yml
-name: testing carlos extension
-
-# Controls when the workflow will run
+name: Npm publish repo-rename
 on:
   push:
-    branches: [main]
+        branches: [as-module]
 
-jobs:          
-  carlos:
-    # Define the OS our workflow should run on
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          
+  test-gh-rename-repo:
+    needs: publish-npm
     runs-on: ubuntu-latest
     steps: 
         - uses: actions/checkout@v2 # esta action descarga el repo en la máquina virtual
@@ -95,13 +110,14 @@ jobs:
           run: gh version  
 
         - name: Install gh repo-rename extension. Repo  is now public
-          run: gh extension install ULL-MII-SYTWS-2122/gh-repo-rename  
+          run: gh extension install ${OWNER}/gh-repo-rename  
 
         - name: create repo with user as owner
-          run: gh api /user/repos -X POST --field name=${OLDNAME}           
+          run: gh api /user/repos -X POST --field name=${OLDNAME}        
+          continue-on-error: true   
 
         - name: probar a renombrarlo
-          run: gh repo-rename ${OWNER}/${OLDNAME} ${NEWNAME}           
+          run: gh repo-rename -o ${OWNER} -r ${OLDNAME} -n ${NEWNAME}         
 
         - name: delete repo
           run: gh api -X DELETE "/repos/${OWNER}/${NEWNAME}"           
@@ -111,8 +127,7 @@ jobs:
       # Instead of crguezl. To make it more generic
       OWNER: ${{ github.repository_owner }}
       OLDNAME: "prueba"
-      NEWNAME: "repoRenombrado"
-
+      NEWNAME: "pruebanuevo"
 ```
 {% endraw %}
 
