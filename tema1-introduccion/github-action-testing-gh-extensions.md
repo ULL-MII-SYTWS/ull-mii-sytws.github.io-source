@@ -10,6 +10,7 @@ You can execute any GitHub CLI command.
 
 For example, this workflow uses the `gh issue comment` subcommand to add a comment when an issue is opened.
 
+{% raw %}
 ```yml 
 name: Comment when opened
 on:
@@ -25,6 +26,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ISSUE: ${{ github.event.issue.html_url }}
 ```
+{% endraw %}
 
 See 
 * [Event object properties](https://docs.github.com/en/developers/webhooks-and-events/events/issue-event-types#event-object-properties-6)
@@ -68,6 +70,7 @@ en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-
 2. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
 
 
+{% raw %}
 ```yml
 name: testing carlos extension
 
@@ -108,6 +111,7 @@ jobs:
       # Instead of crguezl. To make it more generic
       OWNER: ${{ github.repository_owner }}
 ```
+{% endraw %}
 
 ## Observaciones
 
