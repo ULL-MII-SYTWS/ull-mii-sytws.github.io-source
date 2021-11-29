@@ -1,12 +1,12 @@
 ---
-title: Testing GitHub Extensions with GitHub Actions
+title: Testing GitHub Cli Extensions with GitHub Actions
 ---
 
 Véase:
 
 1. GitHub Action en [crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing) para testear la github cli  extensión 
 en el repo [ULL-MII-SYTWS-2122/gh-repo-rename](https://github.com/ULL-MII-SYTWS-2122/gh-repo-rename) por Carlos
-2. [workflow-syntax-for-github-actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
+2. [Workflow syntax for GitHub Actions](https://docs.github.com/es/actions/learn-github-actions/workflow-syntax-for-github-actions#)
 
 
 ```yml
