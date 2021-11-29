@@ -2,6 +2,60 @@
 title: Testing GitHub Cli Extensions with GitHub Actions
 ---
 
+GitHub CLI is preinstalled on all GitHub-hosted runners. For each step that uses GitHub CLI, you must set an environment variable called `GITHUB_TOKEN` to a token with the required scopes.
+
+You can execute any GitHub CLI command. 
+
+For example, this workflow uses the `gh issue comment` subcommand to add a comment when an issue is opened.
+
+```yml 
+name: Comment when opened
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh issue comment $ISSUE --body "Thank you for opening this issue!"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ISSUE: ${{ github.event.issue.html_url }}
+```
+
+See [Event object properties](https://docs.github.com/en/developers/webhooks-and-events/events/issue-event-types#event-object-properties-6): the `htm_url` property is a string that contains the HTML URL of the issue comment.
+
+Here is the help of `gh issue comment`:
+
+```
+➜  gh-repo-rename-testing git:(main) ✗ gh help issue comment
+Create a new issue comment
+
+USAGE
+  gh issue comment {<number> | <url>} [flags]
+
+FLAGS
+  -b, --body string      Supply a body. Will prompt for one otherwise.
+  -F, --body-file file   Read body text from file (use "-" to read from standard input)
+  -e, --editor           Add body using editor
+  -w, --web              Add body in browser
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+EXAMPLES
+  $ gh issue comment 22 --body "I was able to reproduce this issue, lets fix it."
+
+LEARN MORE
+  Use 'gh <command> <subcommand> --help' for more information about a command.
+  Read the manual at https://cli.github.com/manual
+```
+
+
+## Testing Carlos ULL-MII-SYTWS-2122/gh-repo-rename in production 
+
 Véase:
 
 1. GitHub Action en [crguezl/gh-repo-rename-testing](https://github.com/crguezl/gh-repo-rename-testing) para testear la github cli  extensión 
