@@ -1,3 +1,13 @@
+### Recursos
+
+* [GitHub repo ULL-MII-CA-1819/nodejs-the-right-way](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way). 
+    - Mira el [directorio connecting-robust-microservices-chapter-4](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/tree/master/connecting-robust-microservices-chapter-4)
+    - [El subdirectorio  connecting-robust-microservices-chapter-4/microservices contiene los ejemplos del libro](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/tree/master/connecting-robust-microservices-chapter-4/microservices)
+* [YouTube vídeo: Building Distributed Systems with Node.js and 0MQ](https://www.youtube.com/watch?v=zgDjaJdAB9c). 
+    - Jim R. Wilson, author of Node.js the Right Way, explains how to build distributed systems using ØMQ at a Node.js in the Wild meetup]
+    - [Slides](https://ull-mii-ca-1819.github.io/node-zmq-talk/) at ull-mii-ca-1819
+    - [Slides](https://github.com/jimbojw/node-zmq-talk) at jimbojw-zmq-talk
+
 ### Node.js 0MQ API
 
 * [http://zeromq.github.io/zeromq.js/](http://zeromq.github.io/zeromq.js/) 
