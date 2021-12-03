@@ -294,4 +294,5 @@ publica a los clientes conectados a la room especificada usando el socket PUB/SU
 ## References
 
 * <https://zeromq.org/>
+* [Software Architecture using ZeroMQ](https://www.infoq.com/presentations/Architecture-Scale-ZeroMQ/): Pieter Hintjens explains at Strabge Loop  how to use contracts and rapid iterative design cycles to architect large-scale distributed systems with ZeroMQ.
 * [Old References]({{site.baseurl}}/tema2-async/practicas/p6-t2-microservices/old-references)
