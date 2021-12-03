@@ -1,5 +1,6 @@
 ---
-title: Práctica Connecting Robust Microservices (p6-t2-microservices)
+title: Práctica Connecting Robust Microservices
+permalink: /practicas/robust-microservices
 ---
 
 * Lea el [Capítulo 4 "Connecting Robust Microservices" de *Node.JS The Right Way*](https://github.com/iMarcoGovea/books/blob/master/nodejs/Node.js%20the%20Right%20Way.pdf) ` ` y resuelva los problemas en la secciones 
@@ -218,7 +219,7 @@ $$
 
 Para computar π aproxime la integral mediante sumas de áreas de rectángulos:
 
-![](integration-as-a-sum.jpg)
+![](integration-as-a-sum.png)
 
 1. El capataz divide el intervalo \[0,1\] en un número de subintervalos bastante mayor que el número de trabajadores
 2. El capataz  le indicará a cada trabajador para que intervalo debe calcular el  área 
