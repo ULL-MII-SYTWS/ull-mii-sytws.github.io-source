@@ -8,4 +8,4 @@ video:
 order: 26
 --- 
 
-See <a href="https://github.com/crguezl/vuejs-fundamentals#readme" target="_blank">for the full description of this lab.
+See repo crguezl/vuejs-fundamentals <a href="https://github.com/crguezl/vuejs-fundamentals#readme" target="_blank">for the full description of this lab.
