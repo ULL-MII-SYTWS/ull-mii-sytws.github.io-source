@@ -1,5 +1,5 @@
 ---
-title: Vue Fundamentals"
+title: Vue Fundamentals
 rubrica: 
 layout: practica
 permalink: /practicas/vue-fundamentals
