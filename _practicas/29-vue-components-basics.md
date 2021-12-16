@@ -8,4 +8,4 @@ video:
 order: 27
 --- 
 
-See repo crguezl/vuejs-components-basics-plan-picker-components <a href="https://github.com/crguezl/vuejs-components-basics-plan-picker-component" target="_blank">for the full description of this lab.
+See repo crguezl/vuejs-components-basics-plan-picker-component <a href="https://github.com/crguezl/vuejs-components-basics-plan-picker-component" target="_blank">for the full description of this lab.
