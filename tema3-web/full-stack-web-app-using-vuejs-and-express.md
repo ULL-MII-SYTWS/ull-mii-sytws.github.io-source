@@ -18,7 +18,11 @@ title: "Full Stack Web App using Vue.js & Express.js"
 * [Full Stack Web App using Vue.js & Express.js: Part 5 - View Song](https://youtube.com/watch?v=3zw5LgKDMhg)
 * [Full Stack Web App using Vue.js & Express.js: Part 7 - Wrapping Up](https://youtube.com/watch?v=stx-tUS0vo4)
 
-# Repo 
+## Repo 
 
 [codyseibert/tab-tracker](https://github.com/codyseibert/tab-tracker)
-   
+
+
+## Comments
+
+- Install v8.2 of node. It fails with v16.13
