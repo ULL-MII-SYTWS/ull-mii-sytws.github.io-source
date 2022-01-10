@@ -26,3 +26,4 @@ title: "Full Stack Web App using Vue.js & Express.js"
 ## Comments
 
 - Install v8.2 of node. It fails with v16.13
+- The vue-cli used in the video is 2.8.2
