@@ -22,22 +22,10 @@ El máster contempla un 50% de no presencialidad y las clases de teoría (Grupos
 
 [meet]: https://meet.google.com/bhv-togn-ynm
 
-Nos comunican que las clases comenzarán el Lunes 27/09/2021.
- 
+
 * [Calendario Google de SYTWS](https://calendar.google.com/calendar/u/1?cid=dWxsLmVkdS5lc19oM2FiN3AzcmxmYW1qY25zbmhsdDZ1aGI0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) (Por si lo quieres añadir a tu Google Calendar)
 
 {% include embeded-calendar-iframe.html %}
-
-### Horarios del Master de II 
-
-* <a href="https://drive.google.com/file/d/1j97jIXuJ3fEXYLD8XA0HZG2WtV_Vo0vp/view" target="_blank">Horarios completos del curso 20/21 del Master de II</a>
-* <a href="https://docs.google.com/document/d/1RprRwWi3BD2tMkWzrxFlCHMDpajECqg97Tom8-tpog4/edit?ts=5d7a7ae4" target="_blank">Horarios completos del curso 19/20 del Master de II</a>
-
-### Horarios de Tutorías
-
-* Primer Cuatrimestre: L, M, X de 8:30 a 10:30
-
-<!-- -->
 
 
 ## Exámenes de convocatoria
@@ -48,14 +36,7 @@ Nos comunican que las clases comenzarán el Lunes 27/09/2021.
 
 ### Normativa de Evaluación
 
-* [Normativa](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
-* [Normativa de Compensación](https://riull.ull.es/xmlui/bitstream/handle/915/8580/acuerdo12.pdf?sequence=1&isAllowed=y)
+* [Reglamento de evaluacion y calificacion](https://www.ull.es/portal/normativa/normativa/nuevo-reglamento-de-evaluacion-y-calificacion-de-la-universidad-de-la-laguna/ )
+* [Normativas de la ULL para el estudiantado](https://www.ull.es/portal/normativa/estudiantes/)
 
-## Fechas de Cierre de actas 
-
-*  14 de Febrero
-*  17 de Marzo
-*  20 de Junio
-*  13 de Julio
-*  19 de Septiembre
 
