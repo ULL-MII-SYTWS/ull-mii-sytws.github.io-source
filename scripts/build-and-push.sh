@@ -5,6 +5,6 @@ cd ../website && \
 #git remote add origin git@github.com:ULL-MII-SYTWS-2122/ULL-MII-SYTWS-2122.github.io.git && \
 #touch .nojekyll && \
 git add . && \
-git ci -am 'new build' && \
+git ci -am 'new build 22/23';\
 git push --force sytws main && \
-git push --force sytws2122 main
+git push --force sytws2223 main
